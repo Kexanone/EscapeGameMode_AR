@@ -1,0 +1,118 @@
+$grp GenericEntity {
+ LocationStart {
+  components {
+   EM_MapMarkerComponent "{5D2ED34DC869F2F9}" {
+    m_sImageQuadName "em_start"
+    m_color 0 0.074 0.314 0
+    m_fSize 0.5
+   }
+  }
+  coords 6455.33 160.043 6496.759
+ }
+ LocationCheckpoint1 {
+  components {
+   EM_MapMarkerComponent "{5D2ED34DC869F2F9}" {
+    m_sImageQuadName "em_warning"
+    m_color 0.212 0 0 0
+    m_fSize 0.5
+    m_sMarkerText "Checkpoint"
+   }
+  }
+  coords 4641.412 120.195 7946.438
+ }
+ LocationCheckpoint2 {
+  components {
+   EM_MapMarkerComponent "{5D2ED34DC869F2F9}" {
+    m_sImageQuadName "em_warning"
+    m_color 0.212 0 0 0
+    m_fSize 0.5
+    m_sMarkerText "Checkpoint"
+   }
+  }
+  coords 4950.747 27.728 10728.35
+ }
+ LocationUnknown3 {
+  components {
+   EM_MapMarkerComponent "{5D2ED34DC869F2F9}" {
+    m_sImageQuadName "em_unknown"
+    m_color 0 0 0 1
+    m_fSize 0.5
+   }
+  }
+  coords 4995.816 25.343 9957.697
+ }
+ LocationUnknown1 {
+  components {
+   EM_MapMarkerComponent "{5D2ED34DC869F2F9}" {
+    m_sImageQuadName "em_unknown"
+    m_color 0 0 0 1
+    m_fSize 0.5
+   }
+  }
+  coords 5753.708 218.037 7055.838
+ }
+ LocationUnknown2 {
+  components {
+   EM_MapMarkerComponent "{5D2ED34DC869F2F9}" {
+    m_sImageQuadName "em_unknown"
+    m_color 0 0 0 1
+    m_fSize 0.5
+   }
+  }
+  coords 4859.721 111.069 8091.283
+ }
+ LocationUnknown4 {
+  components {
+   EM_MapMarkerComponent "{5D2ED34DC869F2F9}" {
+    m_sImageQuadName "em_unknown"
+    m_color 0 0 0 1
+    m_fSize 0.5
+   }
+  }
+  coords 7437.25 7.875 6727.804
+ }
+ LocationEnd {
+  components {
+   EM_MapMarkerComponent "{5D2ED34DC869F2F9}" {
+    m_sImageQuadName "em_end"
+    m_color 0 0.074 0.314 0
+    m_fSize 0.5
+   }
+  }
+  coords 4888.233 28.595 11816.635
+ }
+ LocationUnknown5 {
+  components {
+   EM_MapMarkerComponent "{5D2ED34DC869F2F9}" {
+    m_sImageQuadName "em_unknown"
+    m_color 0 0 0 1
+    m_fSize 0.5
+   }
+  }
+  coords 4555.26 156.188 6891.583
+ }
+ LocationUnknown6 {
+  components {
+   EM_MapMarkerComponent "{5D2ED34DC869F2F9}" {
+    m_sImageQuadName "em_unknown"
+    m_color 0 0 0 1
+    m_fSize 0.5
+   }
+  }
+  coords 5605.38 54.938 9149.359
+  angleX -0.895
+  angleZ -15.707
+ }
+ LocationUnknown7 {
+  components {
+   EM_MapMarkerComponent "{5D2ED34DC869F2F9}" {
+    m_sImageQuadName "em_unknown"
+    m_color 0 0 0 1
+    m_fSize 0.5
+   }
+  }
+  coords 4451.158 5.77 11196.96
+  angleX -0.895
+  angleZ -15.707
+ }
+}

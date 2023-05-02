@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{E8E7AE7D999FE1AF}Prefabs/Groups/OPFOR/EM_Group_USSR_SniperTeam.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

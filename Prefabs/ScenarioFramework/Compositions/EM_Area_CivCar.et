@@ -1,0 +1,20 @@
+GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
+ ID "59E8CDC4819B4FE1"
+ components {
+  CP_Area "{59E8CDC50969206E}" {
+   m_rTriggerResource "{47D49EA6A216CFD5}Prefabs/ScenarioFramework/Triggers/TriggerCharacterSlow.et"
+   m_fAreaRadius 1000
+  }
+ }
+ coords 0 0 0
+ {
+  GenericEntity : "{F8BAE116AD72D32A}Prefabs/ScenarioFramework/Compositions/EM_Layer_CivCar.et" {
+   ID "5D42DB31DC4E8734"
+   components {
+    CP_LayerBase "{5A2283EA2A0B4B14}" {
+     m_EActivationType ON_AREA_TRIGGER_ACTIVATION
+    }
+   }
+  }
+ }
+}

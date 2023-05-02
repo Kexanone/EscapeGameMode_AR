@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{D4D27FA1008472C7}Configs/Navmesh/Navmesh_EM_Eden_Soldier.conf"
+ Configurations {
+  CONFResourceClass PC {
+  }
+  CONFResourceClass XBOX_ONE : PC {
+  }
+  CONFResourceClass XBOX_SERIES : PC {
+  }
+  CONFResourceClass PS4 : PC {
+  }
+  CONFResourceClass HEADLESS : PC {
+  }
+ }
+}

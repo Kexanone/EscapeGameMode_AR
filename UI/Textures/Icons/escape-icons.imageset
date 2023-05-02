@@ -1,0 +1,35 @@
+ImageSetClass {
+ RefSize 136 136
+ Textures {
+  ImageSetTextureClass {
+   mpix 1
+   path "UI/Textures/Icons/escape-icons_atlas.edds"
+  }
+ }
+ Images {
+  ImageSetDefClass em_end {
+   Name "em_end"
+   Pos 2 2
+   Size 64 64
+   Flags 0
+  }
+  ImageSetDefClass em_start {
+   Name "em_start"
+   Pos 68 2
+   Size 64 64
+   Flags 0
+  }
+  ImageSetDefClass em_unknown {
+   Name "em_unknown"
+   Pos 2 68
+   Size 64 64
+   Flags 0
+  }
+  ImageSetDefClass em_warning {
+   Name "em_warning"
+   Pos 68 68
+   Size 64 64
+   Flags 0
+  }
+ }
+}

@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{102F5EE061B48B48}Prefabs/ScenarioFramework/Compositions/EM_Area_USSR_SniperTeam.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

@@ -1,0 +1,28 @@
+$grp SCR_AIGroup : "{657590C1EC9E27D3}Prefabs/Groups/OPFOR/Group_USSR_LightFireTeam.et" {
+ {
+  coords 6660.084 115.211 5962.071
+  angleY -29.165
+  m_aStaticWaypoints {
+   "wp_stalk1"
+  }
+ }
+ {
+  coords 5885.033 153.776 6669.981
+  angleY 114.085
+  m_aStaticWaypoints {
+   "wp_stalk2"
+  }
+ }
+}
+$grp SCR_AIWaypoint : "{9ECC61863C856C27}Prefabs/AI/Waypoints/EM_AIWaypoint_Stalk.et" {
+ wp_stalk2 {
+  coords 6329.048 164.881 6439.697
+  CompletionRadius 75
+ }
+ wp_stalk1 {
+  coords 6524.34 163.535 6391.248
+  angleX 5.356
+  angleZ 1.782
+  CompletionRadius 75
+ }
+}

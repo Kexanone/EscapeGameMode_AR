@@ -1,0 +1,10 @@
+SCR_AIWaypoint {
+ ID "5D3C5CFE4B0EAB7B"
+ coords 2687.019 389.014 5186.562
+ Type "Move"
+ Title "Simple move wyapoint"
+ AIBehaviorTree "{3C439E3BA991CB33}AI/BehaviorTrees/Waypoints/EM_StalkerInit.bt"
+ AIBehaviorTreeMoveTo "{A3755C1F88DED8D6}AI/BehaviorTrees/Waypoints/WP_Move.bt"
+ CompletionRadius 5
+ CompletionType Any
+}

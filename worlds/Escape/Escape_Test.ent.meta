@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{C4C31EA59BF3C3B6}worlds/Escape/Escape_Test.ent"
+ Configurations {
+  ENTResourceClass PC {
+  }
+  ENTResourceClass XBOX_ONE : PC {
+  }
+  ENTResourceClass XBOX_SERIES : PC {
+  }
+  ENTResourceClass PS4 : PC {
+  }
+  ENTResourceClass HEADLESS : PC {
+  }
+ }
+}

@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{DDD2A8C5836F09F6}Prefabs/Groups/OPFOR/EM_Group_USSR_Squad1.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

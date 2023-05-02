@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{BCE5AFFB8443FC84}Prefabs/Characters/Factions/OPFOR/USSR_Army/EM_Character_USSR_ReconMarksman.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

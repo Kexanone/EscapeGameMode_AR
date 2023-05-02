@@ -1,0 +1,14 @@
+GenericEntity {
+ ID "5D4364623E9E05DB"
+ components {
+  CP_EM_SlotAI "{5D4364623E9E05E2}" {
+   m_rObjectToSpawn ""
+   m_sFaction ""
+   m_bSpawnAIOnWPPos 0
+   m_sWPToSpawn "{93291E72AC23930F}Prefabs/AI/Waypoints/AIWaypoint_Defend.et"
+  }
+  Hierarchy "{5D4364623E9E05E9}" {
+  }
+ }
+ coords 1.053 -0.127 3.001
+}

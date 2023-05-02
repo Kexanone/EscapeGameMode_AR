@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{9ECC61863C856C27}Prefabs/AI/Waypoints/EM_AIWypoing_Stalk.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

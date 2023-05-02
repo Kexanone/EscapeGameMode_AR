@@ -1,0 +1,22 @@
+GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
+ ID "59E8CDC4819B4FE1"
+ components {
+  CP_Area "{59E8CDC50969206E}" {
+   m_rTriggerResource "{47D49EA6A216CFD5}Prefabs/ScenarioFramework/Triggers/TriggerCharacterSlow.et"
+  }
+ }
+ coords -161.266 104.438 53.258
+ {
+  GenericEntity : "{8DBEDDB396ABD81A}Prefabs/ScenarioFramework/Components/EM_SlotAIPatrolOrStalk.et" {
+   ID "5D42DB3EA5D380EB"
+   components {
+    CP_EM_SlotAIPatrolOrStalk "{5D3D09AD8446B6B4}" {
+     m_EActivationType ON_AREA_TRIGGER_ACTIVATION
+     m_rObjectToSpawn "{B01CE9605681C3E4}Prefabs/Groups/OPFOR/EM_Group_USSR_ReconTeam1.et"
+     m_fStalkProbability 1
+    }
+   }
+   coords 0 0 0
+  }
+ }
+}

@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{44850546B9F6F8E6}Prefabs/ScenarioFramework/Compositions/EM_Area_USSR_ReconQRF.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

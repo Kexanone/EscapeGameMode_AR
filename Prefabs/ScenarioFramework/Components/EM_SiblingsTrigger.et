@@ -1,0 +1,16 @@
+GenericEntity {
+ ID "5D3D09DE10CADD89"
+ components {
+  CP_EM_SiblingsTrigger "{5D3D09DE10CADD81}" {
+   m_aPlugins {
+    CP_PluginTrigger "{5D3D09DE72A70D11}" {
+    }
+   }
+   m_rObjectToSpawn "{9DB5EBFFEC1A54B4}Prefabs/ScenarioFramework/Triggers/TriggerAnyPlayerSlow.et"
+   m_sFaction ""
+  }
+  Hierarchy "{5D3D09DE10CADD98}" {
+  }
+ }
+ coords 2056.049 48.569 3411.102
+}

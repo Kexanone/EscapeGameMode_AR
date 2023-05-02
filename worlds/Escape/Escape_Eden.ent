@@ -1,0 +1,21 @@
+SubScene {
+ Parent "worlds/Eden/Eden.ent"
+}
+Layer default {
+ Index 0
+}
+Layer modules {
+ Index 1
+}
+Layer markers {
+ Index 2
+}
+Layer start {
+ Index 3
+}
+Layer areas {
+ Index 4
+}
+Layer patrols {
+ Index 5
+}

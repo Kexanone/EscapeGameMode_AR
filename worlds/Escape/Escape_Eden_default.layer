@@ -1,0 +1,14 @@
+$grp GenericEntity : "{350EE4325BB6C9E1}Prefabs/ScenarioFramework/Compositions/EM_Area_USSR_Patrol.et" {
+ {
+  coords 4899.903 170.993 7059.958
+ }
+ {
+  coords 6695.016 146.002 7730.12
+ }
+ {
+  coords 5155.882 90.931 8453.297
+ }
+ {
+  coords 4293.52 101.14 8493.773
+ }
+}

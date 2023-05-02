@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{ABCA14BDF7F3D580}Prefabs/Characters/Factions/OPFOR/USSR_Army/EM_Character_USSR_Scour.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}
