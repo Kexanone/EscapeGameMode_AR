@@ -3,6 +3,8 @@ SCR_AIWorld AIWorld : "{E0A05C76552E7F58}Prefabs/AI/SCR_AIWorld.et" {
   NavmeshWorldComponent "{5584F30E67F617AD}" {
    NavmeshSettings NavmeshWorld "{50FC63BEBE3973C5}" {
     NavmeshFilesConfig BaseNavmeshFilesConfig "{598EDE77A2C17DC2}" : "{D4D27FA1008472C7}Configs/Navmesh/Navmesh_EM_Eden_Soldier.conf" {
+     NavmeshFileOveride {
+     }
     }
    }
   }

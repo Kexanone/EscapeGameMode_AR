@@ -31,6 +31,9 @@ EM_GameModeEscape GameModeEscape : "{087AE647D1755635}scripts/Game/GameMode/EM_G
    m_iHandlerTimeout 10
    m_fEventRadius 15
   }
+  EM_RespawnTimerComponent "{5D45178B969D7313}" {
+   m_fRespawnTime 3
+  }
   EM_VictoryBorderComponent "{5D3C5CC9F314C1C5}" {
    Enabled 0
   }

@@ -1,0 +1,34 @@
+$grp GenericEntity : "{350EE4325BB6C9E1}Prefabs/ScenarioFramework/Compositions/EM_Area_USSR_Patrol.et" {
+ {
+  components {
+   CP_Area "{59E8CDC50969206E}" {
+   }
+  }
+  coords 5024.57 163.923 7244.78
+  angleX -13.392
+  angleY -0.256
+  angleZ 2.717
+ }
+ {
+  coords 6695.016 146.002 7730.12
+ }
+ {
+  components {
+   CP_Area "{59E8CDC50969206E}" {
+   }
+  }
+  coords 5325.8 25.892 8368.28
+  angleX -29.358
+  angleZ 4.671
+ }
+ {
+  components {
+   CP_Area "{59E8CDC50969206E}" {
+   }
+  }
+  coords 4541.808 80.687 8493.21
+  angleX 8.026
+  angleY -0.461
+  angleZ -23.958
+ }
+}
