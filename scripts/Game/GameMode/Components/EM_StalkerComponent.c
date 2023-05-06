@@ -86,7 +86,7 @@ class EM_StalkerComponent : ScriptComponent
 	
 	IEntity GetStalkedPlayer()
 	{
-		if (!m_StalkedPlayer || !(SCR_AIIsAlive.IsAlive(m_StalkedPlayer)))
+		if (!m_StalkedPlayer || !(SCR_AIDamageHandling.IsAlive(m_StalkedPlayer)))
 		{
 			m_StalkedPlayer = EM_Utils.GetRandomPlayer(true);
 		};

@@ -17,7 +17,7 @@ class EM_Utils
 			if (!player)
 				continue;
 			
-			if (!aliveOnly || SCR_AIIsAlive.IsAlive(player))
+			if (!aliveOnly || SCR_AIDamageHandling.IsAlive(player))
 			{
 				players.Insert(player);
 			};

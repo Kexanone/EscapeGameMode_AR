@@ -50,7 +50,7 @@ class EM_GameModeEscape : SCR_BaseGameMode
 			if (!otherPlayer)
 				continue;
 			
-			if (SCR_AIIsAlive.IsAlive(otherPlayer))
+			if (SCR_AIDamageHandling.IsAlive(otherPlayer))
 			{
 				return false; // There's still a player alive
 			};

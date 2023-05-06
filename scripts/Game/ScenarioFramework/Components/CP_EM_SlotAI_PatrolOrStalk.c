@@ -1,9 +1,9 @@
 [EntityEditorProps(category: "GameScripted/ScriptWizard", description: "ScriptWizard generated script file.")]
-class CP_EM_SlotAIPatrolOrStalkClass : CP_SlotBaseClass
+class CP_EM_SlotAIPatrolOrStalkClass : SCR_ScenarioFrameworkSlotBaseClass
 {
 };
 
-class CP_EM_SlotAIPatrolOrStalk : CP_SlotBase
+class CP_EM_SlotAIPatrolOrStalk : SCR_ScenarioFrameworkSlotBase
 {
 	[Attribute("0.45", UIWidgets.EditBox, "Probability for group to stalk instead of patrol", "")]
 	protected float m_fStalkProbability;
@@ -17,38 +17,37 @@ class CP_EM_SlotAIPatrolOrStalk : CP_SlotBase
 	[Attribute("3", UIWidgets.EditBox, "Number of waypoints", category: "Patrol")]
 	protected float m_iNumWaypoints;
 	
-	override void Init(CP_Area pArea = null, CP_EActivationType EActivation = CP_EActivationType.SAME_AS_PARENT, bool bInit = true)
+	override void Init(SCR_ScenarioFrameworkArea area = null, SCR_ScenarioFrameworkEActivationType activation = SCR_ScenarioFrameworkEActivationType.SAME_AS_PARENT, bool bInit = true)
 	{
-		
-		if (EActivation == CP_EActivationType.SAME_AS_PARENT)
+		if (activation == SCR_ScenarioFrameworkEActivationType.SAME_AS_PARENT)
 		{
-			ScriptInvoker pInvoker;
-			if (pArea)
-				pInvoker = pArea.GetOnAreaInit();
-			
-			if (pInvoker)
-				pInvoker.Insert(SetTask);
+			ScriptInvoker invoker;
+			if (area)
+				invoker = area.GetOnAreaInit();
+
+			if (invoker)
+				invoker.Insert(SetTask);
 		}
-				
-		if (m_EActivationType != EActivation)
+
+		if (m_eActivationType != activation)
 			return;
-		
+
 		SCR_AIGroup.IgnoreSpawning(true);
-		super.Init(pArea, EActivation);
-		if (EActivation != CP_EActivationType.SAME_AS_PARENT)
+		super.Init(area, activation);
+		if (activation != SCR_ScenarioFrameworkEActivationType.SAME_AS_PARENT)
 			SetTask();
 	}
 	
 	protected void SetTask()
 	{
-		if (!m_pEntity)
+		if (!m_Entity)
 		{
 			Print("CP: Trying to add waypoints to non existing entity! Did you select the object to spawn?");
 			SCR_AIGroup.IgnoreSpawning(false);
 			return;
 		};
 		
-		SCR_AIGroup group = SCR_AIGroup.Cast(m_pEntity);
+		SCR_AIGroup group = SCR_AIGroup.Cast(m_Entity);
 		group.SpawnUnits();
 		
 		Math.Randomize(-1);
