@@ -32,7 +32,7 @@ EM_GameModeEscape : "{1B76F75A3175E85C}Prefabs/MP/Modes/Plain/GameMode_Plain.et"
   }
   SCR_GameModeSFManager "{5D3A8AA1A7856AF8}" {
    m_aTaskTypesAvailable {
-    CP_TaskType "{5D3A8AA1DD81D549}" {
+    SCR_ScenarioFrameworkTaskType "{5D3A8AA1DD81D549}" {
      m_eTypeOfTask EXTRACTION
     }
    }

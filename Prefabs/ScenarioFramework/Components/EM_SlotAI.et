@@ -1,7 +1,7 @@
 GenericEntity {
  ID "5D4364623E9E05DB"
  components {
-  CP_EM_SlotAI "{5D4364623E9E05E2}" {
+  EM_SF_SlotAI "{5D4364623E9E05E2}" {
    m_rObjectToSpawn ""
    m_sFaction ""
    m_bSpawnAIOnWPPos 0

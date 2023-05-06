@@ -1,7 +1,7 @@
 GenericEntity {
  ID "5D3D09AD8446B6BE"
  components {
-  CP_EM_SlotAIPatrolOrStalk "{5D3D09AD8446B6B4}" {
+  EM_SF_SlotAIPatrolOrStalk "{5D3D09AD8446B6B4}" {
    m_sFaction ""
    m_fStalkProbability 0.45
   }

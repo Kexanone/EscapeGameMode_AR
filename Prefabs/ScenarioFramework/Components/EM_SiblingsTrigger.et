@@ -1,9 +1,9 @@
 GenericEntity {
  ID "5D3D09DE10CADD89"
  components {
-  CP_EM_SiblingsTrigger "{5D3D09DE10CADD81}" {
+  EM_SF_SiblingsTrigger "{5D3D09DE10CADD81}" {
    m_aPlugins {
-    CP_PluginTrigger "{5D3D09DE72A70D11}" {
+    SCR_ScenarioFrameworkPluginTrigger "{5D3D09DE72A70D11}" {
     }
    }
    m_rObjectToSpawn "{9DB5EBFFEC1A54B4}Prefabs/ScenarioFramework/Triggers/TriggerAnyPlayerSlow.et"

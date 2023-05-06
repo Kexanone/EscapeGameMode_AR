@@ -1,7 +1,7 @@
 GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
  ID "59F0B4850F342318"
  components {
-  CP_LayerBase "{5A2283EA2A0B4B14}" {
+  SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
    m_SpawnChildren RANDOM_ONE
    m_EActivationType SAME_AS_PARENT
   }
@@ -12,7 +12,7 @@ GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et
    {
     ID "5D42B1F0952CA161"
     components {
-     CP_SlotBase "{5A22E1D67E712EC8}" {
+     SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
       m_rObjectToSpawn "{F1FBD0972FA5FE09}Prefabs/Vehicles/Wheeled/M923A1/M923A1_transport.et"
      }
     }
@@ -21,7 +21,7 @@ GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et
    {
     ID "5D42B1F0952CA167"
     components {
-     CP_SlotBase "{5A22E1D67E712EC8}" {
+     SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
       m_rObjectToSpawn "{F649585ABB3706C4}Prefabs/Vehicles/Wheeled/M151A2/M151A2.et"
      }
     }
@@ -30,7 +30,7 @@ GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et
    {
     ID "5D42B1F0952CD7CA"
     components {
-     CP_SlotBase "{5A22E1D67E712EC8}" {
+     SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
       m_rObjectToSpawn "{F649585ABB3706C4}Prefabs/Vehicles/Wheeled/M151A2/M151A2.et"
      }
     }
@@ -39,7 +39,7 @@ GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et
    {
     ID "5D42B1F0952CD7D5"
     components {
-     CP_SlotBase "{5A22E1D67E712EC8}" {
+     SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
       m_rObjectToSpawn "{5674FAEB9AB7BDD0}Prefabs/Vehicles/Wheeled/M998/M998.et"
      }
     }
@@ -48,7 +48,7 @@ GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et
    {
     ID "5D42B1F0952CD7D6"
     components {
-     CP_SlotBase "{5A22E1D67E712EC8}" {
+     SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
       m_rObjectToSpawn "{47D94E1193A88497}Prefabs/Vehicles/Wheeled/M151A2/M151A2_transport.et"
      }
     }

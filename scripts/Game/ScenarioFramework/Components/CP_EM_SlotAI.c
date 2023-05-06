@@ -1,9 +1,9 @@
 [EntityEditorProps(category: "GameScripted/ScriptWizard", description: "ScriptWizard generated script file.")]
-class CP_EM_SlotAIClass : SCR_ScenarioFrameworkSlotAIClass
+class EM_SF_SlotAIClass : SCR_ScenarioFrameworkSlotAIClass
 {
 }
 
-class CP_EM_SlotAI : SCR_ScenarioFrameworkSlotAI
+class EM_SF_SlotAI : SCR_ScenarioFrameworkSlotAI
 {
 	[Attribute("Column", UIWidgets.EditBox, "Name of the group formation", "")]
 	protected string m_sFormationName;

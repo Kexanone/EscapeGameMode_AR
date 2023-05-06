@@ -7,8 +7,10 @@ $grp SCR_AIGroup : "{657590C1EC9E27D3}Prefabs/Groups/OPFOR/Group_USSR_LightFireT
   }
  }
  {
-  coords 5885.033 153.776 6669.981
-  angleY 114.085
+  coords 5885.03 146.109 6669.98
+  angleX -0.122
+  angleY 114.223
+  angleZ 6.785
   m_aStaticWaypoints {
    "wp_stalk2"
   }

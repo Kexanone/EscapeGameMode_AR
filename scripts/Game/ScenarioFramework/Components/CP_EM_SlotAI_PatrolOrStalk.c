@@ -1,9 +1,9 @@
 [EntityEditorProps(category: "GameScripted/ScriptWizard", description: "ScriptWizard generated script file.")]
-class CP_EM_SlotAIPatrolOrStalkClass : SCR_ScenarioFrameworkSlotBaseClass
+class EM_SF_SlotAIPatrolOrStalkClass : SCR_ScenarioFrameworkSlotBaseClass
 {
 };
 
-class CP_EM_SlotAIPatrolOrStalk : SCR_ScenarioFrameworkSlotBase
+class EM_SF_SlotAIPatrolOrStalk : SCR_ScenarioFrameworkSlotBase
 {
 	[Attribute("0.45", UIWidgets.EditBox, "Probability for group to stalk instead of patrol", "")]
 	protected float m_fStalkProbability;
