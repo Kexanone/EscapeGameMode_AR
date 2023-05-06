@@ -8,7 +8,7 @@ class CP_EM_SlotAIPatrolOrStalk : CP_SlotBase
 	[Attribute("0.45", UIWidgets.EditBox, "Probability for group to stalk instead of patrol", "")]
 	protected float m_fStalkProbability;
 	
-	[Attribute("100", UIWidgets.EditBox, "Radius in meters within the patrol waypoints are generated", category: "Patrol")]
+	[Attribute("150", UIWidgets.EditBox, "Radius in meters within the patrol waypoints are generated", category: "Patrol")]
 	protected float m_fRadius;
 		
 	[Attribute("50", UIWidgets.EditBox, "Minimum distance in meters between two consecutive waypoints", category: "Patrol")]
