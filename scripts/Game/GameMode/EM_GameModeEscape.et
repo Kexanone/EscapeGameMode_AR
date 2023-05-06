@@ -10,6 +10,9 @@ EM_GameModeEscape : "{1B76F75A3175E85C}Prefabs/MP/Modes/Plain/GameMode_Plain.et"
   }
   EM_InitialSpawnPointDeleterComponent "{5D3C5CD1A04EA5D6}" {
   }
+  EM_RespawnTimerComponent "{5D45178B969D7313}" {
+   m_fRespawnTime 30
+  }
   EM_SpecialEventsComponent "{5D3AEB65B3020A33}" {
   }
   EM_StalkerComponent "{5D3C5CFF21F349C0}" {
@@ -26,14 +29,6 @@ EM_GameModeEscape : "{1B76F75A3175E85C}Prefabs/MP/Modes/Plain/GameMode_Plain.et"
   }
   SCR_CommandingManagerComponent "{5A86E110CD916E9A}" {
    m_sCommandsConfigPath "{54764D4E706F348C}Configs/Commanding/Commands.conf"
-  }
-  SCR_GameModeCombatOpsManager "{5A234ADFA03CDF03}" {
-   m_aTaskTypesAvailable {
-    CP_TaskType "{5A3AEBCFFA9F291C}" {
-     m_eTypeOfTask LAST
-    }
-   }
-   m_iMaxNumberOfTasks 1
   }
   SCR_GameModeSFManager "{5D3A8AA1A7856AF8}" {
    m_aTaskTypesAvailable {
@@ -321,9 +316,6 @@ EM_GameModeEscape : "{1B76F75A3175E85C}Prefabs/MP/Modes/Plain/GameMode_Plain.et"
   }
   SCR_RespawnSystemComponent "{56B2B4793051E7C9}" {
    m_bDebugSkipSelection 1
-  }
-  SCR_RespawnTimerComponent "{5A234AD9646DDEF9}" {
-   m_fRespawnTime 30
   }
   SCR_TimeAndWeatherHandlerComponent "{5AD4D80FEA1C15D9}" {
    m_iStartingHours 12
