@@ -2,8 +2,9 @@ GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et"
  ID "59E8CDC4819B4FE1"
  components {
   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
-   m_rTriggerResource "{47D49EA6A216CFD5}Prefabs/ScenarioFramework/Triggers/TriggerCharacterSlow.et"
+   m_sTriggerResource "{FF958FE1DB5710FB}Prefabs/ScenarioFramework/Triggers/EM_SF_TriggerAnyPlayer_5s.et"
    m_fAreaRadius 1000
+   m_bShowDebugShapesInWorkbench 1
   }
  }
  coords 0 0 0
@@ -12,7 +13,7 @@ GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et"
    ID "5D42DB31DC4E8734"
    components {
     SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
-     m_EActivationType ON_AREA_TRIGGER_ACTIVATION
+     m_eActivationType ON_AREA_TRIGGER_ACTIVATION
     }
    }
   }

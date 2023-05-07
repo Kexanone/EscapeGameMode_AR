@@ -1,7 +1,7 @@
 GenericEntity Area_1_Airport : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
  components {
-  CP_Area "{59E8CDC50969206E}" {
-   m_rTriggerResource "{9DB5EBFFEC1A54B4}Prefabs/ScenarioFramework/Triggers/TriggerAnyPlayerSlow.et"
+  SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+   m_sTriggerResource "{9DB5EBFFEC1A54B4}Prefabs/ScenarioFramework/Triggers/TriggerAnyPlayerSlow.et"
    m_fAreaRadius 250
   }
  }
@@ -10,8 +10,8 @@ GenericEntity Area_1_Airport : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Comp
   $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
    Area_1_Vehicles {
     components {
-     CP_LayerBase "{5A2283EA2A0B4B14}" {
-      m_EActivationType ON_TRIGGER_ACTIVATION
+     SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+      m_eActivationType ON_TRIGGER_ACTIVATION
      }
     }
     coords 0 0 0
@@ -19,8 +19,8 @@ GenericEntity Area_1_Airport : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Comp
      $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
       Helo_1 {
        components {
-        CP_SlotBase "{5A22E1D67E712EC8}" {
-         m_rObjectToSpawn "{0C6491AC961ACAC9}Prefabs/Vehicles/Helis/R3D_UH60/R3D_UH60.et"
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sObjectToSpawn "{0C6491AC961ACAC9}Prefabs/Vehicles/Helis/R3D_UH60/R3D_UH60.et"
         }
        }
        coords 15 0.001 -50
@@ -28,8 +28,8 @@ GenericEntity Area_1_Airport : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Comp
       }
       Helo_2 {
        components {
-        CP_SlotBase "{5A22E1D67E712EC8}" {
-         m_rObjectToSpawn "{0C6491AC961ACAC9}Prefabs/Vehicles/Helis/R3D_UH60/R3D_UH60.et"
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sObjectToSpawn "{0C6491AC961ACAC9}Prefabs/Vehicles/Helis/R3D_UH60/R3D_UH60.et"
         }
        }
        coords 15 -1.04 -84
@@ -40,24 +40,24 @@ GenericEntity Area_1_Airport : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Comp
    }
    Area_1_Triggers {
     components {
-     CP_LayerBase "{5A2283EA2A0B4B14}" {
+     SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
      }
     }
     coords -135.607 -1.132 -75.513
     {
      GenericEntity MainTrigger_1 : "{D183AFE8DAF9793D}Prefabs/ScenarioFramework/Components/SlotTrigger.et" {
       components {
-       CP_SlotTrigger "{5A4B5098DE424991}" {
+       SCR_ScenarioFrameworkSlotTrigger "{5A4B5098DE424991}" {
         m_bShowDebugShapesDuringRuntime 1
         m_aPlugins {
-         CP_PluginTrigger "{5AC53D73FCB1F805}" {
+         SCR_ScenarioFrameworkPluginTrigger "{5AC53D73FCB1F805}" {
           m_fAreaRadius 1000
           m_bOnce 1
          }
         }
-        m_rObjectToSpawn "{9DB5EBFFEC1A54B4}Prefabs/ScenarioFramework/Triggers/TriggerAnyPlayerSlow.et"
+        m_sObjectToSpawn "{9DB5EBFFEC1A54B4}Prefabs/ScenarioFramework/Triggers/TriggerAnyPlayerSlow.et"
         m_aTriggerActions {
-         CP_ActionSpawnObjects "{5D3A8AAC80BDDDA8}" {
+         SCR_ScenarioFrameworkActionSpawnObjects "{5D3A8AAC80BDDDA8}" {
           m_sNameOfObjectsToSpawnOnActivation {
            "Area_1_Vehicles"
           }
@@ -71,7 +71,7 @@ GenericEntity Area_1_Airport : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Comp
    }
    Area_1_Markers {
     components {
-     CP_LayerBase "{5A2283EA2A0B4B14}" {
+     SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
      }
     }
     coords 141.959 -0.019 65.164

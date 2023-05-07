@@ -22,6 +22,10 @@ GenericEntity : "{E712306EC1913041}Prefabs/Systems/Arsenal/AmmoBoxes/AmmoBoxArse
      Radius 1.5
     }
    }
+   additionalActions {
+    SCR_SaveArsenalLoadout "{5B12C7AE552AEDD7}" {
+    }
+   }
   }
  }
 }

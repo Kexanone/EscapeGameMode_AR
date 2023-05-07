@@ -1,11 +1,12 @@
 GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et" {
  ID "59E8CDC4819B4FE1"
  components {
-  SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
-   m_rTriggerResource "{47D49EA6A216CFD5}Prefabs/ScenarioFramework/Triggers/TriggerCharacterSlow.et"
-   m_fAreaRadius 400
-  }
   Hierarchy "{59E8CDC4E5A36383}" {
+  }
+  SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+   m_sTriggerResource "{FF958FE1DB5710FB}Prefabs/ScenarioFramework/Triggers/EM_SF_TriggerAnyPlayer_5s.et"
+   m_fAreaRadius 400
+   m_bShowDebugShapesInWorkbench 1
   }
  }
  coords -3.565 4.713 7.31
@@ -14,8 +15,8 @@ GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et"
    ID "5D42DB3024DA98B9"
    components {
     EM_SF_SlotAIPatrolOrStalk "{5D3D09AD8446B6B4}" {
-     m_EActivationType ON_AREA_TRIGGER_ACTIVATION
-     m_rObjectToSpawn "{E8E7AE7D999FE1AF}Prefabs/Groups/OPFOR/EM_Group_USSR_SniperTeam.et"
+     m_eActivationType ON_AREA_TRIGGER_ACTIVATION
+     m_sObjectToSpawn "{E8E7AE7D999FE1AF}Prefabs/Groups/OPFOR/EM_Group_USSR_SniperTeam.et"
      m_fStalkProbability 1
     }
    }

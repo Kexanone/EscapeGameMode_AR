@@ -2,8 +2,9 @@ GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et"
  ID "59E8CDC4819B4FE1"
  components {
   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
-   m_rTriggerResource "{9DB5EBFFEC1A54B4}Prefabs/ScenarioFramework/Triggers/TriggerAnyPlayerSlow.et"
+   m_sTriggerResource "{FF958FE1DB5710FB}Prefabs/ScenarioFramework/Triggers/EM_SF_TriggerAnyPlayer_5s.et"
    m_fAreaRadius 1000
+   m_bShowDebugShapesInWorkbench 1
   }
  }
  coords 1.526 -0.051 0.618
@@ -13,7 +14,7 @@ GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et"
    components {
     SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
      m_SpawnChildren RANDOM_ONE
-     m_EActivationType ON_AREA_TRIGGER_ACTIVATION
+     m_eActivationType ON_AREA_TRIGGER_ACTIVATION
     }
    }
    coords 0 0 0
@@ -23,8 +24,8 @@ GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et"
       ID "5D42DB3141488248"
       components {
        EM_SF_SlotAIPatrolOrStalk "{5D3D09AD8446B6B4}" {
-        m_EActivationType SAME_AS_PARENT
-        m_rObjectToSpawn "{30ED11AA4F0D41E5}Prefabs/Groups/OPFOR/Group_USSR_FireGroup.et"
+        m_eActivationType SAME_AS_PARENT
+        m_sObjectToSpawn "{30ED11AA4F0D41E5}Prefabs/Groups/OPFOR/Group_USSR_FireGroup.et"
        }
       }
       coords 0 0 0
@@ -33,8 +34,8 @@ GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et"
       ID "5D42DB3141488249"
       components {
        EM_SF_SlotAIPatrolOrStalk "{5D3D09AD8446B6B4}" {
-        m_EActivationType SAME_AS_PARENT
-        m_rObjectToSpawn "{96BAB56E6558788E}Prefabs/Groups/OPFOR/Group_USSR_Team_AT.et"
+        m_eActivationType SAME_AS_PARENT
+        m_sObjectToSpawn "{96BAB56E6558788E}Prefabs/Groups/OPFOR/Group_USSR_Team_AT.et"
        }
       }
       coords 0 0 0
@@ -43,8 +44,8 @@ GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et"
       ID "5D42DB314148F042"
       components {
        EM_SF_SlotAIPatrolOrStalk "{5D3D09AD8446B6B4}" {
-        m_EActivationType SAME_AS_PARENT
-        m_rObjectToSpawn "{43C7A28EEB660FF8}Prefabs/Groups/OPFOR/Group_USSR_Team_GL.et"
+        m_eActivationType SAME_AS_PARENT
+        m_sObjectToSpawn "{43C7A28EEB660FF8}Prefabs/Groups/OPFOR/Group_USSR_Team_GL.et"
        }
       }
       coords 0 0 0
@@ -53,8 +54,8 @@ GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et"
       ID "5D42DB314148F045"
       components {
        EM_SF_SlotAIPatrolOrStalk "{5D3D09AD8446B6B4}" {
-        m_EActivationType SAME_AS_PARENT
-        m_rObjectToSpawn "{B1869C253FAB86D8}Prefabs/Groups/OPFOR/EM_Group_USSR_Squad2.et"
+        m_eActivationType SAME_AS_PARENT
+        m_sObjectToSpawn "{B1869C253FAB86D8}Prefabs/Groups/OPFOR/EM_Group_USSR_Squad2.et"
        }
       }
       coords 0 0 0
@@ -63,8 +64,8 @@ GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et"
       ID "5D42DB314148F05E"
       components {
        EM_SF_SlotAIPatrolOrStalk "{5D3D09AD8446B6B4}" {
-        m_EActivationType SAME_AS_PARENT
-        m_rObjectToSpawn "{E92FAFABE185B324}Prefabs/Groups/OPFOR/EM_Group_USSR_Team1.et"
+        m_eActivationType SAME_AS_PARENT
+        m_sObjectToSpawn "{E92FAFABE185B324}Prefabs/Groups/OPFOR/EM_Group_USSR_Team1.et"
        }
       }
       coords 0 0 0
@@ -73,8 +74,8 @@ GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et"
       ID "5D42DB31414926A9"
       components {
        EM_SF_SlotAIPatrolOrStalk "{5D3D09AD8446B6B4}" {
-        m_EActivationType SAME_AS_PARENT
-        m_rObjectToSpawn "{DDD2A8C5836F09F6}Prefabs/Groups/OPFOR/EM_Group_USSR_Squad1.et"
+        m_eActivationType SAME_AS_PARENT
+        m_sObjectToSpawn "{DDD2A8C5836F09F6}Prefabs/Groups/OPFOR/EM_Group_USSR_Squad1.et"
        }
       }
       coords 0 0 0

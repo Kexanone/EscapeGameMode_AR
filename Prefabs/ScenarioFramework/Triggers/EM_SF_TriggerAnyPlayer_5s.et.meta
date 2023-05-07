@@ -1,5 +1,5 @@
 MetaFileClass {
- Name "{9ECC61863C856C27}Prefabs/AI/Waypoints/EM_AIWypoing_Stalk.et"
+ Name "{FF958FE1DB5710FB}Prefabs/ScenarioFramework/Triggers/EM_SF_PlayerTrigger_5s.et"
  Configurations {
   EntityTemplateResourceClass PC {
   }

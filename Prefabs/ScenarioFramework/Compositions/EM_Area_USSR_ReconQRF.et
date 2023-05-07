@@ -2,7 +2,9 @@ GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et"
  ID "59E8CDC4819B4FE1"
  components {
   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
-   m_rTriggerResource "{47D49EA6A216CFD5}Prefabs/ScenarioFramework/Triggers/TriggerCharacterSlow.et"
+   m_sTriggerResource "{FF958FE1DB5710FB}Prefabs/ScenarioFramework/Triggers/EM_SF_TriggerAnyPlayer_5s.et"
+   m_fAreaRadius 400
+   m_bShowDebugShapesInWorkbench 1
   }
  }
  coords -161.266 104.438 53.258
@@ -11,8 +13,8 @@ GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Area.et"
    ID "5D42DB3EA5D380EB"
    components {
     EM_SF_SlotAIPatrolOrStalk "{5D3D09AD8446B6B4}" {
-     m_EActivationType ON_AREA_TRIGGER_ACTIVATION
-     m_rObjectToSpawn "{B01CE9605681C3E4}Prefabs/Groups/OPFOR/EM_Group_USSR_ReconTeam1.et"
+     m_eActivationType ON_AREA_TRIGGER_ACTIVATION
+     m_sObjectToSpawn "{B01CE9605681C3E4}Prefabs/Groups/OPFOR/EM_Group_USSR_ReconTeam1.et"
      m_fStalkProbability 1
     }
    }

@@ -10,12 +10,9 @@ Layer modules {
 Layer markers {
  Index 2
 }
-Layer start {
- Index 3
+Layer patrols {
+ Index 5
 }
 Layer areas {
  Index 4
-}
-Layer patrols {
- Index 5
 }

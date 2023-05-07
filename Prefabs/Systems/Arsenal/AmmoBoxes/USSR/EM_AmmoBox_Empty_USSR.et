@@ -25,7 +25,7 @@ GenericEntity : "{E712306EC1913041}Prefabs/Systems/Arsenal/AmmoBoxes/AmmoBoxArse
    Enabled 0
   }
   SCR_FactionAffiliationComponent "{5A50E7650A1AE9EC}" {
-   "faction affiliation" "US"
+   "faction affiliation" "USSR"
   }
   UniversalInventoryStorageComponent "{58A17A341AB8F069}" {
    MultiSlots {
@@ -115,6 +115,12 @@ GenericEntity : "{E712306EC1913041}Prefabs/Systems/Arsenal/AmmoBoxes/AmmoBoxArse
       Offset 0 0.464 0
      }
      Radius 1.5
+    }
+   }
+   additionalActions {
+    SCR_SaveArsenalLoadout "{5B12C7AE552AEDD7}" {
+     ParentContextList {
+     }
     }
    }
   }
