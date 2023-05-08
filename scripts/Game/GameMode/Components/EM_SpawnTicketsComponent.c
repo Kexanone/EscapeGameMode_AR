@@ -1,5 +1,5 @@
 /*
-	This component deletes the initial spawn point if a player is far enough from it
+	This component implements spawn tickets and disables respawn if no tickets are left
 */
 
 class EM_SpawnTicketsComponentClass : ScriptComponentClass
