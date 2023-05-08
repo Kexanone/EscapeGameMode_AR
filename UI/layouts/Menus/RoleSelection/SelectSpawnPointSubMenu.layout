@@ -1,0 +1,94 @@
+FrameWidgetClass {
+ {
+  OverlayWidgetClass "{595464A8B661C90E}" {
+   Prefab "{595464A8B661C90E}"
+   {
+    SizeLayoutWidgetClass "{589F049780D13CA5}" {
+     Prefab "{589F049780D13CA5}"
+     {
+      VerticalLayoutWidgetClass "{589F049780D13CA3}" {
+       Prefab "{589F049780D13CA3}"
+       {
+        OverlayWidgetClass "{589F0497F7A00346}" {
+         Prefab "{589F0497F7A00346}"
+         {
+          VerticalLayoutWidgetClass "{55B2D3A206E518A2}" {
+           Prefab "{55B2D3A206E518A2}"
+           {
+            OverlayWidgetClass "{5D4F4A3AAAA777FA}" {
+             Name "TicketsCount"
+             Slot LayoutSlot "{5D4F4A3AAAA7771B}" {
+              Padding 0 0 0 5
+             }
+             "Is Visible" 0
+             {
+              ImageWidgetClass "{5D4F4A3B60BB9298}" {
+               Name "Bckg"
+               Slot OverlayWidgetSlot "{5D4F4A28FD29F131}" {
+                HorizontalAlign 3
+                VerticalAlign 3
+               }
+               Color 0 0 0 0.863
+              }
+              HorizontalLayoutWidgetClass "{5D4F4A3AEC33E74D}" {
+               Name "HorizontalLayout0"
+               Slot OverlayWidgetSlot "{5D4F4A3AEC33E76C}" {
+                Padding 0 15 0 15
+               }
+               {
+                TextWidgetClass "{5D4F4A3ACB0D644A}" {
+                 Name "Label"
+                 Slot LayoutSlot "{5D4F4A28FD29F15D}" {
+                  Padding 0 0 8 0
+                 }
+                 Text "Respawn Tickets:"
+                 "Font Size" 28
+                 "Vertical Alignment" Center
+                }
+                TextWidgetClass "{5D4F4A3AC8D4FD16}" {
+                 Name "Tickets"
+                 Slot LayoutSlot "{5D4F4A28FD29F176}" {
+                 }
+                 Text "0"
+                 "Vertical Alignment" Center
+                 FontProperties FontProperties "{5D4F4A3A231B012D}" {
+                  Font "{EABA4FE9D014CCEF}UI/Fonts/RobotoCondensed/RobotoCondensed_Bold.fnt"
+                  ShadowSize 1
+                 }
+                }
+               }
+              }
+             }
+            }
+            OverlayWidgetClass "{5D4F4A396F9011A1}" {
+             Prefab "{5608C99AACCEEE09}"
+             Name "DeployCountdown"
+             Slot LayoutSlot "{58588AE6C00B8FF2}" {
+             }
+             {
+              ImageWidgetClass "{5D4F4A39769AE322}" {
+               Prefab "{58588ADAD7BF24D8}"
+               Slot OverlayWidgetSlot "{5D4F4A3B65073A04}" {
+                HorizontalAlign 3
+                VerticalAlign 3
+               }
+               Color 0 0 0 0.863
+              }
+             }
+            }
+            OverlayWidgetClass "{58588ADA2B0C0939}" {
+             Prefab "{58588ADA2B0C0939}"
+             Name "Overlay1"
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

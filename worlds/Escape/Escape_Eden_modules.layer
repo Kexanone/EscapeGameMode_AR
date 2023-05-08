@@ -20,6 +20,9 @@ PerceptionManager PerceptionManager : "{028DAEAD63E056BE}Prefabs/World/Game/Perc
 }
 EM_GameModeEscape GameModeEscape : "{087AE647D1755635}scripts/Game/GameMode/EM_GameModeEscape.et" {
  components {
+  EM_SpawnTicketsComponent "{5D4F4A2800A9B193}" {
+   m_iInitialTicketsCount 30
+  }
   EM_SpecialEventsComponent "{5D3AEB65B3020A33}" {
   }
   EM_VictoryBorderComponent "{5D3C5CC9F314C1C5}" {

@@ -37,6 +37,9 @@ EM_GameModeEscape GameModeEscape : "{087AE647D1755635}scripts/Game/GameMode/EM_G
   EM_VictoryBorderComponent "{5D3C5CC9F314C1C5}" {
    Enabled 0
   }
+  EM_SpawnTicketsComponent "{5D4F4A2800A9B193}" {
+   m_iInitialTicketsCount 3
+  }
  }
  coords 128.348 1.001 140.035
 }
@@ -78,6 +81,10 @@ $grp GenericEntity {
   }
   coords 176.829 1.001 175.57
  }
+}
+SCR_AIWaypoint wp_stalk {
+ coords 151.823 1 138.641
+ AIBehaviorTree "{3C439E3BA991CB33}AI/BehaviorTrees/Waypoints/EM_StalkerInit.bt"
 }
 GenericEntity Area4_Sniper : "{102F5EE061B48B48}Prefabs/ScenarioFramework/Compositions/EM_Area_USSR_SniperTeam.et" {
  components {
@@ -168,6 +175,7 @@ SCR_SpawnPoint InitialSpawnPoint : "{5A2220DD0C16958B}Prefabs/MP/Spawning/SpawnP
  }
  coords 137.997 1.521 147.615
  angleY 165.392
+ m_bShowInDeployMapOnly 1
 }
 SCR_AIWaypoint wp_move_1 : "{750A8D1695BD6998}Prefabs/AI/Waypoints/AIWaypoint_Move.et" {
  coords 185.16 1.001 169.135
@@ -183,10 +191,6 @@ SCR_AIGroup : "{84E5BBAB25EA23E5}Prefabs/Groups/BLUFOR/Group_US_FireTeam.et" {
 }
 SCR_BaseTaskManager : "{87208DAD6F3C0DE2}Prefabs/MP/Managers/Tasks/TaskManager_Editor.et" {
  coords 152.519 1.001 115.901
-}
-SCR_AIWaypoint wp_stalk : "{9ECC61863C856C27}Prefabs/AI/Waypoints/EM_AIWaypoint_Stalk.et" {
- coords 151.823 1 138.641
- AIBehaviorTree "{3C439E3BA991CB33}AI/BehaviorTrees/Waypoints/EM_StalkerInit.bt"
 }
 GenericEntity : "{9F9924B626C5FA2B}Prefabs/Compositions/Slotted/SlotRoadLarge/Checkpoint_L_USSR_01.et" {
  coords 93.565 1.001 85.8
