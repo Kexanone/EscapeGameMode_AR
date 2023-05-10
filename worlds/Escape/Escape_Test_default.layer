@@ -24,24 +24,36 @@ SCR_AIWorld AIWorld : "{E0A05C76552E7F58}Prefabs/AI/SCR_AIWorld.et" {
 PerceptionManager PerceptionManager : "{028DAEAD63E056BE}Prefabs/World/Game/PerceptionManager.et" {
  coords 125.092 1.358 142.596
 }
-EM_GameModeEscape GameModeEscape : "{087AE647D1755635}scripts/Game/GameMode/EM_GameModeEscape.et" {
+SCR_BaseGameMode GameModeEscape : "{087AE647D1755635}Prefabs/MP/Modes/EM_GameModeEscape.et" {
  components {
   EM_InitialSpawnPointDeleterComponent "{5D3C5CD1A04EA5D6}" {
-   Enabled 0
    m_iHandlerTimeout 10
    m_fEventRadius 15
   }
   EM_RespawnTimerComponent "{5D45178B969D7313}" {
    m_fRespawnTime 3
   }
-  EM_VictoryBorderComponent "{5D3C5CC9F314C1C5}" {
-   Enabled 0
-  }
   EM_SpawnTicketsComponent "{5D4F4A2800A9B193}" {
    m_iInitialTicketsCount 3
   }
+  EM_VictoryBorderComponent "{5D3C5CC9F314C1C5}" {
+   m_iGameOverType EM_VICTORY
+   m_BorderPolygon {
+    100 0 170 170 0 170 170 0 100 100 0 100
+   }
+  }
+  SCR_GameOverScreenManagerComponent "{56DEC646298AD219}" {
+   m_GameOverScreenConfig SCR_GameOverScreenConfig "{56DEC6462FFDD82D}" {
+    m_aGameOverScreens {
+    }
+   }
+  }
+  SCR_RespawnMenuHandlerComponent "{5A234AD9987A4877}" {
+   m_bAllowFactionChange 0
+  }
  }
  coords 128.348 1.001 140.035
+ m_fAutoReloadTime 30
 }
 SCR_FactionManager FactionManager : "{4A188E44289B9A50}Prefabs/MP/Managers/Factions/FactionManager_Editor.et" {
  coords 123.031 0.975 142.969
@@ -81,10 +93,6 @@ $grp GenericEntity {
   }
   coords 176.829 1.001 175.57
  }
-}
-SCR_AIWaypoint wp_stalk {
- coords 151.823 1 138.641
- AIBehaviorTree "{3C439E3BA991CB33}AI/BehaviorTrees/Waypoints/EM_StalkerInit.bt"
 }
 GenericEntity Area4_Sniper : "{102F5EE061B48B48}Prefabs/ScenarioFramework/Compositions/EM_Area_USSR_SniperTeam.et" {
  components {

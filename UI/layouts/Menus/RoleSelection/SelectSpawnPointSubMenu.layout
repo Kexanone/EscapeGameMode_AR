@@ -50,6 +50,7 @@ FrameWidgetClass {
                  Slot LayoutSlot "{5D4F4A28FD29F176}" {
                  }
                  Text "0"
+                 "Font Size" 28
                  "Vertical Alignment" Center
                  FontProperties FontProperties "{5D4F4A3A231B012D}" {
                   Font "{EABA4FE9D014CCEF}UI/Fonts/RobotoCondensed/RobotoCondensed_Bold.fnt"
@@ -62,7 +63,6 @@ FrameWidgetClass {
             }
             OverlayWidgetClass "{5D4F4A396F9011A1}" {
              Prefab "{5608C99AACCEEE09}"
-             Name "DeployCountdown"
              Slot LayoutSlot "{58588AE6C00B8FF2}" {
              }
              {
@@ -75,10 +75,6 @@ FrameWidgetClass {
                Color 0 0 0 0.863
               }
              }
-            }
-            OverlayWidgetClass "{58588ADA2B0C0939}" {
-             Prefab "{58588ADA2B0C0939}"
-             Name "Overlay1"
             }
            }
           }

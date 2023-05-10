@@ -5,10 +5,7 @@ class EM_GameModeEscapeClass: SCR_BaseGameModeClass
 
 class EM_GameModeEscape : SCR_BaseGameMode
 {
-	// -- TO DO: Implement respawn ticket handler
-	[Attribute("-1", UIWidgets.EditBox, "", "")]
-	protected int m_iRespawnTickets;
-	
+	/*	
 	protected override void OnPlayerDisconnected(int playerId, KickCauseCode cause, int timeout)
 	{
 		super.OnPlayerDisconnected(playerId, cause, timeout);
@@ -57,7 +54,7 @@ class EM_GameModeEscape : SCR_BaseGameMode
 		};
 		return true;
 	};
-	
+	*/
 	// -- TO DO: Make custom game mode end screen
 	void Finish(bool victory = true)
 	{
