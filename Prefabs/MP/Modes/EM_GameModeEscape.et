@@ -1,4 +1,4 @@
-EM_GameModeEscape : "{1B76F75A3175E85C}Prefabs/MP/Modes/Plain/GameMode_Plain.et" {
+SCR_BaseGameMode : "{1B76F75A3175E85C}Prefabs/MP/Modes/Plain/GameMode_Plain.et" {
  ID "5D3A7780FC2EAB8B"
  components {
   SignalsManagerComponent "{5A96DB65B66820ED}" {
@@ -10,17 +10,20 @@ EM_GameModeEscape : "{1B76F75A3175E85C}Prefabs/MP/Modes/Plain/GameMode_Plain.et"
   }
   EM_InitialSpawnPointDeleterComponent "{5D3C5CD1A04EA5D6}" {
   }
+  EM_NoSpawnDefeatComponent "{5D537AF0AD1F1973}" {
+   m_iGameOverType EM_DEFEAT
+  }
   EM_RespawnTimerComponent "{5D45178B969D7313}" {
    m_fRespawnTime 30
+  }
+  EM_SpawnTicketsComponent "{5D4F4A2800A9B193}" {
   }
   EM_SpecialEventsComponent "{5D3AEB65B3020A33}" {
   }
   EM_StalkerComponent "{5D3C5CFF21F349C0}" {
   }
   EM_VictoryBorderComponent "{5D3C5CC9F314C1C5}" {
-   m_BorderPolygon {
-    100 0 170 100 0 100 170 0 100 170 0 170
-   }
+   m_iGameOverType EM_VICTORY
   }
   SCR_ArsenalManagerComponent "{5B0298F006265F20}" {
   }
@@ -275,6 +278,26 @@ EM_GameModeEscape : "{1B76F75A3175E85C}Prefabs/MP/Modes/Plain/GameMode_Plain.et"
        m_sSubtitle "#AR-CombatScenario_Debriefing_Good"
       }
      }
+     SCR_BaseGameOverScreenInfo "{5D537AF0ED4A31B7}" {
+      m_GameOverScreenId EM_VICTORY
+      m_GameOverContentLayout "{C4507D07F3C54831}UI/layouts/HUD/GameOver/EndScreen/EndScreenContent_NoImage.layout"
+      m_OptionalParams SCR_BaseGameOverScreenInfoOptional "{5D537AF0FC39819B}" {
+       m_sTitle "MISSION COMPLETED"
+       m_sSubtitle "You escaped!"
+       m_sDebriefing "Against all odds, you managed to escape. Great work!"
+       m_sAudioOneShot "SOUND_ONVICTORY"
+      }
+     }
+     SCR_BaseGameOverScreenInfo "{5D537AF0EA7FEA74}" {
+      m_GameOverScreenId EM_DEFEAT
+      m_GameOverContentLayout "{C4507D07F3C54831}UI/layouts/HUD/GameOver/EndScreen/EndScreenContent_NoImage.layout"
+      m_OptionalParams SCR_BaseGameOverScreenInfoOptional "{5D537AF03A479EA2}" {
+       m_sTitle "MISSION FAILED"
+       m_sSubtitle "Too many casualties..."
+       m_sDebriefing "Your entire team has been killed in action."
+       m_sAudioOneShot "SOUND_ONDEFEAT"
+      }
+     }
     }
    }
   }
@@ -324,9 +347,8 @@ EM_GameModeEscape : "{1B76F75A3175E85C}Prefabs/MP/Modes/Plain/GameMode_Plain.et"
   }
   SerializerInventoryStorageManagerComponent "{5B0298F0BE978323}" {
   }
-  EM_SpawnTicketsComponent "{5D4F4A2800A9B193}" {
-  }
  }
  coords 0 0 0
  m_bAutoPlayerRespawn 0
+ m_fAutoReloadTime 30
 }

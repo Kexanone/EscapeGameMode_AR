@@ -8,10 +8,14 @@ class EM_VictoryBorderComponentClass : ScriptComponentClass
 
 class EM_VictoryBorderComponent : ScriptComponent
 {
+	[Attribute("0", desc: "Game over type", uiwidget: UIWidgets.ComboBox, enums: ParamEnumArray.FromEnum(EGameOverTypes))]
+	protected EGameOverTypes m_iGameOverType;
 	[Attribute("10", UIWidgets.EditBox, "Timeout for border check in seconds", "")]
 	protected int m_iHandlerTimeout;
 	[Attribute(UIWidgets.Auto, "Polygon that forms the border")];
 	protected ref array<vector> m_BorderPolygon;
+
+	protected SCR_BaseGameMode m_GameMode;
 
 	override void OnPostInit(IEntity owner)
 	{
@@ -30,7 +34,12 @@ class EM_VictoryBorderComponent : ScriptComponent
 
 		// Run handler only on authority		
 		if (!EM_Utils.IsAuthority(owner))
-			return;	
+			return;
+		
+		m_GameMode = SCR_BaseGameMode.Cast(GetOwner());
+		
+		if (!m_GameMode)
+			return;
 
 		GetGame().GetCallqueue().CallLater(Handler, m_iHandlerTimeout*1000, true);
 	};
@@ -41,12 +50,7 @@ class EM_VictoryBorderComponent : ScriptComponent
 		{
 			if (!Math2D.IsPointInPolygonXZ(m_BorderPolygon, player.GetOrigin()))
 			{
-				EM_GameModeEscape gameMode = EM_GameModeEscape.Cast(GetOwner());
-				if (!gameMode)
-					return;
-				
-				GetGame().GetCallqueue().Remove(Handler);
-				gameMode.Finish();
+				m_GameMode.EndGameMode(SCR_GameModeEndData.CreateSimple(m_iGameOverType));
 				return;
 			};
 		};
