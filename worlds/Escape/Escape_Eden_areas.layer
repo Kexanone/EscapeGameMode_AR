@@ -291,11 +291,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
          EM_SF_SlotAI "{5D4364623E9E05E2}" {
           m_sObjectToSpawn "{CB58D90EA14430AD}Prefabs/Groups/OPFOR/Group_USSR_SentryTeam.et"
           m_aWaypointGroupNames {
-           SCR_WaypointSet "{5D4E8ADAE13C3750}" {
-            m_sName "A2_wp_set_2"
-            m_bUseRandomOrder 1
-            m_bCycleWaypoints 1
-           }
            SCR_WaypointSet "{5D4E8ADBA285A188}" {
             m_sName "A2_wp_set_2"
            }

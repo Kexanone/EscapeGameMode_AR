@@ -3,12 +3,6 @@ GenericEntity {
  components {
   EM_SF_SlotAI "{5D4364623E9E05E2}" {
    m_sObjectToSpawn ""
-   m_aWaypointGroupNames {
-    SCR_WaypointSet "{5D4E8ADBA285A188}" {
-     m_bUseRandomOrder 1
-     m_bCycleWaypoints 1
-    }
-   }
    m_sWPToSpawn "{93291E72AC23930F}Prefabs/AI/Waypoints/AIWaypoint_Defend.et"
   }
   Hierarchy "{5D4364623E9E05E9}" {
