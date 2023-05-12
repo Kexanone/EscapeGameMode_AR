@@ -43,7 +43,7 @@ class EM_SpecialEventsComponent : ScriptComponent
 		if (!EM_Utils.IsAuthority(owner))
 			return;
 		
-		//GetGame().GetCallqueue().CallLater(SelectEvent, m_randomGenerator.RandInt(m_iMinTimeout*60000, m_iMaxTimeout*60000));
+		GetGame().GetCallqueue().CallLater(SelectEvent, m_randomGenerator.RandInt(m_iMinTimeout*60000, m_iMaxTimeout*60000));
 
 	};
 	
@@ -94,12 +94,11 @@ class EM_SpecialEventsComponent : ScriptComponent
 		{
 			m_targetPos = m_targetEntity.GetOrigin();
 		};
-		/*
+		
 		Bacon_FakeArtillery arty = Bacon_FakeArtillery.Cast(EM_Utils.SpawnEntity(m_ArtyResName, m_targetPos));
 		arty.EditorAttributeSetInteger("m_numberOfProjectiles", 18);
 		arty.EditorAttributeSetInteger("m_rofRPM", 30);
 		arty.EditorAttributeSetInteger("m_areaRadius", 200);
 		arty.EditorAttributeSetActive(true);
-		*/
 	};
 };
