@@ -1,5 +1,7 @@
 SCR_PlayerSpawnPoint : "{F6CAD21EDD2D1964}Prefabs/MP/Spawning/PlayerSpawnPoint.et" {
  ID "56442C076054B2F7"
  coords 155.708 1.001 121.274
+ m_fSpawnRadius 5
+ m_fNoPlayerRadius 0
  m_bShowInDeployMapOnly 1
 }
