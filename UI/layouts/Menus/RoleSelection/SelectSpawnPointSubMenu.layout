@@ -41,7 +41,7 @@ FrameWidgetClass {
                  Slot LayoutSlot "{5D4F4A28FD29F15D}" {
                   Padding 0 0 8 0
                  }
-                 Text "Respawn Tickets:"
+                 Text "#EM-DeployMenu_RespawnTickets"
                  "Font Size" 28
                  "Vertical Alignment" Center
                 }

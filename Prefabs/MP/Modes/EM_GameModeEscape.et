@@ -13,6 +13,8 @@ SCR_BaseGameMode : "{1B76F75A3175E85C}Prefabs/MP/Modes/Plain/GameMode_Plain.et" 
   EM_NoSpawnDefeatComponent "{5D537AF0AD1F1973}" {
    m_iGameOverType EM_DEFEAT
   }
+  EM_PlayerCorpseComponent "{5D590B199A4BC247}" {
+  }
   EM_RespawnTimerComponent "{5D45178B969D7313}" {
    m_fRespawnTime 30
   }
@@ -282,9 +284,9 @@ SCR_BaseGameMode : "{1B76F75A3175E85C}Prefabs/MP/Modes/Plain/GameMode_Plain.et" 
       m_GameOverScreenId EM_VICTORY
       m_GameOverContentLayout "{C4507D07F3C54831}UI/layouts/HUD/GameOver/EndScreen/EndScreenContent_NoImage.layout"
       m_OptionalParams SCR_BaseGameOverScreenInfoOptional "{5D537AF0FC39819B}" {
-       m_sTitle "MISSION COMPLETED"
-       m_sSubtitle "You escaped!"
-       m_sDebriefing "Against all odds, you managed to escape. Great work!"
+       m_sTitle "#EM-VictoryScreenTitle"
+       m_sSubtitle "#EM-VictoryScreenSubtitle"
+       m_sDebriefing "#EM-VictoryScreenDebriefing"
        m_sAudioOneShot "SOUND_ONVICTORY"
       }
      }
@@ -292,9 +294,9 @@ SCR_BaseGameMode : "{1B76F75A3175E85C}Prefabs/MP/Modes/Plain/GameMode_Plain.et" 
       m_GameOverScreenId EM_DEFEAT
       m_GameOverContentLayout "{C4507D07F3C54831}UI/layouts/HUD/GameOver/EndScreen/EndScreenContent_NoImage.layout"
       m_OptionalParams SCR_BaseGameOverScreenInfoOptional "{5D537AF03A479EA2}" {
-       m_sTitle "MISSION FAILED"
-       m_sSubtitle "Too many casualties..."
-       m_sDebriefing "Your entire team has been killed in action."
+       m_sTitle "#EM-DefeatScreenTitle"
+       m_sSubtitle "#EM-DefeatScreenSubtitle"
+       m_sDebriefing "#EM-DefeatScreenDebriefing"
        m_sAudioOneShot "SOUND_ONDEFEAT"
       }
      }
@@ -322,15 +324,15 @@ SCR_BaseGameMode : "{1B76F75A3175E85C}Prefabs/MP/Modes/Plain/GameMode_Plain.et" 
    m_SimpleBriefingBackground "{39A515BAE3795994}UI/Textures/DeployMenu/Briefing/conflict_HintBanner_3_UI.edds"
    m_aGameModeHints {
     SCR_HintUIInfo "{5A52BD34105BB30B}" {
-     Name "Escape from Everon"
-     Description "Escape from Everon by any means possible."
+     Name "#EM-ScenarioName_Everon"
+     Description "#EM-ScenarioDesc_Everon"
      Icon "{39A515BAE3795994}UI/Textures/DeployMenu/Briefing/conflict_HintBanner_3_UI.edds"
     }
    }
    m_aWinConditions {
     SCR_BriefingVictoryCondition "{5A52BD34B2740F51}" {
-     name "Escape from Everon"
-     description "Escape from Everon"
+     name "#EM-ScenarioName_Everon"
+     description "#EM-ScenarioName_Everon"
     }
    }
   }

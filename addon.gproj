@@ -7,6 +7,63 @@ GameProject {
  }
  Configurations {
   GameProjectConfig PC {
+   WidgetManagerSettings WidgetManagerSettings "{AC4BE58770485E02}" {
+    StringTables {
+     StringTableDefinition "{5D5921F28DBA6C86}" {
+      StringTableSource "{7D32E8A91611FCF4}Language/EM_localization.st"
+      Languages {
+       LanguageDefinition "{5D5921F28B73C3C3}" {
+        Code "cs_cz"
+        StringTableRuntime "{BB11DB3C7076384D}Language/EM_localization.cs_cz.conf"
+       }
+       LanguageDefinition "{5D5921F28B73C3F8}" {
+        Code "de_de"
+        StringTableRuntime "{6E6FC10F63D5296D}Language/EM_localization.de_de.conf"
+       }
+       LanguageDefinition "{5D5921F28B73C315}" {
+        Code "en_us"
+        StringTableRuntime "{309F4B4409262C6C}Language/EM_localization.en_us.conf"
+       }
+       LanguageDefinition "{5D5921F28B73C322}" {
+        Code "es_es"
+        StringTableRuntime "{F5D306CDE7244773}Language/EM_localization.es_es.conf"
+       }
+       LanguageDefinition "{5D5921F28B73C330}" {
+        Code "fr_fr"
+        StringTableRuntime "{4E7BF3FA01A7A471}Language/EM_localization.fr_fr.conf"
+       }
+       LanguageDefinition "{5D5921F28B73C34B}" {
+        Code "it_it"
+        StringTableRuntime "{CE677CCEAC852788}Language/EM_localization.it_it.conf"
+       }
+       LanguageDefinition "{5D5921F28B73C35B}" {
+        Code "ja_jp"
+        StringTableRuntime "{DE7CC15C92F41723}Language/EM_localization.ja_jp.conf"
+       }
+       LanguageDefinition "{5D5921F28B73C36B}" {
+        Code "ko_kr"
+        StringTableRuntime "{7EC2E9F001D9141C}Language/EM_localization.ko_kr.conf"
+       }
+       LanguageDefinition "{5D5921F28B73C37A}" {
+        Code "pl_pl"
+        StringTableRuntime "{22B34F0ABF368860}Language/EM_localization.pl_pl.conf"
+       }
+       LanguageDefinition "{5D5921F28B73C089}" {
+        Code "pt_br"
+        StringTableRuntime "{F7C4D5C684C842DA}Language/EM_localization.pt_br.conf"
+       }
+       LanguageDefinition "{5D5921F28B73C0A4}" {
+        Code "ru_ru"
+        StringTableRuntime "{A285C16E19B127AC}Language/EM_localization.ru_ru.conf"
+       }
+       LanguageDefinition "{5D5921F28B73C03A}" {
+        Code "zh_cn"
+        StringTableRuntime "{F26DFAA54C3F49E4}Language/EM_localization.zh_cn.conf"
+       }
+      }
+     }
+    }
+   }
   }
   GameProjectConfig XBOX_ONE {
   }
