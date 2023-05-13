@@ -22,7 +22,7 @@ GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et
     ID "5D42B1F0952CA167"
     components {
      SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-      m_sObjectToSpawn "{F649585ABB3706C4}Prefabs/Vehicles/Wheeled/M151A2/M151A2.et"
+      m_sObjectToSpawn "{16A674FE31B0921C}Prefabs/Vehicles/Wheeled/UAZ469/UAZ469_uncovered.et"
      }
     }
     coords 0 0 0
