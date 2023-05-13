@@ -18,8 +18,11 @@ SCR_AIWorld AIWorld : "{70CCCF16487C927F}Prefabs/AI/SCR_AIWorld_Eden.et" {
 PerceptionManager PerceptionManager : "{028DAEAD63E056BE}Prefabs/World/Game/PerceptionManager.et" {
  coords 6444.997 162.583 6490.358
 }
-EM_GameModeEscape GameModeEscape : "{087AE647D1755635}scripts/Game/GameMode/EM_GameModeEscape.et" {
+SCR_BaseGameMode GameModeEscape : "{087AE647D1755635}Prefabs/MP/Modes/EM_GameModeEscape.et" {
  components {
+  EM_InitialSpawnPointDeleterComponent "{5D3C5CD1A04EA5D6}" {
+   m_sSpawnPointName "A0_SpawnPoint"
+  }
   EM_SpawnTicketsComponent "{5D4F4A2800A9B193}" {
    m_iInitialTicketsCount 30
   }
@@ -48,15 +51,6 @@ RadioManagerEntity RadioManager : "{B8E09FAB91C4ECCD}Prefabs/Radio/RadioManager.
 ScriptedChatEntity ChatEntity : "{F69BC912AC8236F9}Prefabs/MP/ScriptedChatEntity.et" {
  coords 5371.133 110.219 5931.469
  Flags 0
-}
-SCR_SpawnPoint InitialSpawnPoint : "{5A2220DD0C16958B}Prefabs/MP/Spawning/SpawnPoint_US.et" {
- components {
-  SCR_MapDescriptorComponent "{54C659A97C47BDE2}" {
-   VisibleOnMap 1
-  }
- }
- coords 6456.864 162.746 6499.361
- angleY 165.392
 }
 SCR_LoadoutManager LoadoutManager : "{AA4E7419A1FF65B0}Prefabs/MP/Managers/Loadouts/LoadoutManager_Base.et" {
  coords 6447.407 164.175 6491.963

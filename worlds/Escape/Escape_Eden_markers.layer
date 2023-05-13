@@ -7,9 +7,9 @@ $grp GenericEntity {
     m_fSize 0.5
    }
   }
-  coords 6455.33 160.043 6496.759
+  coords 6456.864 162.746 6499.361
  }
- LocationCheckpoint1 {
+ LocationCheckpointGorey {
   components {
    EM_MapMarkerComponent "{5D2ED34DC869F2F9}" {
     m_sImageQuadName "em_warning"
@@ -18,9 +18,10 @@ $grp GenericEntity {
     m_sMarkerText "Checkpoint"
    }
   }
-  coords 4641.412 120.195 7946.438
+  coords 4636.11 120.237 7963.15
+  angleX 0.895
  }
- LocationCheckpoint2 {
+ LocationCheckpointAirfield {
   components {
    EM_MapMarkerComponent "{5D2ED34DC869F2F9}" {
     m_sImageQuadName "em_warning"
@@ -41,7 +42,7 @@ $grp GenericEntity {
   }
   coords 4995.816 25.343 9957.697
  }
- LocationUnknown1 {
+ LocationEntreDeux {
   components {
    EM_MapMarkerComponent "{5D2ED34DC869F2F9}" {
     m_sImageQuadName "em_unknown"
@@ -71,7 +72,7 @@ $grp GenericEntity {
   }
   coords 7437.25 7.875 6727.804
  }
- LocationEnd {
+ LocationEndAirfield {
   components {
    EM_MapMarkerComponent "{5D2ED34DC869F2F9}" {
     m_sImageQuadName "em_end"
