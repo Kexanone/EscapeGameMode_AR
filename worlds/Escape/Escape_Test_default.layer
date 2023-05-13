@@ -155,6 +155,26 @@ SCR_DestructibleBuildingEntity : "{1982A8DD680C416B}PrefabLibrary/Structures/Mil
   }
  }
 }
+Vehicle nono : "{259EE7B78C51B624}Prefabs/Vehicles/Wheeled/UAZ469/UAZ469.et" {
+ components {
+  SCR_VehicleDamageManagerComponent "{141326E9FD94FE40}" {
+   m_fVehicleDestroyDamage 8582.14
+  }
+ }
+ coords 150.113 1.001 125.678
+ EOnInit ""\
+ "		EventHandlerManagerComponent ev = EventHandlerManagerComponent.Cast(owner.FindComponent(EventHandlerManagerComponent));"\
+ "		ev.RegisterScriptHandler(\"OnCompartmentEntered\", this, OnCompartmentEntered);"\
+ "	};"\
+ "	"\
+ "	void OnCompartmentEntered(IEntity vehicle, BaseCompartmentManagerComponent mgr, IEntity occupant, int managerId, int slotID)"\
+ "	{"\
+ "		ChimeraWorld world = GetGame().GetWorld();"\
+ "		world.GetMusicManager().Play(\"EM_MU_RETURNTOEVERON\");"\
+ "		EventHandlerManagerComponent ev = EventHandlerManagerComponent.Cast(vehicle.FindComponent(EventHandlerManagerComponent));"\
+ "		ev.RemoveScriptHandler(\"OnCompartmentEntered\", this, OnCompartmentEntered);"\
+ "	"
+}
 GenericEntity Area2_Patrol : "{350EE4325BB6C9E1}Prefabs/ScenarioFramework/Compositions/EM_Area_USSR_Patrol.et" {
  components {
   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
@@ -162,6 +182,19 @@ GenericEntity Area2_Patrol : "{350EE4325BB6C9E1}Prefabs/ScenarioFramework/Compos
   }
  }
  coords 125.226 1.002 72.966
+}
+MusicManager : "{359452CCDBDD03F5}Prefabs/Sounds/Music/MusicManager_Base.et" {
+ coords 138.607 -1.603 123.993
+ Music {
+  SCR_RespawnMusic "{59CEAEC5D2396983}" {
+   Acp "{1AB8FE6DEF9B47A1}Sounds/Music/EM_Music.acp"
+   "Music Name" "EM_MU_RETURNTOEVERON"
+  }
+  ScriptedMusic "{5D542283C7EBFDEA}" {
+   "Music Name" "EM_MU_RETURNTOEVERON"
+   Interruptible 0
+  }
+ }
 }
 GenericEntity Area3_Recon : "{44850546B9F6F8E6}Prefabs/ScenarioFramework/Compositions/EM_Area_USSR_ReconQRF.et" {
  components {
@@ -910,6 +943,23 @@ GenericEntity Area1_Checkpoint : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Co
  }
  coords 92.024 1.002 85.193
  {
+  GenericEntity LayerTask_1 : "{5AF3BFDA2EAE56EA}Prefabs/ScenarioFramework/Components/LayerTask.et" {
+   components {
+    SCR_ScenarioFrameworkLayerTask "{5A2283E9F84958A1}" {
+     m_eActivationType CUSTOM1
+    }
+   }
+   coords 0 0 0
+   {
+    SCR_EditorTask : "{3AD0A1257870E6C7}Prefabs/Tasks/CustomTask.et" {
+     components {
+      SCR_MapDescriptorComponent "{54C6755D2955E709}" {
+      }
+     }
+     coords 0 0 0
+    }
+   }
+  }
   GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
    components {
     SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
