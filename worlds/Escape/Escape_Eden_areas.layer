@@ -8,32 +8,652 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
   }
   coords 4873.15 28.596 11882.314
   {
-   GenericEntity A1_Vehicles : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
-    components {
-     SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
-      m_eActivationType ON_AREA_TRIGGER_ACTIVATION
+   GenericEntity A1_AmmoBox : "{0D96DBCE1B0A42D2}Prefabs/Systems/Arsenal/AmmoBoxes/USSR/EM_AmmoBox_Empty_USSR.et" {
+    coords 60.691 -0.002 -131.928
+    angleX 0.899
+    angleY -89.766
+    angleZ -0.891
+   }
+   $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+    A1_Vehicles {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       m_eActivationType ON_AREA_TRIGGER_ACTIVATION
+      }
+     }
+     coords 0 0 0
+     {
+      $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+       Helo_1 {
+        components {
+         SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+          m_sObjectToSpawn "{0C6491AC961ACAC9}Prefabs/Vehicles/Helis/R3D_UH60/R3D_UH60.et"
+         }
+        }
+        coords 15 0.001 -50
+        angleY -90
+       }
+       Helo_2 {
+        components {
+         SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+          m_sObjectToSpawn "{0C6491AC961ACAC9}Prefabs/Vehicles/Helis/R3D_UH60/R3D_UH60.et"
+         }
+        }
+        coords 15 0 -84
+        angleY -90
+       }
+       Slot_34 {
+        components {
+         SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+          m_sObjectToSpawn "{26013123314183EA}Prefabs/Vehicles/Wheeled/M923A1/M923A1_tanker_MERDC.et"
+         }
+        }
+        coords 59.862 0.179 -122.582
+        angleY -89.51
+       }
+       Slot_35 {
+        components {
+         SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+          m_sObjectToSpawn "{DC21E543DF39D2C0}Prefabs/Vehicles/Wheeled/M923A1/M923A1_transport_covered_closed_MERDC.et"
+         }
+        }
+        coords 59.659 -0.002 -117.315
+        angleX 2.684
+        angleY -90.361
+        angleZ -0.017
+       }
+      }
      }
     }
-    coords 0 0 0
-    {
-     $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
-      Helo_1 {
-       components {
-        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-         m_sObjectToSpawn "{0C6491AC961ACAC9}Prefabs/Vehicles/Helis/R3D_UH60/R3D_UH60.et"
-        }
-       }
-       coords 15 0.001 -50
-       angleY -90
+    A1_StaticUnits {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       m_eActivationType ON_AREA_TRIGGER_ACTIVATION
       }
-      Helo_2 {
-       components {
-        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-         m_sObjectToSpawn "{0C6491AC961ACAC9}Prefabs/Vehicles/Helis/R3D_UH60/R3D_UH60.et"
+     }
+     coords 62.365 -0.126 50.787
+     angleX 0.895
+     angleZ 1.79
+     {
+      $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+       A1_BTR_1 {
+        components {
+         SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+          m_SpawnChildren RANDOM_ONE
+         }
+        }
+        coords -127.915 -1.026 -188.16
+        angleX 0.959
+        angleY 177.947
+        angleZ 1.757
+        {
+         $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+          Layer_25 {
+           coords 4.806 -0.53 -35.163
+           angleX 0.895
+           angleZ -0.033
+           {
+            GenericEntity SlotAI_21 : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+             components {
+              SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+               m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
+               m_sWPToSpawn "{B049D4C74FBC0C4D}Prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
+              }
+             }
+             coords 1.968 0 0
+            }
+            GenericEntity Slot_27 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+             components {
+              SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+               m_sObjectToSpawn "{E46CEB248C82B2FC}Prefabs/Vehicles/Wheeled/BTR70/EM_LockedBTR.et"
+              }
+             }
+             coords 0 0 0
+            }
+           }
+          }
+          Layer_26 {
+           coords -89.855 0.092 53.717
+           angleY 91.129
+           {
+            GenericEntity SlotAI_5 : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+             components {
+              SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+               m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
+               m_sWPToSpawn "{B049D4C74FBC0C4D}Prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
+              }
+             }
+             coords 1.968 0 0
+            }
+            GenericEntity Slot_2 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+             components {
+              SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+               m_sObjectToSpawn "{E46CEB248C82B2FC}Prefabs/Vehicles/Wheeled/BTR70/EM_LockedBTR.et"
+              }
+             }
+             coords 0 0 0
+            }
+           }
+          }
+          Layer_27 {
+           coords -69.309 0.093 -15.18
+           angleY 0.587
+           {
+            GenericEntity SlotAI_6 : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+             components {
+              SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+               m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
+               m_sWPToSpawn "{B049D4C74FBC0C4D}Prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
+              }
+             }
+             coords 1.968 0 0
+            }
+            GenericEntity Slot_3 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+             components {
+              SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+               m_sObjectToSpawn "{E46CEB248C82B2FC}Prefabs/Vehicles/Wheeled/BTR70/EM_LockedBTR.et"
+              }
+             }
+             coords 0 0 0
+            }
+           }
+          }
+         }
         }
        }
-       coords 15 0 -84
-       angleY -90
+       A1_BTR_2 {
+        components {
+         SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+          m_SpawnChildren RANDOM_ONE
+         }
+        }
+        coords -71.975 -2.608 13.614
+        angleX 2.842
+        angleY 178.048
+        angleZ 4.379
+        {
+         $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+          Layer_2 {
+           coords 48.257 0.502 -25.454
+           {
+            GenericEntity SlotAI_7 : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+             components {
+              SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+               m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
+               m_sWPToSpawn "{B049D4C74FBC0C4D}Prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
+              }
+             }
+             coords 1.968 0 0
+            }
+            GenericEntity Slot_4 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+             components {
+              SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+               m_sObjectToSpawn "{E46CEB248C82B2FC}Prefabs/Vehicles/Wheeled/BTR70/EM_LockedBTR.et"
+              }
+             }
+             coords 0 0 0
+            }
+           }
+          }
+          Layer_3 {
+           coords -97.159 -5.246 22.981
+           angleY 17.717
+           {
+            GenericEntity SlotAI_8 : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+             components {
+              SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+               m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
+               m_sWPToSpawn "{B049D4C74FBC0C4D}Prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
+              }
+             }
+             coords 1.968 0 0
+            }
+            GenericEntity Slot_5 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+             components {
+              SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+               m_sObjectToSpawn "{E46CEB248C82B2FC}Prefabs/Vehicles/Wheeled/BTR70/EM_LockedBTR.et"
+              }
+             }
+             coords 0 0 0
+            }
+           }
+          }
+          Layer_4 {
+           coords -42.391 -1.04 -19.128
+           angleY 2.122
+           {
+            GenericEntity SlotAI_9 : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+             components {
+              SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+               m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
+               m_sWPToSpawn "{B049D4C74FBC0C4D}Prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
+              }
+             }
+             coords 1.968 0 0
+            }
+            GenericEntity Slot_6 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+             components {
+              SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+               m_sObjectToSpawn "{E46CEB248C82B2FC}Prefabs/Vehicles/Wheeled/BTR70/EM_LockedBTR.et"
+              }
+             }
+             coords 0 0 0
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+      $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+       {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sObjectToSpawn "{976AC400219898FA}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Sharpshooter.et"
+          m_sWPToSpawn "{4729B051DD20F04F}Prefabs/AI/Waypoints/EM_AIWaypoint_DefendPoint.et"
+         }
+        }
+        coords -20.463 17.526 -149.949
+        angleY -133.48
+       }
+       {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sObjectToSpawn "{976AC400219898FA}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Sharpshooter.et"
+          m_aWaypointGroupNames {
+           SCR_WaypointSet "{5D5A9E024BD6FFF5}" {
+            m_sName "A1_wp_defend_1"
+           }
+          }
+          m_sWPToSpawn "{4729B051DD20F04F}Prefabs/AI/Waypoints/EM_AIWaypoint_DefendPoint.et"
+         }
+        }
+        coords -115.691 9.054 -159.715
+        angleY 153.301
+       }
+       {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sObjectToSpawn "{96C784C502AC37DA}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_MG.et"
+          m_sWPToSpawn "{4729B051DD20F04F}Prefabs/AI/Waypoints/EM_AIWaypoint_DefendPoint.et"
+         }
+        }
+        coords -126.679 8.531 -159.734
+        angleY -136.279
+       }
+       {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sObjectToSpawn "{23ADBBC31B6A3DC6}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_AR.et"
+          m_sWPToSpawn "{4729B051DD20F04F}Prefabs/AI/Waypoints/EM_AIWaypoint_DefendPoint.et"
+         }
+        }
+        coords -123.511 12.174 -157.062
+        angleY -177.297
+       }
+       {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
+          m_sWPToSpawn "{4729B051DD20F04F}Prefabs/AI/Waypoints/EM_AIWaypoint_DefendPoint.et"
+         }
+        }
+        coords -118.717 12.325 -153.213
+        angleY 65.265
+       }
+       {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sObjectToSpawn "{8E0FE664CE7D1CA9}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_GL.et"
+          m_sWPToSpawn "{4729B051DD20F04F}Prefabs/AI/Waypoints/EM_AIWaypoint_DefendPoint.et"
+         }
+        }
+        coords -126.776 8.447 -150.858
+        angleY -52.493
+       }
+       {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
+          m_sWPToSpawn "{4729B051DD20F04F}Prefabs/AI/Waypoints/EM_AIWaypoint_DefendPoint.et"
+         }
+        }
+        coords -117.292 8.814 -150.36
+        angleY 20.565
+       }
+       {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sObjectToSpawn "{976AC400219898FA}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Sharpshooter.et"
+          m_aWaypointGroupNames {
+           SCR_WaypointSet "{5D5A9E024BD6FFF5}" {
+            m_sName "A1_wp_defend_1"
+           }
+          }
+          m_sWPToSpawn "{4729B051DD20F04F}Prefabs/AI/Waypoints/EM_AIWaypoint_DefendPoint.et"
+         }
+        }
+        coords -120.825 8.819 -159.719
+        angleY 171.735
+       }
+       {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sObjectToSpawn "{8E0FE664CE7D1CA9}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_GL.et"
+          m_sWPToSpawn "{4729B051DD20F04F}Prefabs/AI/Waypoints/EM_AIWaypoint_DefendPoint.et"
+         }
+        }
+        coords -115.6 8.81 -151.769
+        angleY 63.563
+       }
+       {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sObjectToSpawn "{8E0FE664CE7D1CA9}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_GL.et"
+          m_aWaypointGroupNames {
+           SCR_WaypointSet "{5D5A9E024BD6FFF5}" {
+            m_sName "A1_wp_defend_1"
+           }
+          }
+          m_sWPToSpawn "{4729B051DD20F04F}Prefabs/AI/Waypoints/EM_AIWaypoint_DefendPoint.et"
+         }
+        }
+        coords -20.019 17.599 -141.078
+        angleY -59.992
+       }
+       {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sObjectToSpawn "{976AC400219898FA}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Sharpshooter.et"
+          m_aWaypointGroupNames {
+           SCR_WaypointSet "{5D5A9E024BD6FFF5}" {
+            m_sName "A1_wp_defend_1"
+           }
+          }
+          m_sWPToSpawn "{4729B051DD20F04F}Prefabs/AI/Waypoints/EM_AIWaypoint_DefendPoint.et"
+         }
+        }
+        coords -10.083 17.413 -141.494
+        angleY 70.117
+       }
+       {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sObjectToSpawn "{96C784C502AC37DA}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_MG.et"
+          m_aWaypointGroupNames {
+           SCR_WaypointSet "{5D5A9E024BD6FFF5}" {
+            m_sName "A1_wp_defend_1"
+           }
+          }
+          m_sWPToSpawn "{4729B051DD20F04F}Prefabs/AI/Waypoints/EM_AIWaypoint_DefendPoint.et"
+         }
+        }
+        coords -15.479 11.266 -132.952
+        angleY -59.992
+       }
+       {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sObjectToSpawn "{23ADBBC31B6A3DC6}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_AR.et"
+          m_aWaypointGroupNames {
+           SCR_WaypointSet "{5D5A9E024BD6FFF5}" {
+            m_sName "A1_wp_defend_1"
+           }
+          }
+          m_sWPToSpawn "{4729B051DD20F04F}Prefabs/AI/Waypoints/EM_AIWaypoint_DefendPoint.et"
+         }
+        }
+        coords -5.154 11.616 -133.796
+        angleY 64.148
+       }
+       {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
+          m_aWaypointGroupNames {
+           SCR_WaypointSet "{5D5A9E024BD6FFF5}" {
+            m_sName "A1_wp_defend_1"
+           }
+          }
+          m_sWPToSpawn "{4729B051DD20F04F}Prefabs/AI/Waypoints/EM_AIWaypoint_DefendPoint.et"
+         }
+        }
+        coords 10.034 9.756 -93.776
+        angleY 64.148
+       }
+       {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sObjectToSpawn "{8E0FE664CE7D1CA9}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_GL.et"
+          m_aWaypointGroupNames {
+           SCR_WaypointSet "{5D5A9E024BD6FFF5}" {
+            m_sName "A1_wp_defend_1"
+           }
+          }
+          m_sWPToSpawn "{4729B051DD20F04F}Prefabs/AI/Waypoints/EM_AIWaypoint_DefendPoint.et"
+         }
+        }
+        coords 9.972 9.431 -105.869
+        angleY 130.661
+       }
+       {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sObjectToSpawn "{1C78331E156A3D65}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_AT.et"
+          m_aWaypointGroupNames {
+           SCR_WaypointSet "{5D5A9E024BD6FFF5}" {
+            m_sName "A1_wp_defend_1"
+           }
+          }
+          m_sWPToSpawn "{4729B051DD20F04F}Prefabs/AI/Waypoints/EM_AIWaypoint_DefendPoint.et"
+         }
+        }
+        coords -4.855 9.431 -105.172
+        angleY -141.168
+       }
+      }
+     }
+    }
+    A1_Waypoints {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+      }
+     }
+     coords 76.545 -0.001 -61.882
+     {
+      $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+       A1_wp_set_1 {
+        coords -138.392 -1.724 96.392
+        {
+         $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+          {
+           components {
+            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+             m_sObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            }
+           }
+           coords -70.79 -4.76 126.874
+           angleX -1.79
+           angleZ -0.895
+          }
+          {
+           components {
+            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+             m_sObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            }
+           }
+           coords -76.644 0.233 -205.023
+           angleZ -0.895
+          }
+         }
+        }
+       }
+       A1_wp_set_2 {
+        coords -73.839 2.394 40.709
+        {
+         $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+          {
+           components {
+            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+             m_sObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            }
+           }
+           coords -9.388 -2.395 68.994
+           angleX -1.79
+           angleZ -0.895
+          }
+          {
+           components {
+            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+             m_sObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            }
+           }
+           coords -5.224 -2.395 -122.371
+           angleZ -0.895
+          }
+         }
+        }
+       }
+       A1_wp_set_3 {
+        coords 4.333 -0.313 119.018
+        {
+         $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+          {
+           components {
+            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+             m_sObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            }
+           }
+           coords -2.695 0.083 49.635
+           angleX -1.789
+           angleY -0.056
+           angleZ 0.896
+          }
+          {
+           components {
+            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+             m_sObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            }
+           }
+           coords 3.012 0.133 -240.836
+           angleX 1.79
+           angleZ -0.895
+          }
+         }
+        }
+       }
+      }
+      $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+       A1_wp_defend_1 {
+        components {
+         SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+          m_sObjectToSpawn "{BBD7AB0B1069FE0A}Prefabs/AI/Waypoints/EM_AIWaypoint_Defend_15m.et"
+         }
+        }
+        coords -27.151 -4.164 -33.899
+       }
+       wp_test {
+        components {
+         SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+          m_sObjectToSpawn "{B049D4C74FBC0C4D}Prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
+         }
+        }
+        coords -141.009 -0.084 -89.863
+       }
+      }
+     }
+    }
+    A1_Groups {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       m_eActivationType ON_AREA_TRIGGER_ACTIVATION
+      }
+     }
+     coords 0 0 0
+     {
+      $grp GenericEntity : "{64B06C9676461725}Prefabs/ScenarioFramework/Components/EM_SlotAI.et" {
+       {
+        components {
+         EM_SF_SlotAI "{5D4364623E9E05E2}" {
+          m_sObjectToSpawn "{B1869C253FAB86D8}Prefabs/Groups/OPFOR/EM_Group_USSR_Squad2.et"
+          m_aWaypointGroupNames {
+           SCR_WaypointSet "{5D4E8ADAD54CF53A}" {
+            m_sName "A1_wp_set_1"
+            m_bUseRandomOrder 1
+            m_bCycleWaypoints 1
+           }
+          }
+          m_bSpawnAIOnWPPos 1
+         }
+        }
+        coords -130.009 -2.21 -20.446
+        angleX -2.684
+        angleZ -1.788
+       }
+       {
+        components {
+         EM_SF_SlotAI "{5D4364623E9E05E2}" {
+          m_sObjectToSpawn "{E92FAFABE185B324}Prefabs/Groups/OPFOR/EM_Group_USSR_Team1.et"
+          m_aWaypointGroupNames {
+           SCR_WaypointSet "{5D4E8ADAD54CF53A}" {
+            m_sName "A1_wp_set_2"
+            m_bUseRandomOrder 1
+            m_bCycleWaypoints 1
+           }
+          }
+          m_bSpawnAIOnWPPos 1
+         }
+        }
+        coords -20.892 -0.002 -145.962
+        angleX -0.893
+        angleY 0.056
+        angleZ -9.827
+       }
+       {
+        components {
+         EM_SF_SlotAI "{5D4364623E9E05E2}" {
+          m_sObjectToSpawn "{DDD2A8C5836F09F6}Prefabs/Groups/OPFOR/EM_Group_USSR_Squad1.et"
+          m_aWaypointGroupNames {
+           SCR_WaypointSet "{5D4E8ADAD54CF53A}" {
+            m_sName "A1_wp_set_3"
+            m_bUseRandomOrder 1
+            m_bCycleWaypoints 1
+           }
+          }
+          m_bSpawnAIOnWPPos 1
+         }
+        }
+        coords 76.954 -0.166 16.08
+        angleY 0.014
+        angleZ 0.895
+       }
+      }
+     }
+    }
+    A1_Structures {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+      }
+     }
+     coords 0 0 0
+     {
+      $grp SCR_DoorOpenerEntity {
+       {
+        coords 75.433 -0.284 79.956
+        m_fRadius 5
+       }
+       {
+        coords 84.417 -0.197 -32.549
+        angleZ -0.895
+        m_fRadius 5
+       }
+       {
+        coords 48.24 -0.024 44.686
+        m_fRadius 5
+       }
+      }
+      SCR_DestructibleBuildingEntity : "{F6FC9703E7F4FDCA}Prefabs/Structures/Military/Houses/ControlTowerMilitary_E_01/ControlTowerMilitary_E_01.et" {
+       coords -57.991 0.599 -103.543
       }
      }
     }
@@ -63,7 +683,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
      }
      coords 0 0 0
      {
-      $grp GenericEntity : "{F8BAE116AD72D32A}Prefabs/ScenarioFramework/Compositions/EM_Layer_CivCar.et" {
+      $grp GenericEntity : "{F8BAE116AD72D32A}Prefabs/ScenarioFramework/Compositions/Everon/EM_Layer_CivCar.et" {
        {
         components {
          SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
@@ -179,12 +799,8 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
        components {
         EM_SF_SlotAI "{5D4364623E9E05E2}" {
          m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
-         m_aWaypointGroupNames {
-          SCR_WaypointSet "{5D4E8ADA40B9E3D9}" {
-           m_sName "A2_wp_static_1"
-          }
-         }
          m_bSpawnAIOnWPPos 1
+         m_sWPToSpawn "{4729B051DD20F04F}Prefabs/AI/Waypoints/EM_AIWaypoint_DefendPoint.et"
         }
        }
        coords 0.26 -0.487 -4.054
@@ -255,9 +871,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
         }
        }
       }
-      GenericEntity A2_wp_static_1 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
-       coords 0.26 -0.487 -4.054
-      }
      }
     }
     A2_Groups {
@@ -316,6 +929,16 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
   }
   coords 6456.535 161.643 6498.723
   {
+   SCR_SpawnPoint A0_SpawnPoint : "{5A2220DD0C16958B}Prefabs/MP/Spawning/SpawnPoint_US.et" {
+    components {
+     SCR_MapDescriptorComponent "{54C659A97C47BDE2}" {
+      VisibleOnMap 1
+     }
+    }
+    coords 0.329 1.103 0.638
+    angleY 165.392
+    m_bShowInDeployMapOnly 1
+   }
    GenericEntity A0_Groups : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
     components {
      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
@@ -350,6 +973,2964 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
        angleX 4.836
        angleY -40.679
        angleZ -5.313
+      }
+     }
+    }
+   }
+  }
+ }
+ A3_CheckpointGorey {
+  components {
+   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+    m_sTriggerResource "{FF958FE1DB5710FB}Prefabs/ScenarioFramework/Triggers/EM_SF_TriggerAnyPlayer_5s.et"
+    m_fAreaRadius 600
+    m_bShowDebugShapesInWorkbench 1
+   }
+  }
+  coords 4635.32 120.148 7958.14
+  angleX 0.895
+  angleZ -0.895
+  {
+   GenericEntity A3_AmmoBox : "{0D96DBCE1B0A42D2}Prefabs/Systems/Arsenal/AmmoBoxes/USSR/EM_AmmoBox_Empty_USSR.et" {
+    coords -11.885 0.097 26.016
+    angleX 0.899
+    angleY -89.766
+    angleZ -0.891
+   }
+   $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+    A3_Vehicles {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       m_eActivationType ON_AREA_TRIGGER_ACTIVATION
+      }
+     }
+     coords 0 0 0
+     {
+      GenericEntity Slot_27 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sObjectToSpawn "{D9B91FAB817A6033}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_transport_covered.et"
+        }
+       }
+       coords -12.296 -0.297 16.945
+       angleX 2.661
+       angleY 77.18
+       angleZ -0.469
+      }
+     }
+    }
+    A3_Structures {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+      }
+     }
+     coords 0 0 0
+     {
+      StaticModelEntity : "{732A335C72D8ADE2}Prefabs/Props/Military/Sandbags/Sandbag_01_bunker_burlap_foundation.et" {
+       coords 14.53 1.025 -14.904
+       angleX 0.629
+       angleY 164.769
+       angleZ -1.099
+       {
+        GenericEntity {
+         ID "5A532DCF487275B2"
+         coords 0 0.1 0
+        }
+        GenericEntity {
+         ID "5A532DCF78E7126A"
+         components {
+          SCR_AISmartActionSentinelComponent "{54D6F8392982FA5D}" {
+           AIBehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost.bt"
+           Tags {
+            "ObservationPost"
+           }
+           m_vLookPosition 6.78 0.254 11.792
+          }
+          SCR_AISmartActionSentinelComponent "{58B284D8A6BB7761}" {
+           m_iCharacterStance CROUCH
+          }
+          SCR_AISmartActionSentinelComponent "{58B284D8DAFC3BE2}" {
+           Tags {
+            "ObservationPost"
+           }
+           m_vLookPosition -4.108 2.91 32.511
+          }
+         }
+        }
+        $grp StaticModelEntity : "{55A3DA68E58453A1}Prefabs/Structures/Military/Fortifications/DirtCover_01/DirtCover_01_long_v2.et" {
+         {
+          components {
+           Hierarchy "{569E7A0B050E37A5}" {
+            Enabled 1
+           }
+          }
+          coords -2.201 -0.449 0.67
+          angleY -87.635
+         }
+         {
+          components {
+           Hierarchy "{569E7A0B050E37A5}" {
+            Enabled 1
+           }
+          }
+          coords -3.645 -0.267 -1.317
+          angleY 170.668
+         }
+         {
+          components {
+           Hierarchy "{569E7A0B050E37A5}" {
+            Enabled 1
+           }
+          }
+          coords -0.184 -0.838 2.298
+          angleY 179.346
+         }
+        }
+        $grp StaticModelEntity : "{8B7B5323534404A7}Prefabs/Structures/Military/Fortifications/Dragontooth_01/Dragontooth_01_V2.et" {
+         {
+          components {
+           Hierarchy "{569E7A0B050C16A3}" {
+            Enabled 1
+           }
+          }
+          coords 1.733 -1.022 2.935
+          angleY -117.796
+         }
+         {
+          components {
+           Hierarchy "{569E7A0B050C16A3}" {
+            Enabled 1
+           }
+          }
+          coords -2.016 -1.126 2.977
+          angleY -169.559
+         }
+        }
+        GenericEntity : "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et" {
+         coords -3.489 -0.974 -1.756
+         angleY 173.493
+        }
+        SCR_DestructibleEntity : "{DDF59362051B28BC}Prefabs/Props/Military/Fortification/BarbedTape_KnifeRest.et" {
+         components {
+          Hierarchy "{569E7A0B051A7F4D}" {
+           Enabled 1
+          }
+         }
+         coords -0.113 -0.915 2.94
+         angleY -89.677
+        }
+       }
+      }
+      GenericEntity : "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et" {
+       coords -15.937 -1.304 -2.048
+       angleX -1.231
+       angleY 58.54
+       angleZ -0.296
+       {
+        $grp GenericEntity : "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et" {
+         {
+          coords 2.772 0.049 0.25
+         }
+         {
+          coords 5.452 -0.158 0.43
+         }
+         {
+          coords 8.226 -0.344 0.68
+         }
+         {
+          coords -11.872 0.157 0.156
+          angleY -6.898
+         }
+        }
+       }
+      }
+      DecalEntity : "{9EE74738BD9E8CDB}Prefabs/Decals/Dirt/Decal_Dirt_Tracks_02.et" {
+       components {
+        Hierarchy "{56E0B29FD1BC7A6F}" {
+        }
+       }
+       coords -11.661 -0.504 16.882
+       angleX -88.733
+       angleY -135.007
+       angleZ 118.639
+       FarPlane 1.5
+       Stretch 2
+      }
+      GenericEntity : "{9FEBA85C09987EF6}PrefabsEditable/Auto/Compositions/Misc/CustomEntities/CompositionDecals/E_CompositionDecal_Dirt_Patch_03.et" {
+       coords -11.781 0.719 25.902
+       angleX -0.895
+       angleY -0.014
+       angleZ 0.895
+       {
+        $grp GenericEntity {
+         {
+          components {
+           MeshObject "{5D595C5C61B567BE}" {
+            Object "{D748834B49391924}Assets/Vegetation/Cuttings/Carpinus_betulus_large_01.xob"
+            LODFactors {
+             1
+            }
+           }
+           Hierarchy "{5D595C5C61B567BA}" {
+           }
+           RigidBody "{5D595C5C61B567C4}" {
+            ModelGeometry 1
+            Static 1
+           }
+          }
+          coords 0.229 -0.682 4.725
+          Flags 1027
+         }
+         {
+          components {
+           MeshObject "{5D595C5C61B5623C}" {
+            Object "{8644C452B46FBF5C}Assets/Props/Military/Sandbags/Sandbag_01_wall.xob"
+            Materials {
+             MaterialAssignClass "{5D595C5C61B5655F}" {
+              SourceMaterial "Sandbags_01_Wall_MLOD"
+              AssignedMaterial "{EB1461D010879CA5}Assets/Props/Military/Sandbags/Data/Sandbags_01_Wall_Burlap_MLOD.emat"
+             }
+             MaterialAssignClass "{5D595C5C61B56566}" {
+              SourceMaterial "Sandbags_01_wall"
+              AssignedMaterial "{BA649E49FAB0440C}Assets/Props/Military/Sandbags/Data/Sandbags_01_wall_Burlap.emat"
+             }
+            }
+            LODFactors {
+             4 2 1 0.5 0.3 0.3
+            }
+            PixelSizeScale 2
+            ClutterOccluder 1
+           }
+           Hierarchy "{5D595C5C61B56244}" {
+            Enabled 1
+           }
+           NavmeshCustomLinkComponent "{5D595C5C61B563CF}" {
+            Enabled 0
+            LinkType NavmeshJumpLink "{5D595C5C61B563BC}" {
+             "Navmesh setting presets" {
+              NavmeshCustomLinkSetting "{5D595C5C61B563BF}" {
+               ProjectPresets {
+                NavmeshCustomLinkPreset "{5D595C5C61B56396}" {
+                 ProjectName "Soldiers"
+                 AreaType "Fence"
+                }
+               }
+               BeginPoint 0 0 1.5
+               EndPoint 0 0 -1.5
+               Radius 0.2
+               QueueDelay 5
+               QueueTimeout 0
+              }
+             }
+            }
+           }
+           RigidBody "{5D595C5C61B5630C}" {
+            ResponseIndex "Normal"
+            ModelGeometry 1
+            Static 1
+           }
+           SCR_CampaignBuildingCompositionComponent "{5D595C5C61B56314}" {
+           }
+           SCR_DestructionMultiPhaseComponent "{5D595C5C61B56093}" {
+            Enabled 0
+            "Additional hit zones" {
+             ScriptedHitZone Default {
+              HZDefault 1
+              "Melee multiplier" 1
+              "Kinetic multiplier" 1
+              "Explosive multiplier" 90
+              "Incendiary multiplier" 1
+             }
+            }
+            m_fForceToDamageScale 350
+           }
+           RplComponent "{5D595C5C61B560AC}" {
+            Enabled 0
+           }
+          }
+          coords -1.471 -0.682 4.536
+          Flags 1027
+         }
+         {
+          components {
+           MeshObject "{5D595C5C61B2CAEF}" {
+            Object "{6404EDF8B63C3B5B}Assets/Props/Military/Sandbags/Sandbag_01_wall_solid.xob"
+            Materials {
+             MaterialAssignClass "{5D595C5C61B2CD62}" {
+              SourceMaterial "Sandbags_01_Wall_MLOD"
+              AssignedMaterial "{EB1461D010879CA5}Assets/Props/Military/Sandbags/Data/Sandbags_01_Wall_Burlap_MLOD.emat"
+             }
+             MaterialAssignClass "{5D595C5C61B2CD6A}" {
+              SourceMaterial "Sandbags_01_wall"
+              AssignedMaterial "{BA649E49FAB0440C}Assets/Props/Military/Sandbags/Data/Sandbags_01_wall_Burlap.emat"
+             }
+            }
+            LODFactors {
+             4 2 1 1 0.5 0.5
+            }
+            PixelSizeScale 2
+            ClutterOccluder 1
+           }
+           Hierarchy "{5D595C5C61B2CAF0}" {
+           }
+           NavmeshCustomLinkComponent "{5D595C5C61B2CA4E}" {
+            Enabled 0
+            LinkType NavmeshJumpLink "{5D595C5C61B2CA45}" {
+             "Navmesh setting presets" {
+              NavmeshCustomLinkSetting "{5D595C5C61B2CA46}" {
+               ProjectPresets {
+                NavmeshCustomLinkPreset "{5D595C5C61B2CA26}" {
+                 ProjectName "Soldiers"
+                 AreaType "Fence"
+                }
+               }
+               BeginPoint 0 0 1.5
+               EndPoint 0 0 -1.5
+               Radius 0.2
+               QueueDelay 5
+               QueueTimeout 0
+              }
+             }
+            }
+           }
+           RigidBody "{5D595C5C61B2CB8B}" {
+            ResponseIndex "HugeDestructible"
+            ModelGeometry 1
+            Static 1
+           }
+           SCR_CampaignBuildingCompositionComponent "{5D595C5C61B2CB88}" {
+           }
+           SCR_DestructionMultiPhaseComponent "{5D595C5C61B2CBD6}" {
+            Enabled 0
+            "Additional hit zones" {
+             ScriptedHitZone Default {
+              HZDefault 1
+              "Melee multiplier" 1
+              "Kinetic multiplier" 1
+              "Explosive multiplier" 90
+              "Incendiary multiplier" 1
+             }
+            }
+            m_fForceToDamageScale 350
+           }
+           SCR_SlotCompositionComponent "{5D595C5C61B2CBDD}" {
+            m_bOrientChildrenToTerrain 0
+            m_bEditableChildren 0
+           }
+           RplComponent "{5D595C5C61B2CBEC}" {
+            Enabled 0
+           }
+          }
+          coords -3.25 -0.682 3.735
+          angleY 90
+          Flags 1027
+         }
+         {
+          components {
+           MeshObject "{5D595C5C61B56C21}" {
+            Object "{8B015C0ED326AF56}Assets/Vegetation/Cuttings/Rubus_idaeus_1s_small_01.xob"
+            LODFactors {
+             1
+            }
+           }
+           Hierarchy "{5D595C5C61B56C2A}" {
+           }
+           RigidBody "{5D595C5C61B56C3A}" {
+            ModelGeometry 1
+            Static 1
+           }
+          }
+          coords -3.861 -0.682 0.824
+          angleY -108.788
+          Flags 1027
+         }
+         {
+          components {
+           MeshObject "{5D595C5C6CEB001D}" {
+            Object "{897C38A9EA759709}Assets/Props/Military/Sandbags/Sandbag_01_end_high.xob"
+            Materials {
+             MaterialAssignClass "{5D595C5C6CEB036A}" {
+              SourceMaterial "Sandbags_01_End"
+              AssignedMaterial "{2392C281DF136B3B}Assets/Props/Military/Sandbags/Data/Sandbags_01_end_Burlap.emat"
+             }
+             MaterialAssignClass "{5D595C5C6CEB0370}" {
+              SourceMaterial "Sandbags_01_MLOD"
+              AssignedMaterial "{EB1461D010879CA5}Assets/Props/Military/Sandbags/Data/Sandbags_01_Wall_Burlap_MLOD.emat"
+             }
+            }
+            LODFactors {
+             5 2 1.5 1 1 1
+            }
+            PixelSizeScale 2
+            ClutterOccluder 1
+           }
+           Hierarchy "{5D595C5C6CEB0018}" {
+           }
+           NavmeshCustomLinkComponent "{5D595C5C6CEB018E}" {
+            Enabled 0
+            LinkType NavmeshJumpLink "{5D595C5C6CEB0187}" {
+             "Navmesh setting presets" {
+              NavmeshCustomLinkSetting "{5D595C5C6CEB0079}" {
+               ProjectPresets {
+                NavmeshCustomLinkPreset "{5D595C5C6CEB005A}" {
+                 ProjectName "Soldiers"
+                 AreaType "Fence"
+                }
+               }
+               BeginPoint 0 0 1.5
+               EndPoint 0 0 -1.5
+               Radius 0.2
+               QueueDelay 5
+               QueueTimeout 0
+              }
+             }
+            }
+           }
+           RigidBody "{5D595C5C6CEB01C9}" {
+            ResponseIndex "HugeDestructible"
+            ModelGeometry 1
+            Static 1
+           }
+           SCR_CampaignBuildingCompositionComponent "{5D595C5C6CEB01D3}" {
+           }
+           SCR_DestructionMultiPhaseComponent "{5D595C5C6CEB011C}" {
+            Enabled 0
+            "Additional hit zones" {
+             ScriptedHitZone Default {
+              HZDefault 1
+              "Melee multiplier" 1
+              "Kinetic multiplier" 1
+              "Explosive multiplier" 90
+              "Incendiary multiplier" 1
+             }
+            }
+            m_fForceToDamageScale 350
+           }
+           SCR_SlotCompositionComponent "{5D595C5C6CEB012D}" {
+            m_bOrientChildrenToTerrain 0
+           }
+           RplComponent "{5D595C5C6CEB013B}" {
+            Enabled 0
+           }
+          }
+          coords -3.263 -0.682 1.402
+          angleY 90
+          Flags 1027
+          {
+           GenericEntity {
+            components {
+             MeshObject "{5D595C5C7E9C7167}" {
+              Object "{B8AA18B725C167A5}Assets/Structures/Military/Camps/Canvas_Cover/CanvasCover_Folded.xob"
+              LODFactors {
+               5 2 1.5 1 1 1
+              }
+             }
+             Hierarchy "{5D595C5C7E9C7164}" {
+             }
+             RigidBody "{5D595C5C7E9C6E97}" {
+              Mass 50
+              CenterOfMass 0 0.2 0
+              ResponseIndex "SmallDestructible"
+              ModelGeometry 1
+              Static 1
+             }
+             SCR_DestructionMultiPhaseComponent "{5D595C5C7E9C6EC1}" {
+              Enabled 0
+              "Additional hit zones" {
+               ScriptedHitZone Default {
+                HZDefault 1
+                "Melee multiplier" 1
+                "Kinetic multiplier" 1
+                "Explosive multiplier" 90
+                "Incendiary multiplier" 1
+               }
+              }
+              m_fForceToDamageScale 350
+             }
+             RplComponent "{5D595C5C7E9C6EDF}" {
+              Enabled 0
+             }
+            }
+            coords -0.553 1.265 0.007
+            angleY -2.928
+           }
+          }
+         }
+         {
+          components {
+           MeshObject "{5D595C5C61B572D4}" {
+            Object "{882D75D7C3B41886}Assets/Vegetation/Cuttings/Salix_cinerea_medium_01.xob"
+            LODFactors {
+             1
+            }
+           }
+           Hierarchy "{5D595C5C61B572EF}" {
+           }
+           RigidBody "{5D595C5C61B572FF}" {
+            ModelGeometry 1
+            Static 1
+           }
+          }
+          coords -3.053 -0.582 5.126
+          Flags 1027
+         }
+         {
+          components {
+           MeshObject "{5D595C5C61B55DF1}" {
+            Object "{897C38A9EA759709}Assets/Props/Military/Sandbags/Sandbag_01_end_high.xob"
+            Materials {
+             MaterialAssignClass "{5D595C5C61B55C7D}" {
+              SourceMaterial "Sandbags_01_End"
+              AssignedMaterial "{2392C281DF136B3B}Assets/Props/Military/Sandbags/Data/Sandbags_01_end_Burlap.emat"
+             }
+             MaterialAssignClass "{5D595C5C61B55D85}" {
+              SourceMaterial "Sandbags_01_MLOD"
+              AssignedMaterial "{EB1461D010879CA5}Assets/Props/Military/Sandbags/Data/Sandbags_01_Wall_Burlap_MLOD.emat"
+             }
+            }
+            LODFactors {
+             5 2 1.5 1 1 1
+            }
+            PixelSizeScale 2
+            ClutterOccluder 1
+           }
+           Hierarchy "{5D595C5C61B55DFC}" {
+            Enabled 1
+           }
+           NavmeshCustomLinkComponent "{5D595C5C61B55D4B}" {
+            Enabled 0
+            LinkType NavmeshJumpLink "{5D595C5C61B55D41}" {
+             "Navmesh setting presets" {
+              NavmeshCustomLinkSetting "{5D595C5C61B55D43}" {
+               ProjectPresets {
+                NavmeshCustomLinkPreset "{5D595C5C61B55D2F}" {
+                 ProjectName "Soldiers"
+                 AreaType "Fence"
+                }
+               }
+               BeginPoint 0 0 1.5
+               EndPoint 0 0 -1.5
+               Radius 0.2
+               QueueDelay 5
+               QueueTimeout 0
+              }
+             }
+            }
+           }
+           RigidBody "{5D595C5C61B55A85}" {
+            ResponseIndex "Normal"
+            ModelGeometry 1
+            Static 1
+           }
+           SCR_CampaignBuildingCompositionComponent "{5D595C5C61B55A81}" {
+           }
+           SCR_DestructionMultiPhaseComponent "{5D595C5C61B55AC2}" {
+            Enabled 0
+            "Additional hit zones" {
+             ScriptedHitZone Default {
+              HZDefault 1
+              "Melee multiplier" 1
+              "Kinetic multiplier" 1
+              "Explosive multiplier" 90
+              "Incendiary multiplier" 1
+             }
+            }
+            m_fForceToDamageScale 350
+           }
+           RplComponent "{5D595C5C61B55ADF}" {
+            Enabled 0
+           }
+          }
+          coords 0.035 -0.567 4.562
+          Flags 1027
+         }
+         {
+          components {
+           MeshObject "{5D595C5C6CEB188E}" {
+            Object "{C86C1F784CE41386}Assets/Props/Military/AmmoBox/EquipmentBoxStack/EquipmentBoxStack_01_V2.xob"
+           }
+           Hierarchy "{5D595C5C6CEB188A}" {
+           }
+           RigidBody "{5D595C5C6CEB1834}" {
+            Mass 10
+            ResponseIndex "MediumDestructible"
+            ModelGeometry 1
+            Static 1
+           }
+           SCR_DestructionMultiPhaseComponent "{5D595C5C6CEB16E6}" {
+            Enabled 0
+            "Additional hit zones" {
+             ScriptedHitZone Default {
+              HZDefault 1
+              "Melee multiplier" 1
+              "Kinetic multiplier" 1
+              "Explosive multiplier" 90
+              "Incendiary multiplier" 1
+             }
+            }
+            m_fBaseHealth 800
+            m_fForceToDamageScale 350
+            m_bPassDamageToChildren 1
+            m_DestroySpawnObjects {
+             SCR_ParticleSpawnable "{5D595C5C6CEB19B1}" {
+              m_vOffsetPosition 0 1 0
+              m_Particle "{63D673751320F318}Particles/Props/Dest_Prop_Wood_Medium.ptc"
+             }
+             SCR_DebrisSpawnable "{5D595C5C6CEB1935}" {
+              m_ModelPrefabs {
+               "{1B3653850D7A374D}Assets/Props/Military/AmmoBox/EquipmentBoxStack/Dst/EquipmentBoxStack_01_V2_dst/EquipmentBoxStack_01_V2_dst_02.xob" "{6C3C3B0DF9D8D83D}Assets/Props/Military/AmmoBox/EquipmentBoxStack/Dst/EquipmentBoxStack_01_V2_dst/EquipmentBoxStack_01_V2_dst_03.xob" "{6BFBC15C9F5E62FE}Assets/Props/Military/AmmoBox/EquipmentBoxStack/Dst/EquipmentBoxStack_01_V2_dst/EquipmentBoxStack_01_V2_dst_04.xob" "{1CF1A9D46BFC8D8E}Assets/Props/Military/AmmoBox/EquipmentBoxStack/Dst/EquipmentBoxStack_01_V2_dst/EquipmentBoxStack_01_V2_dst_05.xob"
+              }
+              m_fMass 3
+              m_eMaterialSoundType WOOD_PLANK_SMALL
+             }
+            }
+            m_aDamagePhases {
+             SCR_DamagePhaseData "{5D595C5C6CEB1688}" {
+              m_fPhaseHealth 1500
+              m_PhaseModel "{8228EA1C109D06DD}Assets/Props/Military/AmmoBox/EquipmentBoxStack/Dst/EquipmentBoxStack_01_V2_dst/EquipmentBoxStack_01_V2_dst_01.xob"
+              m_PhaseDestroySpawnObjects {
+               SCR_ParticleSpawnable "{5D595C5C6CEB1951}" {
+                m_Particle "{63D673751320F318}Particles/Props/Dest_Prop_Wood_Medium.ptc"
+               }
+               SCR_DebrisSpawnable "{5D595C5C6CEB1685}" {
+                m_ModelPrefabs {
+                 "{1B3653850D7A374D}Assets/Props/Military/AmmoBox/EquipmentBoxStack/Dst/EquipmentBoxStack_01_V2_dst/EquipmentBoxStack_01_V2_dst_02.xob" "{6C3C3B0DF9D8D83D}Assets/Props/Military/AmmoBox/EquipmentBoxStack/Dst/EquipmentBoxStack_01_V2_dst/EquipmentBoxStack_01_V2_dst_03.xob" "{6BFBC15C9F5E62FE}Assets/Props/Military/AmmoBox/EquipmentBoxStack/Dst/EquipmentBoxStack_01_V2_dst/EquipmentBoxStack_01_V2_dst_04.xob" "{1CF1A9D46BFC8D8E}Assets/Props/Military/AmmoBox/EquipmentBoxStack/Dst/EquipmentBoxStack_01_V2_dst/EquipmentBoxStack_01_V2_dst_05.xob"
+                }
+                m_fMass 3
+                m_eMaterialSoundType WOOD_PLANK_SMALL
+               }
+              }
+             }
+            }
+           }
+           SCR_SlotCompositionComponent "{5D595C5C6CEB16E8}" {
+            m_bOrientChildrenToTerrain 0
+            m_bEditableChildren 1
+           }
+           SCR_SoundDataComponent "{5D595C5C6CEB1636}" {
+            Enabled 0
+            m_aAudioSourceConfiguration {
+             SCR_AudioSourceConfiguration "{5D595C5C6CEB1626}" {
+              m_sSoundProject "{A73D28179B395F19}Sounds/Props/Military/AmmoBoxes/AmmoBox_Big_Wooden/Props_AmmoBox_Big_Wooden.acp"
+              m_sSoundEventName "SOUND_CONTAINER_OPEN"
+             }
+             SCR_AudioSourceConfiguration "{5D595C5C6CEB1637}" {
+              m_sSoundProject "{A73D28179B395F19}Sounds/Props/Military/AmmoBoxes/AmmoBox_Big_Wooden/Props_AmmoBox_Big_Wooden.acp"
+              m_sSoundEventName "SOUND_CONTAINER_CLOSE"
+             }
+            }
+           }
+           SCR_UniversalInventoryStorageComponent "{5D595C5C6CEB178F}" {
+            Enabled 0
+            Attributes SCR_ItemAttributeCollection "{5D595C5C6CEB166E}" {
+             ItemDisplayName UIInfo "{5D595C5C6CEB1660}" {
+              Name "#AR-Ammobox_Name"
+              Description "#AR-Ammobox_Name"
+             }
+            }
+           }
+           ActionsManagerComponent "{5D595C5C6CEB17F4}" {
+            Enabled 0
+            ActionContexts {
+             UserActionContext "{5D595C5C6CEB17A2}" {
+              ContextName "default"
+              Position PointInfo "{5D595C5C6CEB17A3}" {
+              }
+              Radius 0.5
+             }
+            }
+            additionalActions {
+             SCR_OpenStorageAction "{5D595C5C6CEB17E9}" {
+              ParentContextList {
+               "default"
+              }
+              UIInfo UIInfo "{5D595C5C6CEB17BA}" {
+               Name "#AR-Inventory_OpenStorage"
+              }
+             }
+            }
+           }
+           RplComponent "{5D595C5C6CEB170F}" {
+            Enabled 0
+           }
+          }
+          coords -2.223 -0.55 3.528
+          Flags 1027
+          {
+           GameEntity {
+            components {
+             SignalsManagerComponent "{5D595C5C7E9C0592}" {
+             }
+             SoundComponent "{5D595C5C7E9C05A0}" {
+              Filenames {
+               "{604B5E7196B51943}Sounds/Props/Military/Camps/Props_LanternMilitary_US_01.acp"
+              }
+             }
+             MeshObject "{5D595C5C7E9C0507}" {
+              Object "{866AB21E4FEE8FB8}Assets/Props/Military/Camps/LanternMilitary_US_01/LanternMilitary_US_01.xob"
+              LODFactors {
+               5 2 1.5 1 1 1
+              }
+             }
+             Hierarchy "{5D595C5C7E9C050F}" {
+             }
+             ParametricMaterialInstanceComponent "{5D595C5C7E9C0509}" {
+             }
+             RigidBody "{5D595C5C7E9C0539}" {
+              ResponseIndex "TinyDestructible"
+              ModelGeometry 1
+              Static 1
+             }
+             SCR_BaseInteractiveLightComponent "{5D595C5C7E9C0559}" {
+              m_aLightData {
+               SCR_BaseLightData "{5D595C5C7E9C055A}" {
+                m_eLightType POINT
+                m_vLightOffset 0 0.2 0
+                m_vLightColor 1 0.893 0.69
+                m_fRadius 4
+                m_fIntensityClipEV -10
+                m_vFlareOffset 0 0.02 0
+                m_fScale 0.2
+                m_eLightFlags 3
+               }
+              }
+              m_bGradualLightning 1
+              m_fLV 2
+              m_eInitialLightState LIT_ON_SPAWN
+             }
+             SCR_DestructionMultiPhaseComponent "{5D595C5C7E9C02CC}" {
+              Enabled 1
+              "Additional hit zones" {
+               ScriptedHitZone Default {
+                HZDefault 1
+                "Melee multiplier" 1
+                "Kinetic multiplier" 1
+                "Explosive multiplier" 90
+                "Incendiary multiplier" 1
+               }
+              }
+              m_fBaseHealth 300
+              m_fForceToDamageScale 350
+              m_DestroySpawnObjects {
+               SCR_DebrisSpawnable "{5D595C5C7E9C0288}" {
+                m_vOffsetPosition 0 0.3 0
+                m_ModelPrefabs {
+                 "{036DF1B9EDCAFADE}Assets/Props/Military/Camps/LanternMilitary_US_01/Dst/LanternMilitary_US_01_DST_01.xob"
+                }
+                m_fMass 3
+                m_fRandomVelocityLinear 1
+                m_eMaterialSoundType METAL_LIGHT
+               }
+               SCR_ParticleSpawnable "{5D595C5C7E9C0290}" {
+                m_Particle "{6A57903619B5C050}Particles/Props/Dest_Prop_Metal_Small.ptc"
+               }
+              }
+             }
+             ActionsManagerComponent "{5D595C5C7E9C0216}" {
+              ActionContexts {
+               UserActionContext "{5D595C5C7E9C02FE}" {
+                ContextName "Switch"
+                Position PointInfo "{5D595C5C7E9C02F0}" {
+                }
+                Radius 1
+               }
+              }
+              additionalActions {
+               SCR_SwitchLightUserAction "{5D595C5C7E9C0217}" {
+                ParentContextList {
+                 "Switch"
+                }
+                Duration 1
+                m_sLightDescription "#AR-UserAction_LanternLightOn"
+                m_sExtinguishDescription "#AR-UserAction_LanternLightOff"
+               }
+              }
+             }
+             RplComponent "{5D595C5C7E9C0227}" {
+              Enabled 1
+             }
+            }
+            coords 0.355 0.82 0.204
+            angleY -129.157
+           }
+           $grp GenericEntity {
+            {
+             components {
+              MeshObject "{5D595C5C7E9C0B12}" {
+               Object "{0DD3F35E0FB3E4C5}Assets/Props/Garbage/Military/Food/GarbageFoodMilitary_01/GarbageFoodMilitaryUS_01.xob"
+               LODFactors {
+                5 2 1.5 1 1 1
+               }
+              }
+              Hierarchy "{5D595C5C7E9C0B1D}" {
+              }
+              RigidBody "{5D595C5C7E9C0B63}" {
+               Mass 3
+               ResponseIndex "TinyDestructible"
+               ModelGeometry 1
+               Static 1
+              }
+              SCR_DestructionMultiPhaseComponent "{5D595C5C7E9C08C0}" {
+               Enabled 0
+               "Additional hit zones" {
+                ScriptedHitZone Default {
+                 HZDefault 1
+                 "Melee multiplier" 1
+                 "Kinetic multiplier" 1
+                 "Explosive multiplier" 90
+                 "Incendiary multiplier" 1
+                }
+               }
+               m_fBaseHealth 700
+               m_fForceToDamageScale 350
+              }
+              RplComponent "{5D595C5C7E9C08E3}" {
+               Enabled 0
+              }
+             }
+             coords -0.146 0.326 -0.315
+             angleY 52.96
+             Flags 1027
+            }
+            {
+             components {
+              SignalsManagerComponent "{5D595C5C7E9C780B}" {
+              }
+              RadioBroadcastSoundComponent "{5D595C5C7E9C781D}" {
+               Filenames {
+                "{0373401D5C6607B1}Sounds/RadioBroadcast/RadioBroadcast.acp"
+               }
+              }
+              MeshObject "{5D595C5C7E9C7872}" {
+               Object "{16B8DF2B48A440A2}Assets/Props/Civilian/RadioSmall_01/RadioSmall_01.xob"
+               LODFactors {
+                5 2 1.5 1 1 1
+               }
+              }
+              Hierarchy "{5D595C5C7E9C787C}" {
+               Enabled 1
+              }
+              RadioBroadcastComponent "{5D595C5C7E9C7998}" {
+               TurnOnAction SCR_TurnOnAction "{5D595C5C7E9C799A}" {
+                ParentContextList {
+                 "SCR_TurnOnAction"
+                }
+               }
+              }
+              RigidBody "{5D595C5C7E9C79D0}" {
+               ResponseIndex "TinyDestructible"
+               ModelGeometry 1
+               Static 1
+              }
+              SCR_DestructionMultiPhaseComponent "{5D595C5C7E9C7914}" {
+               Enabled 0
+               "Additional hit zones" {
+                ScriptedHitZone Default {
+                 HZDefault 1
+                 "Melee multiplier" 1
+                 "Kinetic multiplier" 1
+                 "Explosive multiplier" 90
+                 "Incendiary multiplier" 1
+                }
+               }
+               m_fBaseHealth 700
+               m_fForceToDamageScale 350
+              }
+              ActionsManagerComponent "{5D595C5C7E9C792F}" {
+               ActionContexts {
+                UserActionContext "{5D595C5C7E9C7920}" {
+                 ContextName "SCR_TurnOnAction"
+                 Position PointInfo "{5D595C5C7E9C7921}" {
+                  Offset -0.129 0.0296 0.0486
+                 }
+                 Radius 1.5
+                 Omnidirectional 0
+                }
+               }
+              }
+              RplComponent "{5D595C5C7E9C7931}" {
+               Enabled 1
+              }
+             }
+             coords -0.204 0.784 -1.896
+             angleY 89.9
+            }
+            {
+             components {
+              MeshObject "{5D595C5C7E9C7259}" {
+               Object "{9D1DB9F275B8257B}Assets/Props/Military/AmmoBox/EquipmentBoxStack/EquipmentBoxStack_01_V2_cover.xob"
+               LODFactors {
+                5 2 1.5 1 1 1
+               }
+              }
+              Hierarchy "{5D595C5C7E9C7265}" {
+              }
+              RigidBody "{5D595C5C7E9C739E}" {
+               ResponseIndex "LargeDestructible"
+               ModelGeometry 1
+               Static 1
+              }
+              SCR_DestructionMultiPhaseComponent "{5D595C5C7E9C7307}" {
+               Enabled 0
+               "Additional hit zones" {
+                ScriptedHitZone Default {
+                 HZDefault 1
+                 "Melee multiplier" 1
+                 "Kinetic multiplier" 1
+                 "Explosive multiplier" 90
+                 "Incendiary multiplier" 1
+                }
+               }
+               m_fBaseHealth 800
+               m_fForceToDamageScale 350
+               m_DestroySpawnObjects {
+                SCR_ParticleSpawnable "{5D595C5C7E9C73C0}" {
+                 m_Particle "{CEE298DA573A1161}Particles/Props/Dest_WoodenWall.ptc"
+                }
+               }
+              }
+              RplComponent "{5D595C5C7E9C7313}" {
+               Enabled 0
+              }
+             }
+             Flags 1027
+            }
+           }
+          }
+         }
+         {
+          components {
+           MeshObject "{5D595C5C61B5599A}" {
+            Object "{CE7255186E4F6BDC}Assets/Props/Industrial/BarrelFuel_01/BarrelFuel_01_closed.xob"
+            Materials {
+             MaterialAssignClass "{5D595C5C61B55844}" {
+              SourceMaterial "Barrel_01"
+              AssignedMaterial "{2A56D0918BFDC30A}Assets/Props/Industrial/BarrelFuel_01/Data/Barrel_01.emat"
+             }
+            }
+            LODFactors {
+             5 2 1.5 1 1 1
+            }
+           }
+           Hierarchy "{5D595C5C61B559A5}" {
+            Enabled 1
+           }
+           RigidBody "{5D595C5C61B559D4}" {
+            ResponseIndex "HugeDestructible"
+            ModelGeometry 1
+            Static 1
+           }
+           SCR_DestructionMultiPhaseComponent "{5D595C5C61B55916}" {
+            Enabled 0
+            "Additional hit zones" {
+             ScriptedHitZone Default {
+              HZDefault 1
+              "Melee multiplier" 1
+              "Kinetic multiplier" 1
+              "Explosive multiplier" 90
+              "Incendiary multiplier" 1
+             }
+            }
+            m_fForceToDamageScale 350
+           }
+           RplComponent "{5D595C5C61B55926}" {
+            Enabled 0
+           }
+          }
+          coords -0.012 -0.658 -0.88
+          angleY 53.167
+          Flags 1027
+         }
+        }
+        SCR_DestructibleEntity {
+         components {
+          ClimbingDataComponent "{5D595C5C61B2EE91}" {
+           CanClimbOver 0
+          }
+          MeshObject "{5D595C5C61B2EE02}" {
+           Object "{98B2118173E6033C}Assets/Props/Military/Fortification/BarbedWire/BarbedTape_KnifeRest.xob"
+           LODFactors {
+            70 50 30 10 2 1 1
+           }
+          }
+          Hierarchy "{5D595C5C61B2EE0B}" {
+           Enabled 1
+          }
+          NavmeshCustomLinkComponent "{5D595C5C61B2EE38}" {
+           Enabled 0
+           LinkType NavmeshJumpLink "{5D595C5C61B2EE3A}" {
+            "Navmesh setting presets" {
+             NavmeshCustomLinkSetting "{5D595C5C61B2EE3C}" {
+              ProjectPresets {
+               NavmeshCustomLinkPreset "{5D595C5C61B2EE3D}" {
+                ProjectName "Soldiers"
+                AreaType "Fence"
+               }
+              }
+              BeginPoint 1.5 0 1.5
+              EndPoint 1.5 0 -1.5
+              Radius 0.2
+              QueueDelay 5
+              QueueTimeout 0
+             }
+            }
+           }
+          }
+          RigidBody "{5D595C5C61B2EF83}" {
+           Mass 10
+           ResponseIndex "MediumDestructible"
+           ModelGeometry 1
+           Static 1
+          }
+          SCR_CampaignBuildingCompositionComponent "{5D595C5C61B2EF81}" {
+          }
+         }
+         coords -1.107 -0.682 5.704
+         angleY 93.788
+         Flags 1027
+         MaxHealth 800
+         "Melee multiplier" 5
+         "Kinetic multiplier" 0
+         "Fragmentation multiplier" 10
+         "Explosive multiplier" 0
+         "Incendiary multiplier" 0
+         DamageThreshold 1
+         DestroyAtNoHealth 0
+         FirstDestructionPhase SCR_BaseDestructionPhase "{5D595C5C61B2EFD1}" {
+          m_sPhaseModel "{A4048C2AA75EF832}Common/Models/Default.xob"
+          m_aPhaseDestroySpawnObjects {
+           SCR_DebrisSpawnable "{5D595C5C61B2EFBF}" {
+            m_ModelPrefabs {
+             "{B443576E2F6E19AD}Assets/Structures/Walls/BarbedWire/Dst/BarbedTape_Long_dst_01.xob" "{6577391115B12C31}Assets/Structures/Walls/BarbedWire/Dst/BarbedTape_Long_Dst_02.xob" "{5A57867FC62BC74D}Assets/Structures/Walls/BarbedWire/Dst/BarbedTape_Long_dst_03.xob" "{5D907C2EA0AD7D8E}Assets/Structures/Walls/BarbedWire/Dst/BarbedTape_Long_dst_04.xob" "{2A9A14A6540F92FE}Assets/Structures/Walls/BarbedWire/Dst/BarbedTape_Long_dst_05.xob" "{B384AD3F49E8A36E}Assets/Structures/Walls/BarbedWire/Dst/BarbedTape_Long_dst_06.xob"
+            }
+            m_fMass 5
+            m_eMaterialSoundType METAL_NETFENCE
+           }
+           SCR_ParticleSpawnable "{5D595C5C61B2EFB8}" {
+            m_Particle "{C607AE95F068E50F}Particles/Props/Dest_NetFence.ptc"
+           }
+          }
+         }
+         LastDestructionPhase SCR_BaseDestructionPhase "{5D595C5C61B2EF03}" {
+          Threshold 0
+          m_aPhaseDestroySpawnObjects {
+           SCR_ParticleSpawnable "{5D595C5C61B2EFE0}" {
+            m_vOffsetPosition 0 0.3 0
+            m_vOffsetRotation 0 0 0
+            m_Particle "{061989E41D044A04}Particles/Props/Dest_PoleFence.ptc"
+            m_bAtCenter 1
+            m_bDirectional 1
+           }
+           SCR_DebrisSpawnable "{5D595C5C61B2EFFF}" {
+            m_vOffsetPosition -0.3 0 0
+            m_vOffsetRotation 0 0 0
+            m_ModelPrefabs {
+             "{48F12BEE30BB1FD0}Assets/Props/Military/Fortification/BarbedWire/Dst/BarbedTape_KnifeRest_Dst_01.xob" "{D1EF92772D5C2E40}Assets/Props/Military/Fortification/BarbedWire/Dst/BarbedTape_KnifeRest_Dst_02.xob"
+            }
+            m_fMass 2
+            m_fLifetimeMin 5
+            m_fLifetimeMax 10
+            m_fDistanceMax 200
+            m_fPriority 0
+            m_fDamageToImpulse 0.1
+            m_fMaxDamageToSpeedMultiplier 2
+            m_fRandomVelocityLinear 0.5
+            m_fRandomVelocityAngular 180
+            m_eMaterialSoundType METAL_NETFENCE
+           }
+           SCR_DebrisSpawnable "{5D595C5C61B2EF04}" {
+            m_vOffsetPosition 0 0 0
+            m_vOffsetRotation 0 0 0
+            m_ModelPrefabs {
+             "{A6E5FAFFD9FEC130}Assets/Props/Military/Fortification/BarbedWire/Dst/BarbedTape_KnifeRest_Dst_03.xob" "{A12200AEBF787BF3}Assets/Props/Military/Fortification/BarbedWire/Dst/BarbedTape_KnifeRest_Dst_04.xob" "{D62868264BDA9483}Assets/Props/Military/Fortification/BarbedWire/Dst/BarbedTape_KnifeRest_Dst_05.xob" "{4F36D1BF563DA513}Assets/Props/Military/Fortification/BarbedWire/Dst/BarbedTape_KnifeRest_Dst_06.xob" "{383CB937A29F4A63}Assets/Props/Military/Fortification/BarbedWire/Dst/BarbedTape_KnifeRest_Dst_07.xob" "{40B9251D9B30D095}Assets/Props/Military/Fortification/BarbedWire/Dst/BarbedTape_KnifeRest_Dst_08.xob"
+            }
+            m_fMass 3
+            m_fLifetimeMin 5
+            m_fLifetimeMax 10
+            m_fDistanceMax 200
+            m_fPriority 0
+            m_fDamageToImpulse 0.1
+            m_fMaxDamageToSpeedMultiplier 2
+            m_fRandomVelocityLinear 0.5
+            m_fRandomVelocityAngular 180
+            m_eMaterialSoundType METAL_POLE
+           }
+          }
+         }
+         m_fMomentumToDamageScale 1
+         m_eMaterialSoundType BREAK_METAL_NETFENCE
+        }
+        $grp StaticModelEntity {
+         {
+          components {
+           MeshObject "{5D595C5C61B2D6D5}" {
+            Object "{B119EC6E3C59AF3B}Assets/Structures/Military/Fortifications/DirtMounds/DirtCover_01_long_01.xob"
+            LODFactors {
+             1
+            }
+            ClutterOccluder 1
+           }
+           Hierarchy "{5D595C5C61B2D6D0}" {
+            Enabled 1
+           }
+           RigidBody "{5D595C5C61B2D6DD}" {
+            ModelGeometry 1
+            Static 1
+           }
+           SCR_CampaignBuildingCompositionComponent "{5D595C5C61B2D6DB}" {
+           }
+          }
+          coords -3.392 -0.682 3.337
+          angleY 90
+          Flags 1027
+         }
+         {
+          components {
+           MeshObject "{5D595C5C61B2E5D7}" {
+            Object "{155FCD2AE8BA59A3}Assets/Structures/Military/Fortifications/DirtMounds/DirtCover_01_short.xob"
+            LODFactors {
+             1
+            }
+            ClutterOccluder 1
+           }
+           Hierarchy "{5D595C5C61B2E5D4}" {
+            Enabled 1
+           }
+           RigidBody "{5D595C5C61B2E5DE}" {
+            ModelGeometry 1
+            Static 1
+           }
+           SCR_CampaignBuildingCompositionComponent "{5D595C5C61B2E5DD}" {
+           }
+          }
+          coords -3.348 -0.682 1.591
+          angleY -92.465
+          Flags 1027
+         }
+         {
+          components {
+           MeshObject "{5D595C5C61B2E324}" {
+            Object "{414B875C942EFBE0}Assets/Structures/Military/Fortifications/Dragonsteeth_01/Dragonsteeth_01.xob"
+            Materials {
+             MaterialAssignClass "{5D595C5C61B2E3DB}" {
+              SourceMaterial "Assets/Structures/Military/Fortifications/Dragonsteeth_01/Data/Dragontooth_01"
+              AssignedMaterial "{F2A09FBA6D407D45}Assets/Structures/Military/Fortifications/Dragonsteeth_01/Data/Dragontooth_01_v2.emat"
+             }
+            }
+            LODFactors {
+             250 90 40 20 1 1
+            }
+           }
+           Hierarchy "{5D595C5C61B2E32F}" {
+            Enabled 1
+           }
+           RigidBody "{5D595C5C61B2E32B}" {
+            ModelGeometry 1
+            Static 1
+           }
+           SCR_CampaignBuildingCompositionComponent "{5D595C5C61B2E329}" {
+           }
+          }
+          coords -3.411 -1.044 5.811
+          angleY -51.376
+          Flags 1027
+         }
+         {
+          components {
+           MeshObject "{5D595C5C61B2EB58}" {
+            Object "{414B875C942EFBE0}Assets/Structures/Military/Fortifications/Dragonsteeth_01/Dragonsteeth_01.xob"
+            Materials {
+             MaterialAssignClass "{5D595C5C61B2EB03}" {
+              SourceMaterial "Assets/Structures/Military/Fortifications/Dragonsteeth_01/Data/Dragontooth_01"
+              AssignedMaterial "{F2A09FBA6D407D44}Assets/Structures/Military/Fortifications/Dragonsteeth_01/Data/Dragontooth_01_v3.emat"
+             }
+             MaterialAssignClass "{5D595C5C61B2EB0A}" {
+              SourceMaterial "Common/Materials/ColorPalette/Color_palette_01"
+              AssignedMaterial "{FAB48730D575CC57}Assets/Structures/Military/Fortifications/Dragonsteeth_01/Data/Dragontooth_01_v3_MLOD.emat"
+             }
+            }
+            LODFactors {
+             250 90 40 20 1 1
+            }
+           }
+           Hierarchy "{5D595C5C61B2EB6E}" {
+            Enabled 1
+           }
+           RigidBody "{5D595C5C61B2EB77}" {
+            ModelGeometry 1
+            Static 1
+           }
+           SCR_CampaignBuildingCompositionComponent "{5D595C5C61B2EB75}" {
+           }
+          }
+          coords 1.779 -0.682 5.646
+          angleY 81.675
+          Flags 1027
+         }
+         {
+          components {
+           MeshObject "{5D595C5C699D8071}" {
+            Object "{71FCFED79B3ABBA7}Assets/Props/Military/Furniture/US/TableMilitary_US_01.xob"
+            LODFactors {
+             5 2 1.5 1 1 1
+            }
+           }
+           Hierarchy "{5D595C5C699D8184}" {
+            Enabled 1
+           }
+           RigidBody "{5D595C5C699D81DE}" {
+            Mass 10
+            ResponseIndex "MediumDestructible"
+            ModelGeometry 1
+            Static 1
+           }
+           SCR_DestructionMultiPhaseComponent "{5D595C5C699D8162}" {
+            Enabled 0
+            "Additional hit zones" {
+             ScriptedHitZone Default {
+              HZDefault 1
+              "Melee multiplier" 1
+              "Kinetic multiplier" 1
+              "Explosive multiplier" 90
+              "Incendiary multiplier" 1
+             }
+            }
+            m_fBaseHealth 800
+            m_fForceToDamageScale 350
+            m_fDamageThresholdMaximum 50000
+            m_DestroySpawnObjects {
+             SCR_DebrisSpawnable "{5D595C5C699D8136}" {
+              m_ModelPrefabs {
+               "{6869E68BF373764F}Assets/Props/Military/Furniture/US/Dst/TableMilitary_US_01_dst_02.xob" "{F1775F12EE9447DF}Assets/Props/Military/Furniture/US/Dst/TableMilitary_US_01_dst_01.xob" "{867D379A1A36A8AF}Assets/Props/Military/Furniture/US/Dst/TableMilitary_US_01_dst_00.xob"
+              }
+              m_fMass 3
+              m_eMaterialSoundType WOOD_PLANK_SMALL
+             }
+            }
+           }
+           SCR_SlotCompositionComponent "{5D595C5C699D8174}" {
+            m_bOrientChildrenToTerrain 0
+           }
+           RplComponent "{5D595C5C699DFE89}" {
+            Enabled 1
+           }
+          }
+          coords -2.356 -0.664 1.46
+          angleY 85.27
+          Flags 1027
+          {
+           $grp GenericEntity {
+            {
+             components {
+              MeshObject "{5D595C5C7E9C6CE9}" {
+               Object "{74A0A675F1DD4092}Assets/Props/Civilian/Ashtray_01/Ashtray_01_Full.xob"
+               LODFactors {
+                5 2 1.5 1 1 1
+               }
+              }
+              Hierarchy "{5D595C5C7E9C6CF6}" {
+              }
+              RigidBody "{5D595C5C7E9C6C36}" {
+               Mass 10
+               ResponseIndex "TinyDestructible"
+               ModelGeometry 1
+               Static 1
+              }
+              SCR_DestructionMultiPhaseComponent "{5D595C5C7E9C6C64}" {
+               Enabled 0
+               "Additional hit zones" {
+                ScriptedHitZone Default {
+                 HZDefault 1
+                 "Melee multiplier" 1
+                 "Kinetic multiplier" 1
+                 "Explosive multiplier" 90
+                 "Incendiary multiplier" 1
+                }
+               }
+               m_fBaseHealth 400
+               m_fForceToDamageScale 350
+              }
+              RplComponent "{5D595C5C7E9C6C71}" {
+               Enabled 0
+              }
+             }
+             coords -0.37 0.9 0.128
+             Flags 1027
+            }
+            {
+             components {
+              MeshObject "{5D595C5C7E9C6B9A}" {
+               Object "{0C80EF92ACEB51C9}Assets/Props/Military/Sandbags/Sandbag_01_empty.xob"
+               LODFactors {
+                5 2 1.5 1 1 1
+               }
+               PixelSizeScale 2
+               ClutterOccluder 1
+              }
+              Hierarchy "{5D595C5C7E9C6BA5}" {
+               Enabled 1
+              }
+              NavmeshCustomLinkComponent "{5D595C5C7E9C6B00}" {
+               Enabled 0
+               LinkType NavmeshJumpLink "{5D595C5C7E9C6B02}" {
+                "Navmesh setting presets" {
+                 NavmeshCustomLinkSetting "{5D595C5C7E9C6B04}" {
+                  ProjectPresets {
+                   NavmeshCustomLinkPreset "{5D595C5C7E9C6BE5}" {
+                    ProjectName "Soldiers"
+                    AreaType "Fence"
+                   }
+                  }
+                  BeginPoint 0 0 1.5
+                  EndPoint 0 0 -1.5
+                  Radius 0.2
+                  QueueDelay 5
+                  QueueTimeout 0
+                 }
+                }
+               }
+              }
+              RigidBody "{5D595C5C7E9C6B3F}" {
+               ResponseIndex "TinyDestructible"
+               ModelGeometry 1
+               Static 1
+              }
+              SCR_CampaignBuildingCompositionComponent "{5D595C5C7E9C6B3C}" {
+              }
+              SCR_DestructionMultiPhaseComponent "{5D595C5C7E9C6B68}" {
+               Enabled 0
+               "Additional hit zones" {
+                ScriptedHitZone Default {
+                 HZDefault 1
+                 "Melee multiplier" 1
+                 "Kinetic multiplier" 1
+                 "Explosive multiplier" 90
+                 "Incendiary multiplier" 1
+                }
+               }
+               m_fForceToDamageScale 350
+              }
+              RplComponent "{5D595C5C7E9C6B7A}" {
+               Enabled 0
+              }
+             }
+             coords 0.317 0.9 -0.021
+             angleY 109.713
+             Flags 1027
+            }
+           }
+          }
+         }
+         {
+          components {
+           MeshObject "{5D595C5C61B2DD43}" {
+            Object "{280755F721BE9EAB}Assets/Structures/Military/Fortifications/DirtMounds/DirtCover_01_long_02.xob"
+            LODFactors {
+             1
+            }
+            ClutterOccluder 1
+           }
+           Hierarchy "{5D595C5C61B2DD4E}" {
+            Enabled 1
+           }
+           RigidBody "{5D595C5C61B2DD48}" {
+            ModelGeometry 1
+            Static 1
+           }
+           SCR_CampaignBuildingCompositionComponent "{5D595C5C61B2DD56}" {
+           }
+          }
+          coords -0.007 -0.497 4.719
+          Flags 1027
+         }
+         {
+          components {
+           MeshObject "{5D595C5C61B2E160}" {
+            Object "{155FCD2AE8BA59A3}Assets/Structures/Military/Fortifications/DirtMounds/DirtCover_01_short.xob"
+            LODFactors {
+             1
+            }
+            ClutterOccluder 1
+           }
+           Hierarchy "{5D595C5C61B2E16D}" {
+            Enabled 1
+           }
+           RigidBody "{5D595C5C61B2E169}" {
+            ModelGeometry 1
+            Static 1
+           }
+           SCR_CampaignBuildingCompositionComponent "{5D595C5C61B2E177}" {
+           }
+          }
+          coords -2.55 -0.497 4.812
+          angleY -11.478
+          Flags 1027
+         }
+         {
+          components {
+           MeshObject "{5D595C5C61B2D427}" {
+            Object "{6D4CABF08129A17B}Assets/Props/Military/Furniture/US/ChairMilitary_US_01.xob"
+            LODFactors {
+             5 2 1.5 1 1 1
+            }
+           }
+           Hierarchy "{5D595C5C61B2D422}" {
+            Enabled 1
+           }
+           RigidBody "{5D595C5C61B2D45A}" {
+            Mass 10
+            ResponseIndex "TinyDestructible"
+            ModelGeometry 1
+            Static 1
+           }
+           SCR_DestructionMultiPhaseComponent "{5D595C5C61B2D5B9}" {
+            Enabled 0
+            "Additional hit zones" {
+             ScriptedHitZone Default {
+              HZDefault 1
+              "Melee multiplier" 1
+              "Kinetic multiplier" 1
+              "Explosive multiplier" 90
+              "Incendiary multiplier" 1
+             }
+            }
+            m_fForceToDamageScale 350
+            m_fDamageThresholdMaximum 50000
+            m_DestroySpawnObjects {
+             SCR_DebrisSpawnable "{5D595C5C61B2D58F}" {
+              m_ModelPrefabs {
+               "{BB9D31828C9D3F51}Assets/Props/Military/Furniture/US/Dst/ChairMilitary_US_01_dst_01.xob" "{CC97590A783FD021}Assets/Props/Military/Furniture/US/Dst/ChairMilitary_US_01_dst_00.xob"
+              }
+              m_fMass 1
+              m_eMaterialSoundType METAL_LIGHT
+             }
+            }
+           }
+           RplComponent "{5D595C5C61B2D5D5}" {
+            Enabled 0
+           }
+          }
+          coords -1.544 -0.542 1.803
+          angleY 71.635
+          Flags 1027
+         }
+        }
+        GenericEntity : "{A2DF8D647CF4F7C1}PrefabsEditable/Auto/Compositions/Misc/CustomEntities/CompositionDecals/E_CompositionDecal_Dirt_Patch_04.et" {
+         coords 0.011 -0.594 2.166
+        }
+        GenericEntity : "{D82A0B2502D9CB14}Prefabs/Compositions/Misc/CustomEntities/CompositionDecals/CompositionDecal_Dirt_Patch_06.et" {
+         coords 1.305 -0.628 0.064
+         {
+          DecalEntity {
+           ID "56E0B29E1E7CD512"
+           coords -3.118 0.011 0.608
+           angleX -90
+           angleY -180
+           angleZ -180
+          }
+         }
+        }
+       }
+      }
+      $grp GenericEntity : "{C1977A326F2AA011}Prefabs/Structures/Signs/Military/SignCheckpoint_01_stop.et" {
+       {
+        coords 7.856 0.25 -19.313
+        angleX 0.554
+        angleY 160.966
+        angleZ -1.138
+        {
+         $grp StaticModelEntity : "{DA1B42FB9AEC02BE}Prefabs/Structures/Military/Fortifications/Dragontooth_01/Dragontooth_01_V3.et" {
+          {
+           components {
+            Hierarchy "{569E7A0B051BE497}" {
+             Enabled 1
+            }
+           }
+           coords -0.107 -0.094 -5.505
+           angleY -89.227
+          }
+          {
+           components {
+            Hierarchy "{569E7A0B051BE497}" {
+             Enabled 1
+            }
+           }
+           coords -0.036 -0.165 -3.398
+           angleY -89.227
+          }
+          {
+           components {
+            Hierarchy "{569E7A0B051BE497}" {
+             Enabled 1
+            }
+           }
+           coords -0.04 -0.079 -1.108
+           angleY -89.227
+          }
+         }
+        }
+       }
+       {
+        coords -4.794 -0.027 32.652
+        angleX -0.76
+        angleY -8.096
+        angleZ 1.012
+        {
+         $grp StaticModelEntity : "{DA1B42FB9AEC02BE}Prefabs/Structures/Military/Fortifications/Dragontooth_01/Dragontooth_01_V3.et" {
+          {
+           components {
+            Hierarchy "{569E7A0B051BE497}" {
+             Enabled 1
+            }
+           }
+           coords -0.037 -0.325 -3.399
+           angleY -89.227
+          }
+          {
+           components {
+            Hierarchy "{569E7A0B051BE497}" {
+             Enabled 1
+            }
+           }
+           coords -0.109 -0.255 -5.507
+           angleY -89.227
+          }
+          {
+           components {
+            Hierarchy "{569E7A0B051BE497}" {
+             Enabled 1
+            }
+           }
+           coords -0.04 -0.241 -1.109
+           angleY -89.227
+          }
+         }
+        }
+       }
+      }
+      $grp GenericEntity : "{CD67070EFAFC28C7}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_burlap.et" {
+       {
+        coords 1.094 0.138 -20.823
+        angleX -0.5
+        angleY -21.737
+        angleZ 1.163
+        {
+         StaticModelEntity : "{55A3DA68E58453A1}Prefabs/Structures/Military/Fortifications/DirtCover_01/DirtCover_01_long_v2.et" {
+          components {
+           Hierarchy "{569E7A0B050E37A5}" {
+            Enabled 1
+           }
+          }
+          coords -2.117 -0.169 -0.196
+          angleY 0.597
+         }
+         StaticModelEntity : "{8B7B5323534404A7}Prefabs/Structures/Military/Fortifications/Dragontooth_01/Dragontooth_01_V2.et" {
+          components {
+           Hierarchy "{569E7A0B050C16A3}" {
+            Enabled 1
+           }
+          }
+          coords 1.39 0.161 -0.96
+          angleY -27.565
+         }
+         GenericEntity : "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et" {
+          coords -2.733 -0.08 -0.018
+         }
+        }
+       }
+       {
+        coords 1.377 -0.235 32.037
+        angleX -0.817
+        angleY -4.789
+        angleZ 0.967
+        {
+         GenericEntity : "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et" {
+          coords 2.645 0.019 -0.013
+         }
+         StaticModelEntity : "{DA1B42FB9AEC02BE}Prefabs/Structures/Military/Fortifications/Dragontooth_01/Dragontooth_01_V3.et" {
+          components {
+           Hierarchy "{569E7A0B051B62F4}" {
+            Enabled 1
+           }
+          }
+          coords -0.754 0.094 0.708
+          angleY 151.57
+          Flags 1048576
+         }
+        }
+       }
+      }
+     }
+    }
+    A3_StaticUnits {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       m_eActivationType ON_AREA_TRIGGER_ACTIVATION
+      }
+     }
+     coords 0 0 0
+     {
+      $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+       SlotAI_1 {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sObjectToSpawn "{8E0FE664CE7D1CA9}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_GL.et"
+          m_aWaypointGroupNames {
+           SCR_WaypointSet "{5D5A16DD9D3C1376}" {
+            m_sName "Slot_A3_wp_defend_1"
+           }
+          }
+         }
+        }
+        coords 15.386 1.254 -15.243
+        angleY 159.305
+       }
+       SlotAI_2 {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sObjectToSpawn "{96C784C502AC37DA}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_MG.et"
+          m_aWaypointGroupNames {
+           SCR_WaypointSet "{5D5A16DDAAEACB59}" {
+            m_sName "Slot_A3_wp_defend_1"
+           }
+          }
+         }
+        }
+        coords 13.956 1.324 -15.759
+        angleY 162.107
+       }
+       SlotAI_3 {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sObjectToSpawn "{8E0FE664CE7D1CA9}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_GL.et"
+          m_aWaypointGroupNames {
+           SCR_WaypointSet "{5D5A9E0253A38C3D}" {
+            m_sName "Slot_A3_wp_defend_2"
+           }
+          }
+         }
+        }
+        coords -10.053 0.302 23.026
+        angleY 70.376
+       }
+       SlotAI_4 {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sObjectToSpawn "{23ADBBC31B6A3DC6}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_AR.et"
+          m_aWaypointGroupNames {
+           SCR_WaypointSet "{5D5A9E024BD6FFF5}" {
+            m_sName "Slot_A3_wp_defend_2"
+           }
+          }
+         }
+        }
+        coords 1.729 0.038 30.508
+        angleX -0.41
+        angleY -103.229
+        angleZ -1.742
+       }
+      }
+     }
+    }
+    A3_Waypoints {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+      }
+     }
+     coords 0 0 0
+     {
+      GenericEntity A3_wp_set_1 : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+       coords 0 0 0
+       {
+        $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+         A3_wp_1_4 {
+          components {
+           SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+            m_sObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+           }
+          }
+          coords 25.177 1.164 -17.551
+          angleX 0.892
+          angleY -0.07
+          angleZ -5.356
+         }
+         A3_wp_1_5 {
+          components {
+           SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+            m_sObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+           }
+          }
+          coords 11.794 1.864 40.939
+          angleX 10.618
+          angleY 0.196
+          angleZ 1.78
+         }
+         A3_wp_1_1 {
+          components {
+           SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+            m_sObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+           }
+          }
+          coords -20.046 -0.36 35.684
+          angleX 11.503
+          angleY -0.461
+          angleZ -1.86
+         }
+         A3_wp_1_2 {
+          components {
+           SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+            m_sObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+           }
+          }
+          coords -27.647 -1.082 8.907
+          angleX 9.718
+          angleY 0.349
+          angleZ 2.685
+         }
+         A3_wp_1_3 {
+          components {
+           SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+            m_sObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+           }
+          }
+          coords -10.064 -2.29 -32.027
+          angleX 8.816
+          angleY 0.486
+          angleZ 3.585
+         }
+        }
+       }
+      }
+      $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+       Slot_A3_wp_defend_1 {
+        components {
+         SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+          m_sObjectToSpawn "{BBD7AB0B1069FE0A}Prefabs/AI/Waypoints/EM_AIWaypoint_Defend_15m.et"
+         }
+        }
+        coords 7.207 0.184 -17.321
+        angleX 10.614
+        angleY -0.292
+        angleZ -0.942
+       }
+       Slot_A3_wp_defend_2 {
+        components {
+         SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+          m_sObjectToSpawn "{BBD7AB0B1069FE0A}Prefabs/AI/Waypoints/EM_AIWaypoint_Defend_15m.et"
+         }
+        }
+        coords -4.205 0.01 28.279
+       }
+      }
+     }
+    }
+    A3_Groups {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       m_eActivationType ON_AREA_TRIGGER_ACTIVATION
+      }
+     }
+     coords 0 0 0
+     {
+      GenericEntity : "{64B06C9676461725}Prefabs/ScenarioFramework/Components/EM_SlotAI.et" {
+       components {
+        EM_SF_SlotAI "{5D4364623E9E05E2}" {
+         m_sObjectToSpawn "{96BAB56E6558788E}Prefabs/Groups/OPFOR/Group_USSR_Team_AT.et"
+         m_aWaypointGroupNames {
+          SCR_WaypointSet "{5D4E8ADAD54CF53A}" {
+           m_sName "A3_wp_set_1"
+           m_bCycleWaypoints 1
+          }
+         }
+         m_bSpawnAIOnWPPos 1
+        }
+       }
+       coords 4.614 1.658 40.907
+       angleX 6.015
+       angleY -5.772
+       angleZ -40.931
+      }
+     }
+    }
+    A3_Smart {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+      }
+     }
+     coords -9.07 4.403 20.127
+     angleX -0.895
+     angleY -0.014
+     angleZ 0.895
+     {
+      GenericEntity {
+       components {
+        SCR_AISmartActionSentinelComponent "{5D5A9E032B457522}" {
+         AIBehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost.bt"
+         Tags {
+          "ObservationPost"
+         }
+         ActionOffset 6.262 0 0
+         m_vLookPosition -4.797 0 -3.801
+         m_iCharacterStance CROUCH
+        }
+        SCR_AISmartActionSentinelComponent "{5D5A9E06BE287A01}" {
+         AIBehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost.bt"
+         Tags {
+          "ObservationPost"
+         }
+         ActionOffset -8.03 0 -1.971
+         m_vLookPosition 0 0 -7.872
+         m_fLookDirectionRange 90
+         m_iCharacterStance CROUCH
+        }
+        SCR_AISmartActionSentinelComponent "{5D5A9E06EDD7B479}" {
+         AIBehaviorTree "{12B4838160EDE026}AI/BehaviorTrees/SmartActions/SA_CoverPost.bt"
+         Tags {
+          "CoverPost"
+         }
+         ActionOffset 0.46 0 -4.533
+         m_vLookPosition -0.971 0 6.705
+         m_iCharacterStance CROUCH
+        }
+       }
+       coords 4.657 -4.165 10.48
+       Flags 1027
+      }
+     }
+    }
+   }
+  }
+ }
+ A4_CheckpointAirfield {
+  components {
+   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+    m_sTriggerResource "{FF958FE1DB5710FB}Prefabs/ScenarioFramework/Triggers/EM_SF_TriggerAnyPlayer_5s.et"
+    m_fAreaRadius 600
+    m_bShowDebugShapesInWorkbench 1
+   }
+  }
+  coords 4950.654 27.77 10743.371
+  angleX 1.207
+  angleY 27.403
+  angleZ -0.383
+  {
+   GenericEntity A4_AmmoBox : "{0D96DBCE1B0A42D2}Prefabs/Systems/Arsenal/AmmoBoxes/USSR/EM_AmmoBox_Empty_USSR.et" {
+    coords 6.907 -0.219 8.466
+    angleX 0.309
+    angleY -120.883
+    angleZ -1.227
+   }
+   $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+    A4_Vehicles {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       m_eActivationType ON_AREA_TRIGGER_ACTIVATION
+      }
+     }
+     coords 0 0 0
+     {
+      GenericEntity Slot_7 : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sObjectToSpawn "{D9B91FAB817A6033}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_transport_covered.et"
+        }
+       }
+       coords 7.575 -0.687 28.261
+       angleX 0.53
+       angleY -126.126
+       angleZ 1.962
+      }
+     }
+    }
+    A4_Structures {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+      }
+     }
+     coords 0 0 0
+     {
+      SCR_DestructibleEntity : "{0E14405B63358ABF}PrefabsEditable/Auto/Structures/Signs/Military/E_Sign_Warzone_USSR_01.et" {
+       coords 58.603 2.863 -80.894
+       angleX 0.643
+       angleY 138.128
+       angleZ -1.09
+      }
+      StaticModelEntity : "{6A171AC105BA5A2B}PrefabLibrary/Props/Military/Dragonsteeth_01/Dragonsteeth_01_V2.et" {
+       coords -11.024 2.892 -29.519
+       angleX -2.31
+       angleY -177.774
+       angleZ 5.875
+       {
+        $grp StaticModelEntity : "{633BA5C65A652FB5}PrefabLibrary/Props/Military/Dragonsteeth_01/Dragonsteeth_01_old_V2.et" {
+         {
+          coords -1.209 -0.063 -2.19
+          angleX 3.132
+          angleY 0.604
+          angleZ -5.453
+         }
+         {
+          coords 5.292 0.306 1.533
+          angleX -4.195
+          angleY 0.896
+          angleZ -3.418
+         }
+         {
+          coords 8.708 0.582 3.49
+          angleX -2.204
+          angleY 0.617
+          angleZ -3.292
+         }
+         {
+          coords 11.834 0.886 5.396
+          angleX -4.957
+          angleY 1.044
+          angleZ -3.875
+         }
+         {
+          coords 15.188 1.27 7.434
+          angleX -3.145
+          angleY 1.208
+          angleZ -6.978
+         }
+         {
+          coords 18.295 1.698 9.097
+          angleX -1.909
+          angleY 1.631
+          angleZ -12.523
+         }
+         {
+          coords 21.671 2.266 11.03
+          angleX -0.558
+          angleY 1.465
+          angleZ -14.83
+         }
+         {
+          coords 24.382 2.772 12.7
+          angleX 0.201
+          angleY 1.353
+          angleZ -14.371
+         }
+         {
+          coords 27.756 3.347 14.633
+          angleX -1.151
+          angleY 1.508
+          angleZ -12.062
+         }
+         {
+          coords 30.848 3.845 16.288
+          angleX -2.057
+          angleY 1.557
+          angleZ -10.517
+         }
+         {
+          coords 34.23 4.336 18.226
+          angleX -3.433
+          angleY 1.509
+          angleZ -8.202
+         }
+         {
+          coords 40.708 5.129 22.168
+          angleX -3.857
+          angleY 0.535
+          angleZ -2.173
+         }
+         {
+          coords 43.824 5.404 23.838
+          angleX -3.865
+          angleY 0.739
+          angleZ -2.201
+         }
+         {
+          coords 47.131 5.684 25.962
+          angleX -4.961
+          angleY 0.984
+          angleZ -3.87
+         }
+         {
+          coords 37.312 4.762 20.222
+          angleX -3.599
+          angleY 1.214
+          angleZ -6.21
+         }
+         {
+          coords 50.104 5.951 27.78
+          angleX -5.846
+          angleY 0.918
+          angleZ -2.309
+         }
+         {
+          coords 53.555 6.278 29.643
+          angleX -6.611
+          angleY 0.969
+          angleZ -2.755
+         }
+         {
+          coords 56.626 6.585 31.401
+          angleX -9.038
+          angleY 0.979
+          angleZ -2.073
+         }
+         {
+          coords 60.03 6.891 33.352
+          angleX -6.621
+          angleY 0.756
+          angleZ -2.73
+         }
+         {
+          coords 66.532 7.304 37.306
+          angleX -9.24
+          angleY 0.359
+          angleZ 1.98
+         }
+         {
+          coords 69.622 7.516 39.076
+          angleX -7.938
+          angleY 0.59
+          angleZ -0.38
+         }
+         {
+          coords 72.972 7.772 41.112
+          angleX -6.82
+          angleY 0.314
+          angleZ 1.289
+         }
+         {
+          coords 63.118 7.089 35.351
+          angleX -4.394
+          angleY 0.258
+          angleZ 0.597
+         }
+         {
+          coords 79.226 8.222 44.578
+          angleX -5.859
+          angleY 0.595
+          angleZ -2.276
+         }
+         {
+          coords 82.263 8.463 46.435
+          angleX -5.85
+          angleY 0.808
+          angleZ -2.298
+         }
+         {
+          coords 85.712 8.719 48.294
+          angleX -7.838
+          angleY 1.179
+          angleZ -2.453
+         }
+         {
+          coords 92.164 9.219 52.337
+          angleX -7.703
+          angleY 1.445
+          angleZ -4.481
+         }
+         {
+          coords 95.299 9.477 54.017
+          angleX -8.906
+          angleY 1.643
+          angleZ -4.166
+         }
+         {
+          coords 98.701 9.794 55.966
+          angleX -6.31
+          angleY 1.883
+          angleZ -6.846
+         }
+         {
+          coords 88.816 8.937 50.303
+          angleX -9.037
+          angleY 1.026
+          angleZ -2.08
+         }
+         {
+          coords 75.769 7.954 42.714
+          angleX -7.937
+          angleY 0.608
+          angleZ -0.383
+         }
+         {
+          coords 101.612 10.103 57.173
+          angleX -9.017
+          angleY 2.445
+          angleZ -7.481
+         }
+         {
+          coords 105.007 10.495 59.117
+          angleX -7.598
+          angleY 2.733
+          angleZ -9.814
+         }
+         {
+          coords 108.067 10.898 60.87
+          angleX -7.408
+          angleY 2.966
+          angleZ -11.838
+         }
+         {
+          coords 111.449 11.405 62.808
+          angleX -4.719
+          angleY 3.078
+          angleZ -14.422
+         }
+         {
+          coords 117.888 12.552 66.727
+          angleX -2.65
+          angleY 2.567
+          angleZ -16.204
+         }
+         {
+          coords 120.978 13.137 68.383
+          angleX -3.567
+          angleY 2.665
+          angleZ -14.679
+         }
+         {
+          coords 124.296 13.776 70.397
+          angleX -2.636
+          angleY 2.616
+          angleZ -16.206
+         }
+         {
+          coords 114.521 11.912 64.798
+          angleX -6.183
+          angleY 3.498
+          angleZ -15.378
+         }
+         {
+          coords 130.491 14.763 73.832
+          angleX -10.107
+          angleY 1.942
+          angleZ -3.899
+         }
+         {
+          coords 133.583 14.881 75.604
+          angleX -14.486
+          angleY 1.07
+          angleZ 1.922
+         }
+         {
+          coords 136.927 14.739 77.749
+          angleX -21.775
+          angleY 0.151
+          angleZ 6.06
+         }
+         {
+          coords 143.512 14.92 81.636
+          angleX -10.691
+          angleY 2.699
+          angleZ 6.998
+         }
+         {
+          coords 146.646 15.104 83.317
+          angleX -3.904
+          angleY 6.751
+          angleZ 3.833
+         }
+         {
+          coords 150.002 15.389 85.354
+          angleX -0.978
+          angleY 4.672
+          angleZ -1.691
+         }
+         {
+          coords 140.146 14.73 79.594
+          angleX -18.803
+          angleY -7.82
+          angleZ 18.114
+         }
+         {
+          coords 127.056 14.29 71.979
+          angleX -0.469
+          angleY 1.803
+          angleZ -14.833
+         }
+         {
+          coords 2.218 0.106 -0.228
+          angleX -3.549
+          angleY 0.584
+          angleZ -0.978
+         }
+        }
+        $grp StaticModelEntity : "{6A171AC105BA5A2B}PrefabLibrary/Props/Military/Dragonsteeth_01/Dragonsteeth_01_V2.et" {
+         {
+          coords 6.448 0.397 3.81
+          angleX -4.229
+          angleY 0.339
+          angleZ -3.378
+         }
+         {
+          coords 12.987 1.015 7.671
+          angleX -4.549
+          angleY 0.509
+          angleZ -4.602
+         }
+         {
+          coords 19.429 1.929 11.36
+          angleX 0.345
+          angleY 0.542
+          angleZ -13.169
+         }
+         {
+          coords 25.608 3.056 14.785
+          angleX -0.42
+          angleY 0.713
+          angleZ -13.601
+         }
+         {
+          coords 31.99 4.068 18.557
+          angleX -2.627
+          angleY 0.929
+          angleZ -9.724
+         }
+         {
+          coords 38.505 4.899 22.403
+          angleX -4.552
+          angleY 0.464
+          angleZ -4.599
+         }
+         {
+          coords 44.971 5.503 26.108
+          angleX -4.675
+          angleY 0.262
+          angleZ -2.599
+         }
+         {
+          coords 51.31 6.055 29.97
+          angleX -5.871
+          angleY 0.28
+          angleZ -2.244
+         }
+         {
+          coords 57.775 6.664 33.674
+          angleX -7.94
+          angleY 0.274
+          angleZ -0.337
+         }
+         {
+          coords 64.29 7.125 37.636
+          angleX -9.14
+          angleY 0.229
+          angleZ 0.016
+         }
+         {
+          coords 70.822 7.583 41.263
+          angleX -5.941
+          angleY -0.114
+          angleZ -0.213
+         }
+         {
+          coords 76.979 8.008 44.905
+          angleX -7.506
+          angleY -0.009
+          angleZ -1.073
+         }
+         {
+          coords 83.463 8.534 48.62
+          angleX -9.495
+          angleY 0.55
+          angleZ -1.236
+         }
+         {
+          coords 89.966 9.015 52.575
+          angleX -10.591
+          angleY 1
+          angleZ -2.942
+         }
+         {
+          coords 96.446 9.577 56.288
+          angleX -8.948
+          angleY 1.061
+          angleZ -4.076
+         }
+         {
+          coords 102.822 10.242 59.364
+          angleX -7.581
+          angleY 1.474
+          angleZ -6.453
+         }
+         {
+          coords 109.212 11.093 63.14
+          angleX -4.146
+          angleY 2.23
+          angleZ -13.891
+         }
+         {
+          coords 115.696 12.213 66.97
+          angleX -2.386
+          angleY 1.877
+          angleZ -16.933
+         }
+         {
+          coords 122.104 13.429 70.642
+          angleX -0.892
+          angleY 1.498
+          angleZ -16.032
+         }
+         {
+          coords 128.287 14.539 74.067
+          angleX -1.173
+          angleY 0.875
+          angleZ -14.052
+         }
+         {
+          coords 134.754 14.759 77.888
+          angleX -17.772
+          angleY -0.782
+          angleZ 6.533
+         }
+         {
+          coords 141.301 14.835 81.868
+          angleX -13.664
+          angleY -11.708
+          angleZ 13.321
+         }
+         {
+          coords 147.802 15.211 85.592
+          angleX 0.428
+          angleY -0.462
+          angleZ -0.728
+         }
+        }
+        $grp StaticModelEntity : "{9834AC906ADB48F5}PrefabLibrary/Props/Military/Dragonsteeth_01/Dragonsteeth_01_old.et" {
+         {
+          coords 2.877 0.137 1.879
+          angleX 1.435
+          angleY 115.405
+          angleZ -1.04
+         }
+         {
+          coords 9.362 0.66 5.593
+          angleX 5.578
+          angleY 115.346
+          angleZ -2.909
+         }
+         {
+          coords 15.83 1.374 9.529
+          angleX 8.696
+          angleY 115.503
+          angleZ 1.473
+         }
+         {
+          coords 22.254 2.454 13.209
+          angleX 13.516
+          angleY 116.29
+          angleZ 6.91
+         }
+         {
+          coords 28.448 3.53 16.643
+          angleX 11.162
+          angleY 115.477
+          angleZ 1.861
+         }
+         {
+          coords 34.876 4.489 20.325
+          angleX 7.438
+          angleY 115.298
+          angleZ 1.239
+         }
+         {
+          coords 41.314 5.189 24.359
+          angleX 4.13
+          angleY 115.461
+          angleZ -1.856
+         }
+         {
+          coords 47.845 5.744 27.985
+          angleX 4.551
+          angleY 115.6
+          angleZ -4.339
+         }
+         {
+          coords 54.162 6.335 31.834
+          angleX 5.686
+          angleY 115.591
+          angleZ -7.335
+         }
+         {
+          coords 60.7 6.896 35.465
+          angleX 2.592
+          angleY 115.803
+          angleZ -3.992
+         }
+         {
+          coords 67.155 7.284 39.509
+          angleX 4.468
+          angleY 115.807
+          angleZ -7.516
+         }
+         {
+          coords 73.635 7.76 43.221
+          angleX 5.194
+          angleY 115.704
+          angleZ -8.054
+         }
+         {
+          coords 79.836 8.241 46.772
+          angleX 3.496
+          angleY 115.468
+          angleZ -5.798
+         }
+         {
+          coords 86.334 8.717 50.495
+          angleX 6.102
+          angleY 115.407
+          angleZ -9.846
+         }
+         {
+          coords 92.823 9.251 54.443
+          angleX 7.419
+          angleY 115.197
+          angleZ -6.46
+         }
+         {
+          coords 99.297 9.866 58.152
+          angleX 7.893
+          angleY 114.844
+          angleZ -5.782
+         }
+         {
+          coords 105.666 10.601 61.224
+          angleX 11.587
+          angleY 114.854
+          angleZ -0.747
+         }
+         {
+          coords 112.093 11.56 64.906
+          angleX 15.122
+          angleY 114.914
+          angleZ 1.071
+         }
+         {
+          coords 118.477 12.768 68.909
+          angleX 15.748
+          angleY 115.592
+          angleZ 5.143
+         }
+         {
+          coords 124.937 13.969 72.493
+          angleX 15.236
+          angleY 115.681
+          angleZ 4.478
+         }
+         {
+          coords 131.096 14.757 76.021
+          angleX 5.311
+          angleY 114.971
+          angleZ -9.376
+         }
+         {
+          coords 137.657 14.574 79.78
+          angleX 0.812
+          angleY 115.712
+          angleZ -24.363
+         }
+         {
+          coords 144.124 15.01 83.832
+          angleX -1.955
+          angleY 115.584
+          angleZ -7.4
+         }
+        }
+       }
+      }
+      GenericEntity : "{6DF32F9976E68515}Prefabs/Compositions/Slotted/SlotFlatMedium/VehicleMaintenance_M_USSR_01.et" {
+       coords 12.93 -0.769 27.005
+       angleX 0.749
+       angleY -108.666
+       angleZ 1.021
+       {
+        GenericEntity {
+         ID "5A5AB0496039BA97"
+         coords 9.079 -0.248 4.988
+         angleX 0.885
+         angleY -89.999
+         angleZ 0.136
+        }
+        GenericEntity {
+         ID "5A5AB0496039B36A"
+         coords 7.441 -0.219 3.81
+         angleX -0.915
+         angleY 82.576
+         angleZ 0.874
+        }
+        StaticModelEntity {
+         ID "5A5AB0496039B3E5"
+         coords 7.315 -0.216 2.807
+         angleX 0.53
+         angleY -44.997
+         angleZ 0.722
+        }
+        StaticModelEntity {
+         ID "5A5AB0496039BB5F"
+         coords 10.022 0.158 -7.288
+        }
+       }
+      }
+      $grp StaticModelEntity : "{732A335C72D8ADE2}Prefabs/Props/Military/Sandbags/Sandbag_01_bunker_burlap_foundation.et" {
+       {
+        coords 14.53 1.025 -14.904
+        angleX 0.629
+        angleY 164.769
+        angleZ -1.099
+        {
+         GenericEntity {
+          ID "5A532DCF487275B2"
+          coords 0 0.1 0
+         }
+         GenericEntity {
+          ID "5A532DCF78E7126A"
+          components {
+           SCR_AISmartActionSentinelComponent "{54D6F8392982FA5D}" {
+            AIBehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost.bt"
+            Tags {
+             "ObservationPost"
+            }
+            m_vLookPosition 6.78 0.254 11.792
+           }
+           SCR_AISmartActionSentinelComponent "{58B284D8A6BB7761}" {
+            m_iCharacterStance CROUCH
+           }
+           SCR_AISmartActionSentinelComponent "{58B284D8DAFC3BE2}" {
+            Tags {
+             "ObservationPost"
+            }
+            m_vLookPosition -4.108 2.91 32.511
+           }
+          }
+         }
+         $grp StaticModelEntity : "{55A3DA68E58453A1}Prefabs/Structures/Military/Fortifications/DirtCover_01/DirtCover_01_long_v2.et" {
+          {
+           components {
+            Hierarchy "{569E7A0B050E37A5}" {
+             Enabled 1
+            }
+           }
+           coords -2.201 -0.449 0.67
+           angleY -87.635
+          }
+          {
+           components {
+            Hierarchy "{569E7A0B050E37A5}" {
+             Enabled 1
+            }
+           }
+           coords -3.645 -0.267 -1.317
+           angleY 170.668
+          }
+          {
+           components {
+            Hierarchy "{569E7A0B050E37A5}" {
+             Enabled 1
+            }
+           }
+           coords -0.184 -0.838 2.298
+           angleY 179.346
+          }
+          {
+           components {
+            Hierarchy "{569E7A0B050E37A5}" {
+             Enabled 1
+            }
+           }
+           coords -6.125 -0.258 -2.646
+           angleX 0.599
+           angleY -40.846
+           angleZ 0.028
+          }
+         }
+         $grp StaticModelEntity : "{8B7B5323534404A7}Prefabs/Structures/Military/Fortifications/Dragontooth_01/Dragontooth_01_V2.et" {
+          {
+           components {
+            Hierarchy "{569E7A0B050C16A3}" {
+             Enabled 1
+            }
+           }
+           coords 2.296 -1.022 2.972
+           angleY -117.796
+          }
+          {
+           components {
+            Hierarchy "{569E7A0B050C16A3}" {
+             Enabled 1
+            }
+           }
+           coords -1.497 -0.825 2.881
+           angleY -169.559
+          }
+         }
+         $grp GenericEntity : "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et" {
+          {
+           coords -3.489 -0.974 -1.756
+           angleY 173.493
+          }
+          {
+           coords -5.697 -1.124 -2.711
+           angleX 0.594
+           angleY -35.599
+           angleZ 0.083
+          }
+         }
+         SCR_DestructibleEntity : "{DDF59362051B28BC}Prefabs/Props/Military/Fortification/BarbedTape_KnifeRest.et" {
+          components {
+           Hierarchy "{569E7A0B051A7F4D}" {
+            Enabled 1
+           }
+          }
+          coords 0.46 -0.915 2.937
+          angleY -89.677
+         }
+        }
+       }
+       {
+        coords -5.501 3.471 -25.693
+        angleX 1.95
+        angleY 157.93
+        angleZ -1.616
+        {
+         GenericEntity {
+          ID "5A532DCF487275B2"
+          coords 0 0.1 0
+         }
+         GenericEntity {
+          ID "5A532DCF78E7126A"
+          components {
+           SCR_AISmartActionSentinelComponent "{54D6F8392982FA5D}" {
+            AIBehaviorTree "{BC53D77D23308CD6}AI/BehaviorTrees/SmartActions/SA_ObservationPost.bt"
+            Tags {
+             "ObservationPost"
+            }
+            m_vLookPosition 6.78 0.254 11.792
+           }
+           SCR_AISmartActionSentinelComponent "{58B284D8A6BB7761}" {
+            m_iCharacterStance CROUCH
+           }
+           SCR_AISmartActionSentinelComponent "{58B284D8DAFC3BE2}" {
+            Tags {
+             "ObservationPost"
+            }
+            m_vLookPosition -4.108 2.91 32.511
+           }
+          }
+         }
+         $grp StaticModelEntity : "{55A3DA68E58453A1}Prefabs/Structures/Military/Fortifications/DirtCover_01/DirtCover_01_long_v2.et" {
+          {
+           components {
+            Hierarchy "{569E7A0B050E37A5}" {
+             Enabled 1
+            }
+           }
+           coords -2.201 -1.191 0.67
+           angleY -87.635
+          }
+          {
+           components {
+            Hierarchy "{569E7A0B050E37A5}" {
+             Enabled 1
+            }
+           }
+           coords -3.646 -1.598 -1.315
+           angleY 170.668
+          }
+          {
+           components {
+            Hierarchy "{569E7A0B050E37A5}" {
+             Enabled 1
+            }
+           }
+           coords -0.184 -0.838 2.298
+           angleY 179.346
+          }
+          {
+           components {
+            Hierarchy "{569E7A0B050E37A5}" {
+             Enabled 1
+            }
+           }
+           coords -7.467 -1.991 -1.837
+           angleX -0.664
+           angleY -18.728
+           angleZ 1.078
+          }
+         }
+         $grp GenericEntity : "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et" {
+          {
+           coords -3.49 -2.017 -1.756
+           angleY 173.493
+          }
+          {
+           coords -6.131 -2.58 -1.997
+           angleX -0.97
+           angleY -0.365
+           angleZ 0.814
+          }
+         }
+         GenericEntity : "{CD67070EFAFC28C7}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_burlap.et" {
+          coords -11.453 -2.911 -2.129
+          angleX 1.459
+          angleY -179.708
+          angleZ -0.442
+          {
+           StaticModelEntity : "{55A3DA68E58453A1}Prefabs/Structures/Military/Fortifications/DirtCover_01/DirtCover_01_long_v2.et" {
+            components {
+             Hierarchy "{569E7A0B050E37A5}" {
+              Enabled 1
+             }
+            }
+            coords -1.105 0.461 0.082
+            angleY 0.597
+           }
+           StaticModelEntity : "{8B7B5323534404A7}Prefabs/Structures/Military/Fortifications/Dragontooth_01/Dragontooth_01_V2.et" {
+            components {
+             Hierarchy "{569E7A0B050C16A3}" {
+              Enabled 1
+             }
+            }
+            coords 1.39 0.092 -0.959
+            angleY -27.565
+           }
+           GenericEntity : "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et" {
+            coords -2.733 -0.08 -0.018
+           }
+          }
+         }
+         $grp SCR_DestructibleEntity : "{DDF59362051B28BC}Prefabs/Props/Military/Fortification/BarbedTape_KnifeRest.et" {
+          {
+           components {
+            Hierarchy "{569E7A0B051A7F4D}" {
+             Enabled 1
+            }
+           }
+           coords -11.01 -2.865 -0.856
+           angleY -89.677
+          }
+          {
+           components {
+            Hierarchy "{569E7A0B051A7F4D}" {
+             Enabled 1
+            }
+           }
+           coords -4.703 -2.432 -0.474
+           angleX -0.827
+           angleY 88.869
+           angleZ -0.959
+          }
+          {
+           components {
+            Hierarchy "{569E7A0B051A7F4D}" {
+             Enabled 1
+            }
+           }
+           coords -7.8 -2.717 -0.752
+           angleX -0.847
+           angleY 87.664
+           angleZ -0.942
+          }
+         }
+        }
+       }
+      }
+      GenericEntity : "{894A1AFDCB71CD0D}Prefabs/Compositions/Misc/CustomEntities/CompositionDecals/CompositionDecal_Dirt_Patch_02.et" {
+       coords 1.32 -0.155 8.96
+       angleX -0.895
+       angleY -27.413
+       angleZ 0.895
+       {
+        DecalEntity {
+         ID "56DEFDB4A9499F9B"
+         coords 5.005 0 -2.979
+        }
+       }
+      }
+      $grp GenericEntity : "{8F29AB6B2BC31074}PrefabLibrary/Props/Infrastructure/RoadBlock_01.et" {
+       {
+        coords 10.538 0.194 -16.75
+        angleX -0.092
+        angleY -21.515
+        angleZ 0.89
+       }
+       {
+        coords 7.057 0.23 -18.137
+        angleX 0
+        angleY -21.514
+       }
+      }
+      GenericEntity : "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et" {
+       coords -15.937 -1.304 -2.048
+       angleX -1.231
+       angleY 58.54
+       angleZ -0.296
+       {
+        $grp GenericEntity : "{9C9C4BED9E19C374}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_solid_burlap.et" {
+         {
+          coords 2.772 0.049 0.25
+         }
+         {
+          coords 5.452 -0.158 0.43
+         }
+         {
+          coords 8.226 -0.344 0.68
+         }
+         {
+          coords -11.872 0.157 0.156
+          angleY -6.898
+         }
+        }
+       }
+      }
+      DecalEntity : "{9EE74738BD9E8CDB}Prefabs/Decals/Dirt/Decal_Dirt_Tracks_02.et" {
+       components {
+        Hierarchy "{56E0B29FD1BC7A6F}" {
+        }
+       }
+       coords -11.661 -0.504 16.882
+       angleX -88.733
+       angleY -135.007
+       angleZ 118.639
+       FarPlane 1.5
+       Stretch 2
+      }
+      GenericEntity : "{C1977A326F2AA011}Prefabs/Structures/Signs/Military/SignCheckpoint_01_stop.et" {
+       coords 13.019 0.174 -19.639
+       angleX 0.554
+       angleY 160.966
+       angleZ -1.138
+      }
+     }
+    }
+    A4_StaticUnits {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       m_eActivationType ON_AREA_TRIGGER_ACTIVATION
+      }
+     }
+     coords 0 0 0
+     {
+      $grp GenericEntity : "{8D43830F02C3F114}Prefabs/ScenarioFramework/Components/SlotAI.et" {
+       {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sObjectToSpawn "{8E0FE664CE7D1CA9}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_GL.et"
+          m_aWaypointGroupNames {
+           SCR_WaypointSet "{5D5A16DD9D3C1376}" {
+            m_sName "Slot_A3_wp_defend_1"
+           }
+          }
+         }
+        }
+        coords 15.386 1.254 -15.243
+        angleY 159.305
+       }
+       {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sObjectToSpawn "{96C784C502AC37DA}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_MG.et"
+          m_aWaypointGroupNames {
+           SCR_WaypointSet "{5D5A16DDAAEACB59}" {
+            m_sName "Slot_A3_wp_defend_1"
+           }
+          }
+         }
+        }
+        coords 13.956 1.324 -15.759
+        angleY 162.107
+       }
+       {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sObjectToSpawn "{8E0FE664CE7D1CA9}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_GL.et"
+          m_aWaypointGroupNames {
+           SCR_WaypointSet "{5D5A9E0253A38C3D}" {
+           }
+          }
+          m_sWPToSpawn "{4729B051DD20F04F}Prefabs/AI/Waypoints/EM_AIWaypoint_DefendPoint.et"
+         }
+        }
+        coords -5.879 3.745 -26.415
+        angleX 2.77
+        angleY 159.289
+        angleZ -0.575
+       }
+       {
+        components {
+         SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+          m_sObjectToSpawn "{23ADBBC31B6A3DC6}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_AR.et"
+          m_aWaypointGroupNames {
+           SCR_WaypointSet "{5D5A9E024BD6FFF5}" {
+            m_sName "Slot_A3_wp_defend_2"
+           }
+          }
+          m_sWPToSpawn "{4729B051DD20F04F}Prefabs/AI/Waypoints/EM_AIWaypoint_DefendPoint.et"
+         }
+        }
+        coords -4.517 3.686 -25.805
+        angleX -1.857
+        angleY 162.046
+        angleZ -3.997
+       }
+      }
+     }
+    }
+    A4_Waypoints {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+      }
+     }
+     coords 0 0 0
+     {
+      GenericEntity A4_wp_set_1 : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+       coords 0 0 0
+       {
+        $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+         {
+          components {
+           SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+            m_sObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+           }
+          }
+          coords -10.222 2.736 -35.662
+          angleX 2.864
+          angleY -0.236
+          angleZ -5.547
+         }
+         {
+          components {
+           SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+            m_sObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+           }
+          }
+          coords -131.629 0.682 -97.286
+         }
+        }
+       }
+      }
+     }
+    }
+    A4_Groups {
+     components {
+      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+       m_eActivationType ON_AREA_TRIGGER_ACTIVATION
+      }
+     }
+     coords 0 0 0
+     {
+      GenericEntity : "{64B06C9676461725}Prefabs/ScenarioFramework/Components/EM_SlotAI.et" {
+       components {
+        EM_SF_SlotAI "{5D4364623E9E05E2}" {
+         m_sObjectToSpawn "{96BAB56E6558788E}Prefabs/Groups/OPFOR/Group_USSR_Team_AT.et"
+         m_aWaypointGroupNames {
+          SCR_WaypointSet "{5D4E8ADAD54CF53A}" {
+           m_sName "A4_wp_set_1"
+           m_bUseRandomOrder 1
+           m_bCycleWaypoints 1
+          }
+         }
+         m_bSpawnAIOnWPPos 1
+        }
+       }
+       coords -11.756 2.571 -36.988
+       angleX 5.308
+       angleY 70.196
+       angleZ 0.712
       }
      }
     }

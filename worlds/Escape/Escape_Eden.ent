@@ -4,7 +4,7 @@ SubScene {
 Layer default {
  Index 0
 }
-Layer modules {
+Layer managers {
  Index 1
 }
 Layer markers {
