@@ -24,6 +24,8 @@ GenericEntity : "{E712306EC1913041}Prefabs/Systems/Arsenal/AmmoBoxes/AmmoBoxArse
    }
    additionalActions {
     SCR_SaveArsenalLoadout "{5B12C7AE552AEDD7}" {
+     ParentContextList {
+     }
     }
    }
   }
