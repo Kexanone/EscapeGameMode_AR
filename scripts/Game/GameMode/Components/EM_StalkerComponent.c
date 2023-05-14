@@ -63,8 +63,10 @@ class EM_StalkerComponent : ScriptComponent
 			ClearStalkers();
 			return;
 		};
-				
-		m_stalkerWaypoint.SetOrigin(player.GetOrigin());
+
+		vector pos = player.GetOrigin();
+		pos[1] = SCR_TerrainHelper.GetTerrainY(pos);
+		m_stalkerWaypoint.SetOrigin(pos);
 		
 		foreach (SCR_AIGroup group : m_Stalkers)
 		{
