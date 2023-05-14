@@ -32,15 +32,16 @@ $grp GenericEntity {
   }
   coords 4950.747 27.728 10728.35
  }
- LocationUnknown3 {
+ LocationEtoupeFarm {
   components {
    EM_MapMarkerComponent "{5D2ED34DC869F2F9}" {
+    Enabled 0
     m_sImageQuadName "em_unknown"
     m_color 0 0 0 1
     m_fSize 0.5
    }
   }
-  coords 4995.816 25.343 9957.697
+  coords 4976.1 25.875 9912.271
  }
  LocationEntreDeux {
   components {
@@ -52,9 +53,10 @@ $grp GenericEntity {
   }
   coords 5753.708 218.037 7055.838
  }
- LocationUnknown2 {
+ LocationGorey {
   components {
    EM_MapMarkerComponent "{5D2ED34DC869F2F9}" {
+    Enabled 0
     m_sImageQuadName "em_unknown"
     m_color 0 0 0 1
     m_fSize 0.5
@@ -62,9 +64,10 @@ $grp GenericEntity {
   }
   coords 4859.721 111.069 8091.283
  }
- LocationUnknown4 {
+ LocationChotainBase {
   components {
    EM_MapMarkerComponent "{5D2ED34DC869F2F9}" {
+    Enabled 0
     m_sImageQuadName "em_unknown"
     m_color 0 0 0 1
     m_fSize 0.5
@@ -82,9 +85,10 @@ $grp GenericEntity {
   }
   coords 4888.233 28.595 11816.635
  }
- LocationUnknown5 {
+ LocationMontignacIndustrial {
   components {
    EM_MapMarkerComponent "{5D2ED34DC869F2F9}" {
+    Enabled 0
     m_sImageQuadName "em_unknown"
     m_color 0 0 0 1
     m_fSize 0.5
@@ -92,7 +96,7 @@ $grp GenericEntity {
   }
   coords 4555.26 156.188 6891.583
  }
- LocationUnknown6 {
+ LocationLacansHead {
   components {
    EM_MapMarkerComponent "{5D2ED34DC869F2F9}" {
     m_sImageQuadName "em_unknown"
@@ -100,13 +104,12 @@ $grp GenericEntity {
     m_fSize 0.5
    }
   }
-  coords 5605.38 54.938 9149.359
-  angleX -0.895
-  angleZ -15.707
+  coords 5608.524 54.938 9149.288
  }
- LocationUnknown7 {
+ LocationStPhillipeHarbour {
   components {
    EM_MapMarkerComponent "{5D2ED34DC869F2F9}" {
+    Enabled 0
     m_sImageQuadName "em_unknown"
     m_color 0 0 0 1
     m_fSize 0.5

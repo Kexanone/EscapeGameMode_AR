@@ -1,0 +1,37 @@
+$grp GenericEntity : "{44850546B9F6F8E6}Prefabs/ScenarioFramework/Compositions/Everon/EM_Area_USSR_ReconQRF.et" {
+ EM_Area_USSR_ReconQRF_1 {
+  components {
+   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+    m_fAreaRadius 350
+   }
+  }
+  coords 5598.21 31.608 9417.35
+  angleX -4.468
+  angleY -0.14
+  angleZ 6.26
+ }
+ EM_Area_USSR_ReconQRF_2 {
+  components {
+   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+    m_fAreaRadius 350
+   }
+  }
+  coords 4821.02 117.157 8070.23
+ }
+ EM_Area_USSR_ReconQRF_3 {
+  components {
+   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+    m_fAreaRadius 523.429
+   }
+  }
+  coords 5396.946 10.531 8704.875
+ }
+ EM_Area_USSR_ReconQRF_4 {
+  components {
+   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+    m_fAreaRadius 300
+   }
+  }
+  coords 5212.77 22.226 9771.04
+ }
+}

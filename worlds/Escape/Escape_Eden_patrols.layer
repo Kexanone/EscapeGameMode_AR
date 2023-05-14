@@ -1,13 +1,10 @@
-$grp GenericEntity : "{350EE4325BB6C9E1}Prefabs/ScenarioFramework/Compositions/EM_Area_USSR_Patrol.et" {
+$grp GenericEntity : "{350EE4325BB6C9E1}Prefabs/ScenarioFramework/Compositions/Everon/EM_Area_USSR_Patrol.et" {
  {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
    }
   }
-  coords 5024.57 163.923 7244.78
-  angleX -13.392
-  angleY -0.256
-  angleZ 2.717
+  coords 5136.78 175.734 7045.31
  }
  {
   coords 6695.016 146.002 7730.12
@@ -18,8 +15,6 @@ $grp GenericEntity : "{350EE4325BB6C9E1}Prefabs/ScenarioFramework/Compositions/E
    }
   }
   coords 5325.8 25.892 8368.28
-  angleX -29.358
-  angleZ 4.671
  }
  {
   components {
@@ -27,8 +22,72 @@ $grp GenericEntity : "{350EE4325BB6C9E1}Prefabs/ScenarioFramework/Compositions/E
    }
   }
   coords 4541.808 80.687 8493.21
-  angleX 8.026
-  angleY -0.461
-  angleZ -23.958
+ }
+ {
+  coords 5297.56 26.391 9367.367
+ }
+ {
+  coords 5385.576 18.245 9982.972
+ }
+ {
+  coords 4504.74 13.901 9476.46
+ }
+ {
+  coords 5264.33 38.665 11349.1
+  {
+   GenericEntity {
+    ID "5D42DB314148824D"
+    coords -7.415 0.749 0.162
+    {
+     GenericEntity {
+      ID "5D42DB3141488248"
+      coords 0 0 0
+     }
+     GenericEntity {
+      ID "5D42DB3141488249"
+      coords 0 0 0
+     }
+     GenericEntity {
+      ID "5D42DB314148F042"
+      coords 0 0 0
+     }
+     GenericEntity {
+      ID "5D42DB314148F045"
+      coords -19.753 -18.302 0.954
+     }
+     GenericEntity {
+      ID "5D42DB314148F05E"
+      coords 0 0 0
+     }
+     GenericEntity {
+      ID "5D42DB31414926A9"
+      coords 0 0 0
+     }
+    }
+   }
+  }
+ }
+ {
+  coords 4910.57 35.949 9101.87
+  angleX -0.895
+  angleZ -0.895
+  {
+   GenericEntity {
+    ID "5D42DB314148824D"
+    {
+     GenericEntity {
+      ID "5D42DB3141488248"
+      coords 4.021 0 5.099
+     }
+    }
+   }
+  }
+ }
+ {
+  components {
+   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+   }
+  }
+  coords 4527.65 41.591 11929.7
  }
 }

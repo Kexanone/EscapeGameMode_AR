@@ -1,0 +1,7 @@
+SCR_DoorOpenerEntity {
+ coords 4764.894 187.908 6988.134
+ angleX -0.895
+ angleY -27.414
+ angleZ 0.896
+ m_fRadius 5
+}
