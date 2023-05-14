@@ -343,7 +343,7 @@ SCR_BaseGameMode GameModeEscape : "{087AE647D1755635}Prefabs/MP/Modes/EM_GameMod
    m_iPenaltySubstractionPoints 2
   }
   SCR_PlayerSpawnPointManagerComponent "{5D3A7783EC1F84B8}" {
-   m_SpawnPointPrefab "{4677BB7DA4611B8A}Prefabs/MP/Spawning/EM_PlayerSpawnPoint.et.et"
+   m_SpawnPointPrefab "{4677BB7DA4611B8A}Prefabs/MP/Spawning/EM_PlayerSpawnPoint.et"
   }
   SCR_RespawnBriefingComponent "{5A234AD99EE3348B}" {
    m_aWinConditions {
