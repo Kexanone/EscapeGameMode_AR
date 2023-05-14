@@ -338,11 +338,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
         components {
          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
           m_sObjectToSpawn "{976AC400219898FA}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Sharpshooter.et"
-          m_aWaypointGroupNames {
-           SCR_WaypointSet "{5D5A9E024BD6FFF5}" {
-            m_sName "A1_wp_defend_1"
-           }
-          }
           m_sWPToSpawn "{4729B051DD20F04F}Prefabs/AI/Waypoints/EM_AIWaypoint_DefendPoint.et"
          }
         }
@@ -403,11 +398,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
         components {
          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
           m_sObjectToSpawn "{976AC400219898FA}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Sharpshooter.et"
-          m_aWaypointGroupNames {
-           SCR_WaypointSet "{5D5A9E024BD6FFF5}" {
-            m_sName "A1_wp_defend_1"
-           }
-          }
           m_sWPToSpawn "{4729B051DD20F04F}Prefabs/AI/Waypoints/EM_AIWaypoint_DefendPoint.et"
          }
         }
@@ -428,11 +418,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
         components {
          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
           m_sObjectToSpawn "{8E0FE664CE7D1CA9}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_GL.et"
-          m_aWaypointGroupNames {
-           SCR_WaypointSet "{5D5A9E024BD6FFF5}" {
-            m_sName "A1_wp_defend_1"
-           }
-          }
           m_sWPToSpawn "{4729B051DD20F04F}Prefabs/AI/Waypoints/EM_AIWaypoint_DefendPoint.et"
          }
         }
@@ -443,11 +428,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
         components {
          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
           m_sObjectToSpawn "{976AC400219898FA}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Sharpshooter.et"
-          m_aWaypointGroupNames {
-           SCR_WaypointSet "{5D5A9E024BD6FFF5}" {
-            m_sName "A1_wp_defend_1"
-           }
-          }
           m_sWPToSpawn "{4729B051DD20F04F}Prefabs/AI/Waypoints/EM_AIWaypoint_DefendPoint.et"
          }
         }
@@ -458,11 +438,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
         components {
          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
           m_sObjectToSpawn "{96C784C502AC37DA}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_MG.et"
-          m_aWaypointGroupNames {
-           SCR_WaypointSet "{5D5A9E024BD6FFF5}" {
-            m_sName "A1_wp_defend_1"
-           }
-          }
           m_sWPToSpawn "{4729B051DD20F04F}Prefabs/AI/Waypoints/EM_AIWaypoint_DefendPoint.et"
          }
         }
@@ -473,11 +448,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
         components {
          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
           m_sObjectToSpawn "{23ADBBC31B6A3DC6}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_AR.et"
-          m_aWaypointGroupNames {
-           SCR_WaypointSet "{5D5A9E024BD6FFF5}" {
-            m_sName "A1_wp_defend_1"
-           }
-          }
           m_sWPToSpawn "{4729B051DD20F04F}Prefabs/AI/Waypoints/EM_AIWaypoint_DefendPoint.et"
          }
         }
@@ -488,11 +458,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
         components {
          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
           m_sObjectToSpawn "{DCB41B3746FDD1BE}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Rifleman.et"
-          m_aWaypointGroupNames {
-           SCR_WaypointSet "{5D5A9E024BD6FFF5}" {
-            m_sName "A1_wp_defend_1"
-           }
-          }
           m_sWPToSpawn "{4729B051DD20F04F}Prefabs/AI/Waypoints/EM_AIWaypoint_DefendPoint.et"
          }
         }
@@ -503,26 +468,16 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
         components {
          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
           m_sObjectToSpawn "{8E0FE664CE7D1CA9}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_GL.et"
-          m_aWaypointGroupNames {
-           SCR_WaypointSet "{5D5A9E024BD6FFF5}" {
-            m_sName "A1_wp_defend_1"
-           }
-          }
           m_sWPToSpawn "{4729B051DD20F04F}Prefabs/AI/Waypoints/EM_AIWaypoint_DefendPoint.et"
          }
         }
-        coords 9.972 9.431 -105.869
+        coords 9.972 10.009 -105.868
         angleY 130.661
        }
        {
         components {
          SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
           m_sObjectToSpawn "{1C78331E156A3D65}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_AT.et"
-          m_aWaypointGroupNames {
-           SCR_WaypointSet "{5D5A9E024BD6FFF5}" {
-            m_sName "A1_wp_defend_1"
-           }
-          }
           m_sWPToSpawn "{4729B051DD20F04F}Prefabs/AI/Waypoints/EM_AIWaypoint_DefendPoint.et"
          }
         }
@@ -547,21 +502,18 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           {
            components {
             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+             m_sObjectToSpawn "{C0A9A9B589802A5B}PrefabsEditable/Auto/AI/Waypoints/E_AIWaypoint_Patrol.et"
             }
            }
-           coords -70.79 -4.76 126.874
-           angleX -1.79
-           angleZ -0.895
+           coords -70.79 -3.842 126.874
           }
           {
            components {
             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+             m_sObjectToSpawn "{C0A9A9B589802A5B}PrefabsEditable/Auto/AI/Waypoints/E_AIWaypoint_Patrol.et"
             }
            }
-           coords -76.644 0.233 -205.023
-           angleZ -0.895
+           coords -76.644 0.587 -205.023
           }
          }
         }
@@ -573,21 +525,18 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           {
            components {
             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+             m_sObjectToSpawn "{C0A9A9B589802A5B}PrefabsEditable/Auto/AI/Waypoints/E_AIWaypoint_Patrol.et"
             }
            }
            coords -9.388 -2.395 68.994
-           angleX -1.79
-           angleZ -0.895
           }
           {
            components {
             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+             m_sObjectToSpawn "{C0A9A9B589802A5B}PrefabsEditable/Auto/AI/Waypoints/E_AIWaypoint_Patrol.et"
             }
            }
            coords -5.224 -2.395 -122.371
-           angleZ -0.895
           }
          }
         }
@@ -599,45 +548,30 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           {
            components {
             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+             m_sObjectToSpawn "{C0A9A9B589802A5B}PrefabsEditable/Auto/AI/Waypoints/E_AIWaypoint_Patrol.et"
             }
            }
            coords -2.695 0.083 49.635
-           angleX -1.789
-           angleY -0.056
-           angleZ 0.896
           }
           {
            components {
             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+             m_sObjectToSpawn "{C0A9A9B589802A5B}PrefabsEditable/Auto/AI/Waypoints/E_AIWaypoint_Patrol.et"
             }
            }
-           coords 3.012 0.133 -240.836
-           angleX 1.79
-           angleZ -0.895
+           coords 3.012 0.009 -240.836
           }
          }
         }
        }
       }
-      $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
-       A1_wp_defend_1 {
-        components {
-         SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-          m_sObjectToSpawn "{BBD7AB0B1069FE0A}Prefabs/AI/Waypoints/EM_AIWaypoint_Defend_15m.et"
-         }
+      GenericEntity wp_test : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sObjectToSpawn "{B049D4C74FBC0C4D}Prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
         }
-        coords -27.151 -4.164 -33.899
        }
-       wp_test {
-        components {
-         SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-          m_sObjectToSpawn "{B049D4C74FBC0C4D}Prefabs/AI/Waypoints/AIWaypoint_GetInNearest.et"
-         }
-        }
-        coords -141.009 -0.084 -89.863
-       }
+       coords -141.009 -0.084 -89.863
       }
      }
     }
@@ -657,7 +591,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           m_aWaypointGroupNames {
            SCR_WaypointSet "{5D4E8ADAD54CF53A}" {
             m_sName "A1_wp_set_1"
-            m_bUseRandomOrder 1
             m_bCycleWaypoints 1
            }
           }
@@ -675,7 +608,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           m_aWaypointGroupNames {
            SCR_WaypointSet "{5D4E8ADAD54CF53A}" {
             m_sName "A1_wp_set_2"
-            m_bUseRandomOrder 1
             m_bCycleWaypoints 1
            }
           }
@@ -694,7 +626,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           m_aWaypointGroupNames {
            SCR_WaypointSet "{5D4E8ADAD54CF53A}" {
             m_sName "A1_wp_set_3"
-            m_bUseRandomOrder 1
             m_bCycleWaypoints 1
            }
           }
@@ -715,20 +646,9 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
      }
      coords 0 0 0
      {
-      $grp SCR_DoorOpenerEntity {
-       {
-        coords 75.433 -0.284 79.956
-        m_fRadius 5
-       }
-       {
-        coords 84.417 -0.197 -32.549
-        angleZ -0.895
-        m_fRadius 5
-       }
-       {
-        coords 48.24 -0.024 44.686
-        m_fRadius 5
-       }
+      SCR_DoorOpenerEntity {
+       coords 48.24 -0.024 44.686
+       m_fRadius 5
       }
       SCR_DestructibleBuildingEntity : "{F6FC9703E7F4FDCA}Prefabs/Structures/Military/Houses/ControlTowerMilitary_E_01/ControlTowerMilitary_E_01.et" {
        coords -57.991 0.599 -103.543
@@ -985,18 +905,18 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           {
            components {
             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+             m_sObjectToSpawn "{C0A9A9B589802A5B}PrefabsEditable/Auto/AI/Waypoints/E_AIWaypoint_Patrol.et"
             }
            }
-           coords -61.814 1.427 29.911
+           coords -61.814 1.426 29.911
           }
           {
            components {
             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+             m_sObjectToSpawn "{C0A9A9B589802A5B}PrefabsEditable/Auto/AI/Waypoints/E_AIWaypoint_Patrol.et"
             }
            }
-           coords 92.961 -4.476 -19.646
+           coords 92.961 -4.487 -19.646
           }
          }
         }
@@ -1008,26 +928,26 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           {
            components {
             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+             m_sObjectToSpawn "{C0A9A9B589802A5B}PrefabsEditable/Auto/AI/Waypoints/E_AIWaypoint_Patrol.et"
             }
            }
-           coords 16.81 -17.472 -89.378
+           coords 16.81 -12.267 -89.378
           }
           {
            components {
             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+             m_sObjectToSpawn "{C0A9A9B589802A5B}PrefabsEditable/Auto/AI/Waypoints/E_AIWaypoint_Patrol.et"
             }
            }
-           coords -175.262 -14.885 -121.933
+           coords -175.262 -22.145 -121.933
           }
           {
            components {
             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+             m_sObjectToSpawn "{C0A9A9B589802A5B}PrefabsEditable/Auto/AI/Waypoints/E_AIWaypoint_Patrol.et"
             }
            }
-           coords -137.092 -3.476 42.4
+           coords -137.092 -4.517 42.4
           }
          }
         }
@@ -1051,7 +971,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           m_aWaypointGroupNames {
            SCR_WaypointSet "{5D4E8ADAD54CF53A}" {
             m_sName "A2_wp_set_1"
-            m_bUseRandomOrder 1
             m_bCycleWaypoints 1
            }
           }
@@ -1068,6 +987,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           m_aWaypointGroupNames {
            SCR_WaypointSet "{5D4E8ADBA285A188}" {
             m_sName "A2_wp_set_2"
+            m_bCycleWaypoints 1
            }
           }
           m_bSpawnAIOnWPPos 1
@@ -2886,57 +2806,42 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
          A3_wp_1_4 {
           components {
            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-            m_sObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sObjectToSpawn "{C0A9A9B589802A5B}PrefabsEditable/Auto/AI/Waypoints/E_AIWaypoint_Patrol.et"
            }
           }
-          coords 25.177 1.164 -17.551
-          angleX 0.892
-          angleY -0.07
-          angleZ -5.356
+          coords 25.177 1.162 -17.551
          }
          A3_wp_1_5 {
           components {
            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-            m_sObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sObjectToSpawn "{C0A9A9B589802A5B}PrefabsEditable/Auto/AI/Waypoints/E_AIWaypoint_Patrol.et"
            }
           }
-          coords 11.794 1.864 40.939
-          angleX 10.618
-          angleY 0.196
-          angleZ 1.78
+          coords 11.794 1.864 40.938
          }
          A3_wp_1_1 {
           components {
            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-            m_sObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sObjectToSpawn "{C0A9A9B589802A5B}PrefabsEditable/Auto/AI/Waypoints/E_AIWaypoint_Patrol.et"
            }
           }
           coords -20.046 -0.36 35.684
-          angleX 11.503
-          angleY -0.461
-          angleZ -1.86
          }
          A3_wp_1_2 {
           components {
            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-            m_sObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sObjectToSpawn "{C0A9A9B589802A5B}PrefabsEditable/Auto/AI/Waypoints/E_AIWaypoint_Patrol.et"
            }
           }
-          coords -27.647 -1.082 8.907
-          angleX 9.718
-          angleY 0.349
-          angleZ 2.685
+          coords -27.647 -1.084 8.907
          }
          A3_wp_1_3 {
           components {
            SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-            m_sObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+            m_sObjectToSpawn "{C0A9A9B589802A5B}PrefabsEditable/Auto/AI/Waypoints/E_AIWaypoint_Patrol.et"
            }
           }
-          coords -10.064 -2.29 -32.027
-          angleX 8.816
-          angleY 0.486
-          angleZ 3.585
+          coords -10.064 -2.294 -32.028
          }
         }
        }
@@ -4220,21 +4125,18 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           {
            components {
             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+             m_sObjectToSpawn "{C0A9A9B589802A5B}PrefabsEditable/Auto/AI/Waypoints/E_AIWaypoint_Patrol.et"
             }
            }
-           coords -10.222 2.736 -35.662
-           angleX 2.864
-           angleY -0.236
-           angleZ -5.547
+           coords -10.222 2.736 -35.661
           }
           {
            components {
             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+             m_sObjectToSpawn "{C0A9A9B589802A5B}PrefabsEditable/Auto/AI/Waypoints/E_AIWaypoint_Patrol.et"
             }
            }
-           coords -131.629 0.682 -97.286
+           coords -131.629 0.683 -97.286
           }
          }
         }
@@ -4249,24 +4151,18 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           {
            components {
             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+             m_sObjectToSpawn "{C0A9A9B589802A5B}PrefabsEditable/Auto/AI/Waypoints/E_AIWaypoint_Patrol.et"
             }
            }
-           coords -97.87 -8.464 -5.618
-           angleX 1.979
-           angleY 0.713
-           angleZ -12.569
+           coords -97.871 -8.465 -5.619
           }
           {
            components {
             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+             m_sObjectToSpawn "{C0A9A9B589802A5B}PrefabsEditable/Auto/AI/Waypoints/E_AIWaypoint_Patrol.et"
             }
            }
-           coords 141.509 7.593 97.961
-           angleX 11.816
-           angleY 3.135
-           angleZ -14.981
+           coords 141.508 7.593 97.96
           }
          }
         }
@@ -4290,7 +4186,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           m_aWaypointGroupNames {
            SCR_WaypointSet "{5D4E8ADAD54CF53A}" {
             m_sName "A4_wp_set_1"
-            m_bUseRandomOrder 1
             m_bCycleWaypoints 1
            }
           }
@@ -4309,7 +4204,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           m_aWaypointGroupNames {
            SCR_WaypointSet "{5D4E8ADAD54CF53A}" {
             m_sName "A4_wp_set_2"
-            m_bUseRandomOrder 1
             m_bCycleWaypoints 1
            }
           }
@@ -4765,6 +4659,10 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
   }
   coords 4792.092 167.536 7027.382
   {
+   SCR_DoorOpenerEntity {
+    coords -23.797 21.004 -38.379
+    m_fRadius 2.5
+   }
    $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
     A7_Groups {
      components {
@@ -4782,7 +4680,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           m_aWaypointGroupNames {
            SCR_WaypointSet "{5D4E8ADAD54CF53A}" {
             m_sName "A7_wp_set_1"
-            m_bUseRandomOrder 1
             m_bCycleWaypoints 1
            }
           }
@@ -4798,6 +4695,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           m_aWaypointGroupNames {
            SCR_WaypointSet "{5D4E8ADBA285A188}" {
             m_sName "A7_wp_set_2"
+            m_bCycleWaypoints 1
            }
           }
           m_bSpawnAIOnWPPos 1
@@ -4826,24 +4724,18 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           {
            components {
             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+             m_sObjectToSpawn "{C0A9A9B589802A5B}PrefabsEditable/Auto/AI/Waypoints/E_AIWaypoint_Patrol.et"
             }
            }
            coords 99.119 3.43 20.929
-           angleX -2.685
-           angleY 0.028
-           angleZ -4.474
           }
           {
            components {
             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+             m_sObjectToSpawn "{C0A9A9B589802A5B}PrefabsEditable/Auto/AI/Waypoints/E_AIWaypoint_Patrol.et"
             }
            }
            coords -156.813 -7.031 -105.852
-           angleX 6.254
-           angleY -0.238
-           angleZ -6.275
           }
          }
         }
@@ -4855,24 +4747,18 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           {
            components {
             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+             m_sObjectToSpawn "{C0A9A9B589802A5B}PrefabsEditable/Auto/AI/Waypoints/E_AIWaypoint_Patrol.et"
             }
            }
-           coords 64.877 -2.472 -127.564
-           angleX 11.579
-           angleY 0.493
-           angleZ 8.076
+           coords 64.877 -2.473 -127.564
           }
           {
            components {
             SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
-             m_sObjectToSpawn "{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et"
+             m_sObjectToSpawn "{C0A9A9B589802A5B}PrefabsEditable/Auto/AI/Waypoints/E_AIWaypoint_Patrol.et"
             }
            }
            coords -36.758 -6.734 147.722
-           angleX 1.79
-           angleY -0.028
-           angleZ -0.896
           }
          }
         }
