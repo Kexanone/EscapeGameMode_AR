@@ -49,10 +49,10 @@ class EM_NoSpawnDefeatComponent : ScriptComponent
 	
 	void OnPlayerDisconnected(int playerId, KickCauseCode cause, int timeout)
 	{
-		Handler();
+		Handler(playerId);
 	};
 	
-	void Handler(void param1 = NULL, void param2 = NULL, void param3 = NULL)
+	void Handler(int playerId, void param1 = NULL, void param2 = NULL)
 	{
 		if (m_RespawnSystem.IsRespawnEnabled())
 		{
@@ -63,7 +63,10 @@ class EM_NoSpawnDefeatComponent : ScriptComponent
 			};
 		};
 		
-		if (!EM_Utils.GetPlayers(true).IsEmpty())
+		array<IEntity> alivePlayers = EM_Utils.GetPlayers(true);
+		alivePlayers.RemoveItem(GetGame().GetPlayerManager().GetPlayerControlledEntity(playerId));
+		
+		if (!alivePlayers.IsEmpty())
 			return; // There are still players alive
 		
 		GetGame().GetCallqueue().CallLater(m_GameMode.EndGameMode, 5000, false, SCR_GameModeEndData.CreateSimple(m_iGameOverType));
