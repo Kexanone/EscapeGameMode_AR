@@ -66,6 +66,6 @@ class EM_NoSpawnDefeatComponent : ScriptComponent
 		if (!EM_Utils.GetPlayers(true).IsEmpty())
 			return; // There are still players alive
 		
-		GetGame().GetCallqueue().Call(m_GameMode.EndGameMode, SCR_GameModeEndData.CreateSimple(m_iGameOverType));
+		GetGame().GetCallqueue().CallLater(m_GameMode.EndGameMode, 5000, false, SCR_GameModeEndData.CreateSimple(m_iGameOverType));
 	};
 };
