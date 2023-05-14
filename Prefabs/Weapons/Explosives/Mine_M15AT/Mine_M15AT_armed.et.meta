@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{AC0FD502C6D3C5C4}Prefabs/Weapons/Explosives/Mine_M15AT/Mine_M15AT_armed.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}
