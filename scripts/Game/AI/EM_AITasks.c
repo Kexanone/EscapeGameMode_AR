@@ -22,24 +22,27 @@ class EM_AITasks
 		formationHandler.SetFormation("Column");
 		
 		vector prevPos = group.GetLeaderEntity().GetOrigin();
+		prevPos[1] = SCR_TerrainHelper.GetTerrainY(prevPos);
 		
+		array<AIWaypoint> wpList = {};
 		int i = 1;
+		
 		while (i <= count)
 		{
 			vector pos = m_RandomGenerator.GenerateRandomPointInRadius(0, radius, position);
-			float y = SCR_TerrainHelper.GetTerrainY(pos);
-			pos[1] = y; 
+			pos[1] = SCR_TerrainHelper.GetTerrainY(pos);
 			if (vector.Distance(prevPos, pos) >= minDistance)
 			{
-				group.AddWaypoint(AIWaypoint.Cast(EM_Utils.SpawnEntity("{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et", pos)));
+				AIWaypoint wp = AIWaypoint.Cast(EM_Utils.SpawnEntity("{C0A9A9B589802A5B}PrefabsEditable/Auto/AI/Waypoints/E_AIWaypoint_Patrol.et", pos));
+				group.AddWaypoint(wp);
+				wpList.Insert(wp);
 				prevPos = pos;
 				i++;
 			};
 		};
+		
 		AIWaypointCycle wpCycle = AIWaypointCycle.Cast(EM_Utils.SpawnEntity("{35BD6541CBB8AC08}Prefabs/AI/Waypoints/AIWaypoint_Cycle.et", prevPos));
+		wpCycle.SetWaypoints(wpList);
 		group.AddWaypoint(wpCycle);
-		array<AIWaypoint> wpList = {};
-		group.GetWaypoints(wpList);
-		wpCycle.SetWaypoints(wpList);		
 	};
 };
