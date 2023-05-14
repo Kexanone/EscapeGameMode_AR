@@ -82,8 +82,7 @@ class EM_SpecialEventsComponent : ScriptComponent
 		};
 		
 		vector pos = m_randomGenerator.GenerateRandomPointInRadius(1000, 1500, m_targetPos);
-		float y = SCR_TerrainHelper.GetTerrainY(pos);
-		pos[1] = y;
+		pos[1] = SCR_TerrainHelper.GetTerrainY(pos);
 		IEntity siren = EM_Utils.SpawnEntity(m_SirenResName, pos);
 		GetGame().GetCallqueue().CallLater(SCR_EntityHelper.DeleteEntityAndChildren, 73100, false, siren);
 	};
