@@ -318,7 +318,7 @@ SCR_BaseGameMode : "{1B76F75A3175E85C}Prefabs/MP/Modes/Plain/GameMode_Plain.et" 
    m_iPenaltySubstractionPoints 2
   }
   SCR_PlayerSpawnPointManagerComponent "{5D3A7783EC1F84B8}" {
-   m_SpawnPointPrefab "{4677BB7DA4611B8A}Prefabs/MP/Spawning/EM_PlayerSpawnPoint.et.et"
+   m_SpawnPointPrefab "{4677BB7DA4611B8A}Prefabs/MP/Spawning/EM_PlayerSpawnPoint.et"
   }
   SCR_RespawnBriefingComponent "{5A234AD99EE3348B}" {
    m_SimpleBriefingBackground "{39A515BAE3795994}UI/Textures/DeployMenu/Briefing/conflict_HintBanner_3_UI.edds"
@@ -337,6 +337,7 @@ SCR_BaseGameMode : "{1B76F75A3175E85C}Prefabs/MP/Modes/Plain/GameMode_Plain.et" 
    }
   }
   SCR_RespawnMenuHandlerComponent "{5A234AD9987A4877}" {
+   m_bAllowFactionChange 0
   }
   SCR_RespawnSystemComponent "{56B2B4793051E7C9}" {
    m_bDebugSkipSelection 1
