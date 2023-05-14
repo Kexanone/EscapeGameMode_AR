@@ -1,0 +1,9 @@
+GenericEntity : "{49FFE8F373F55960}Prefabs/Weapons/Explosives/Mine_M15AT/Mine_M15AT.et" {
+ ID "5968D2B6A82C6019"
+ components {
+  SCR_PressureTriggerComponent "{59E6BE151DCC9953}" {
+   m_bLive 1
+  }
+ }
+ coords 5022.743 26.391 9975.748
+}
