@@ -1,2 +1,10 @@
-FrameWidgetClass {
+FrameWidgetClass "{5D64B8722FEDA6D0}" : "{0651202E9F2646DE}UI/layouts/Map/Map.layout" {
+ {
+  MapWidgetClass "{000000009C582FB6}" {
+   Prefab "{000000009C582FB6}"
+   Imagesets + {
+    "{74534432419F07DC}UI/Textures/Icons/escape-icons.imageset"
+   }
+  }
+ }
 }
