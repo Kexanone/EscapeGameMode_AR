@@ -1,5 +1,5 @@
 MetaFileClass {
- Name "{70EA706A136A7CF4}UI/Textures/MissionLoadingScreens/EscapeMissions.edds"
+ Name "{31283ACC9F24A049}UI/Textures/MissionLoadingScreens/EscapeMissionsPreview.edds"
  Configurations {
   PNGResourceClass PC : "{DC555BD399D92412}Configs/System/ResourceTypes/PC/TextureUnspecified.conf" {
   }
