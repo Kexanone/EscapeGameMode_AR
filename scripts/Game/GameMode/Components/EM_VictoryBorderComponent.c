@@ -1,5 +1,5 @@
 /*
-	This component ends the game in victory when a player left the specified border
+	This component ends the game in victory when a player inside a vehicle left the specified border
 */
 
 class EM_VictoryBorderComponentClass : ScriptComponentClass
@@ -48,7 +48,13 @@ class EM_VictoryBorderComponent : ScriptComponent
 	{
 		foreach (IEntity player : EM_Utils.GetPlayers(true))
 		{
-			if (!Math2D.IsPointInPolygonXZ(m_BorderPolygon, player.GetOrigin()))
+			IEntity vehicle = IEntity.Cast(player.GetParent());
+						
+			if (!vehicle)
+				continue;
+	
+			Print(vehicle.GetOrigin().ToString());
+			if (!Math2D.IsPointInPolygonXZ(m_BorderPolygon, vehicle.GetOrigin()))
 			{
 				m_GameMode.EndGameMode(SCR_GameModeEndData.CreateSimple(m_iGameOverType));
 				return;
