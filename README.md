@@ -49,15 +49,14 @@ https://reforger.armaplatform.com/workshop/5D2E42788801E818-EscapeGameMode
 
 - Escape from Everon: `"{C2465CA59BF931E7}Missions/EscapeEden.conf"`
 
-### Creating Custom Scenarios
-
-_Documentation pending_
-
 ### Mission Header
 
 - Number of spawn tickets (default: `50`): `"m_iRespawnTickets"`
 - Respawn time in seconds  (default: `30`): `"m_fRespawnTime"`
 
+### Creating Custom Scenarios
+
+_Documentation pending_
 
 ## Submitting Issues
 
