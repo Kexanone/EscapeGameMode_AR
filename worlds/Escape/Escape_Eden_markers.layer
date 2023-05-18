@@ -63,10 +63,9 @@ $grp GenericEntity {
   }
   coords 4859.721 111.069 8091.283
  }
- LocationChotainBase {
+ LocationChotainMilitary {
   components {
    EM_MapMarkerComponent "{5D2ED34DC869F2F9}" {
-    Enabled 0
     m_sImageQuadName "em_unknown"
     m_color 0 0 0 1
     m_fSize 0.5
