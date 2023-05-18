@@ -43,32 +43,56 @@ class EM_NoSpawnDefeatComponent : ScriptComponent
 		if (!m_GameMode)
 			return;
 		
-		m_GameMode.GetOnPlayerKilled().Insert(Handler);
+		m_GameMode.GetOnPlayerKilled().Insert(GetOnPlayerKilled);
 		m_GameMode.GetOnPlayerDisconnected().Insert(OnPlayerDisconnected);
+	};
+
+	void GetOnPlayerKilled(int playerId, IEntity player, IEntity killer)
+	{
+		Handler(player);
 	};
 	
 	void OnPlayerDisconnected(int playerId, KickCauseCode cause, int timeout)
 	{
-		Handler(playerId);
+		IEntity player = GetGame().GetPlayerManager().GetPlayerControlledEntity(playerId);
+		Handler(player);
 	};
 	
-	void Handler(int playerId, void param1 = NULL, void param2 = NULL)
+	void Handler(IEntity player, bool __triggerDefeat = false)
+	{
+		if (!IsDefeatImminent(player))
+			return;
+		
+		if (__triggerDefeat)
+		{
+			m_GameMode.EndGameMode(SCR_GameModeEndData.CreateSimple(m_iGameOverType));
+		}
+		else
+		{
+			// We'll check 5 seconds later and if defeat is still imminent, we'll trigger the defeat
+			GetGame().GetCallqueue().CallLater(Handler, 5000, false, null, true);
+		};
+	};
+	
+	bool IsDefeatImminent(IEntity player)
 	{
 		if (m_RespawnSystem.IsRespawnEnabled())
 		{
 			foreach (SCR_SpawnPoint spawnpoint : SCR_SpawnPoint.GetSpawnPoints())
 			{
 				if (!SCR_PlayerSpawnPoint.Cast(spawnpoint))
-					return; // There's still a non-player spawnpoint available
+					return false; // There's still a non-player spawnpoint available
 			};
 		};
-		
+					
 		array<IEntity> alivePlayers = EM_Utils.GetPlayers(true);
-		alivePlayers.RemoveItem(GetGame().GetPlayerManager().GetPlayerControlledEntity(playerId));
-		
+
+		if (player) // When called by OnPlayerDisconnected, the player might still be registered as alive, so we remove the player
+			alivePlayers.RemoveItem(player);
+					
 		if (!alivePlayers.IsEmpty())
-			return; // There are still players alive
+			return false; // There are still players alive
 		
-		GetGame().GetCallqueue().CallLater(m_GameMode.EndGameMode, 5000, false, SCR_GameModeEndData.CreateSimple(m_iGameOverType));
+		return true;
 	};
 };
