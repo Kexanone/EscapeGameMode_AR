@@ -7,6 +7,7 @@
 
 Escape game mode for Arma Reforger inspired by "Escape from Malden" from Arma 3.<br>
 Your task is to survive and escape the hostile territory leaving no man behind.
+Currently only Airfield route is available. Alternatives will be added in future.
 
 ## Features
 
@@ -47,6 +48,10 @@ https://reforger.armaplatform.com/workshop/5D2E42788801E818-EscapeGameMode
 ### Scenario IDs
 
 - Escape from Everon: `"{C2465CA59BF931E7}Missions/EscapeEden.conf"`
+
+### Creating Custom Scenarios
+
+_Documentation pending_
 
 ### Mission Header
 
