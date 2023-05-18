@@ -41,7 +41,6 @@ SCR_BaseGameMode GameModeEscape : "{087AE647D1755635}Prefabs/MP/Modes/EM_GameMod
    m_fRespawnTime 30
   }
   EM_SpawnTicketsComponent "{5D4F4A2800A9B193}" {
-   m_iInitialTicketsCount 30
   }
   EM_SpecialEventsComponent "{5D3AEB65B3020A33}" {
   }
