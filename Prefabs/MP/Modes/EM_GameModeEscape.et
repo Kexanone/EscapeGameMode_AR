@@ -19,6 +19,7 @@ SCR_BaseGameMode : "{1B76F75A3175E85C}Prefabs/MP/Modes/Plain/GameMode_Plain.et" 
    m_fRespawnTime 30
   }
   EM_SpawnTicketsComponent "{5D4F4A2800A9B193}" {
+   m_iInitialTicketsCount 50
   }
   EM_SpecialEventsComponent "{5D3AEB65B3020A33}" {
   }
