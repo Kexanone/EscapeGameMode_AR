@@ -1,10 +1,2 @@
 FrameWidgetClass {
- {
-  MapWidgetClass "{000000009C582FB6}" {
-   Prefab "{000000009C582FB6}"
-   Imagesets {
-    "{74534432419F07DC}UI/Textures/Icons/escape-icons.imageset"
-   }
-  }
- }
 }

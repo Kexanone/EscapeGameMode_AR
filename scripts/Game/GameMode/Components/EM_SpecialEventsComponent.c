@@ -98,6 +98,7 @@ class EM_SpecialEventsComponent : ScriptComponent
 		arty.EditorAttributeSetInteger("m_numberOfProjectiles", 18);
 		arty.EditorAttributeSetInteger("m_rofRPM", 30);
 		arty.EditorAttributeSetInteger("m_areaRadius", 200);
+		arty.EditorAttributeSetDistributionMode(EM_DistributionMode.CENTER_BIASED);
 		arty.EditorAttributeSetActive(true);
 	};
 };
