@@ -33,7 +33,7 @@ class EM_AITasks
 			pos[1] = SCR_TerrainHelper.GetTerrainY(pos);
 			if (vector.Distance(prevPos, pos) >= minDistance)
 			{
-				AIWaypoint wp = AIWaypoint.Cast(EM_Utils.SpawnEntity("{C0A9A9B589802A5B}PrefabsEditable/Auto/AI/Waypoints/E_AIWaypoint_Patrol.et", pos));
+				AIWaypoint wp = AIWaypoint.Cast(EM_Utils.SpawnEntity("{22A875E30470BD4F}Prefabs/AI/Waypoints/AIWaypoint_Patrol.et", pos));
 				group.AddWaypoint(wp);
 				wpList.Insert(wp);
 				prevPos = pos;
