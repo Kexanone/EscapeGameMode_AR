@@ -1,7 +1,7 @@
 GameProject {
- ID "EscapeMissions"
+ ID "EscapeGameMode"
  GUID "5D2E42788801E818"
- TITLE "Escape Missions"
+ TITLE "Escape Game Mode"
  Dependencies {
   "58D0FB3206B6F859" "5994AD5A9F33BE57" "5AAF6D5352E5FCAB" "59D64ADD6FC59CBF"
  }
