@@ -68,14 +68,15 @@ class EM_StalkerComponent : ScriptComponent
 		pos[1] = SCR_TerrainHelper.GetTerrainY(pos);
 		m_stalkerWaypoint.SetOrigin(pos);
 		
-		foreach (SCR_AIGroup group : m_Stalkers)
+		for (int i = m_Stalkers.Count() - 1; i >= 0; i--)
 		{
+			SCR_AIGroup group = m_Stalkers[i];
+			
 			if (!group)
 			{
-				m_Stalkers.RemoveItem(group);
+				m_Stalkers.Remove(i);
 				continue;
 			};
-				
 			
 			if (group.GetCurrentWaypoint() != m_stalkerWaypoint)
 			{
