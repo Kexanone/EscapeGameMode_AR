@@ -2,11 +2,11 @@
 	This component implements spawn tickets and disables respawn if no tickets are left
 */
 
-class EM_SpawnTicketsComponentClass : ScriptComponentClass
+class EM_SpawnTicketsComponentClass : SCR_BaseGameModeComponentClass
 {
 };
 
-class EM_SpawnTicketsComponent : ScriptComponent
+class EM_SpawnTicketsComponent : SCR_BaseGameModeComponent
 {
 	[Attribute("-1", UIWidgets.EditBox, "", "")]
 	protected int m_iInitialTicketsCount;
@@ -41,24 +41,9 @@ class EM_SpawnTicketsComponent : ScriptComponent
 			if (header)
 				m_iTicketsCount = header.m_iRespawnTickets;
 		};
-		
-		// Tickets disabled
-		if (m_iTicketsCount < 0)
-			return;
-
-		// Run handler only on authority		
-		if (!EM_Utils.IsAuthority(owner))
-			return;
-		
-		SCR_BaseGameMode gameMode = SCR_BaseGameMode.Cast(GetOwner());
-		
-		if (!gameMode)
-			return;
-		
-		gameMode.GetOnPlayerSpawned().Insert(OnPlayerSpawned);
 	};
 	
-	void OnPlayerSpawned(int playerId, IEntity controlledEntity)
+	override void OnPlayerSpawned(int playerId, IEntity controlledEntity)
 	{
 		ConsumeTicket();
 	};

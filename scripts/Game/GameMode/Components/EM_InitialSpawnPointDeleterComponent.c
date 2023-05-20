@@ -2,11 +2,11 @@
 	This component deletes the initial spawn point if a player is far enough from it
 */
 
-class EM_InitialSpawnPointDeleterComponentClass : ScriptComponentClass
+class EM_InitialSpawnPointDeleterComponentClass : SCR_BaseGameModeComponentClass
 {
 };
 
-class EM_InitialSpawnPointDeleterComponent : ScriptComponent
+class EM_InitialSpawnPointDeleterComponent : SCR_BaseGameModeComponent
 {
 	[Attribute("InitialSpawnPoint", UIWidgets.EditBox, "Name of the initial spawn point to delete", "")]
 	protected string m_sSpawnPointName;

@@ -2,11 +2,11 @@
 	AI groups assigned to this component via AddStalker will stalk players
 */
 
-class EM_StalkerComponentClass : ScriptComponentClass
+class EM_StalkerComponentClass : SCR_BaseGameModeComponentClass
 {
 };
 
-class EM_StalkerComponent : ScriptComponent
+class EM_StalkerComponent : SCR_BaseGameModeComponent
 {
 	[Attribute("10", UIWidgets.EditBox, "Timeout for position update in seconds", "")]
 	protected int m_iUpdateTimeout;
