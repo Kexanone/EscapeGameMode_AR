@@ -2766,7 +2766,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           }
           coords -0.754 0.094 0.708
           angleY 151.57
-          Flags 1048576
          }
         }
        }
@@ -5340,7 +5339,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
   }
   coords 4928.62 36.073 9092.689
   {
-   GenericEntity A10_Vehicles2 : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
+   GenericEntity A11_Vehicles : "{5F9FFF4BF027B3A3}Prefabs/ScenarioFramework/Components/Layer.et" {
     components {
      SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
       m_eActivationType ON_AREA_TRIGGER_ACTIVATION
