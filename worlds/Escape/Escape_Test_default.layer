@@ -94,7 +94,7 @@ $grp GenericEntity {
   coords 176.829 1.001 175.57
  }
 }
-GenericEntity Area4_Sniper : "{102F5EE061B48B48}Prefabs/ScenarioFramework/Compositions/EM_Area_USSR_SniperTeam.et" {
+GenericEntity Area4_Sniper : "{102F5EE061B48B48}Prefabs/ScenarioFramework/Compositions/Everon/EM_Area_USSR_SniperTeam.et" {
  components {
   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
    Enabled 0
@@ -175,7 +175,7 @@ Vehicle nono : "{259EE7B78C51B624}Prefabs/Vehicles/Wheeled/UAZ469/UAZ469.et" {
  "		ev.RemoveScriptHandler(\"OnCompartmentEntered\", this, OnCompartmentEntered);"\
  "	"
 }
-GenericEntity Area2_Patrol : "{350EE4325BB6C9E1}Prefabs/ScenarioFramework/Compositions/EM_Area_USSR_Patrol.et" {
+GenericEntity Area2_Patrol : "{350EE4325BB6C9E1}Prefabs/ScenarioFramework/Compositions/Everon/EM_Area_USSR_Patrol.et" {
  components {
   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
    Enabled 0
@@ -196,7 +196,7 @@ MusicManager : "{359452CCDBDD03F5}Prefabs/Sounds/Music/MusicManager_Base.et" {
   }
  }
 }
-GenericEntity Area3_Recon : "{44850546B9F6F8E6}Prefabs/ScenarioFramework/Compositions/EM_Area_USSR_ReconQRF.et" {
+GenericEntity Area3_Recon : "{44850546B9F6F8E6}Prefabs/ScenarioFramework/Compositions/Everon/EM_Area_USSR_ReconQRF.et" {
  components {
   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
    Enabled 0
@@ -923,7 +923,7 @@ GenericEntity : "{B24C7A63EE4F0A5D}Prefabs/Compositions/Misc/CombatOps/CP_Headqu
   }
  }
 }
-$grp GenericEntity : "{C3276ABE5DB29953}Prefabs/ScenarioFramework/Compositions/EM_Area_CivCar.et" {
+$grp GenericEntity : "{C3276ABE5DB29953}Prefabs/ScenarioFramework/Compositions/Everon/EM_Area_CivCar.et" {
  {
   coords 133.191 1.001 137.228
   angleY 38
