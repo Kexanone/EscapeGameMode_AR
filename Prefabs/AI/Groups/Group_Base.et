@@ -1,0 +1,9 @@
+SCR_AIGroup {
+ ID "0000000000000001"
+ components {
+  RplComponent "{524EC5D51F101B32}" {
+   "Rpl State Override" Runtime
+   Streamable Enabled
+  }
+ }
+}
