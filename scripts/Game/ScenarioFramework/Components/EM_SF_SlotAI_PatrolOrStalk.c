@@ -50,14 +50,22 @@ class EM_SF_SlotAIPatrolOrStalk : SCR_ScenarioFrameworkSlotBase
 		SCR_AIGroup group = SCR_AIGroup.Cast(m_Entity);
 		group.SpawnUnits();
 		
+		EM_DynamicEntityManagerComponent manager = EM_DynamicEntityManagerComponent.Cast(GetGame().GetGameMode().FindComponent(EM_DynamicEntityManagerComponent));
+		
 		Math.Randomize(-1);
 		if (Math.RandomFloat(0, 1) >= m_fStalkProbability)
 		{
 			EM_AITasks.Patrol(group, GetOwner().GetOrigin(), m_fRadius, m_iNumWaypoints, m_fMinDistance);
+			
+			if (manager)
+				manager.AddEntity(group);
 		}
 		else
 		{
 			EM_AITasks.Stalk(group);
+			
+			if (manager)
+				manager.AddEntity(EM_DynamicStalkerWrapper(group));
 		};
 	};
 };

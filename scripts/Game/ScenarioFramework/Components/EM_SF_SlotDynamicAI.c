@@ -1,9 +1,9 @@
 [EntityEditorProps(category: "GameScripted/ScriptWizard", description: "ScriptWizard generated script file.")]
-class EM_SF_SlotAIClass : SCR_ScenarioFrameworkSlotAIClass
+class EM_SF_SlotDynamicAIClass : SCR_ScenarioFrameworkSlotAIClass
 {
 }
 
-class EM_SF_SlotAI : SCR_ScenarioFrameworkSlotAI
+class EM_SF_SlotDynamicAI : SCR_ScenarioFrameworkSlotAI
 {
 	[Attribute("Column", UIWidgets.EditBox, "Name of the group formation", "")]
 	protected string m_sFormationName;
@@ -18,5 +18,10 @@ class EM_SF_SlotAI : SCR_ScenarioFrameworkSlotAI
 			return;
 		
 		formationHandler.SetFormation(m_sFormationName);
+		
+		EM_DynamicEntityManagerComponent manager = EM_DynamicEntityManagerComponent.Cast(GetGame().GetGameMode().FindComponent(EM_DynamicEntityManagerComponent));
+		
+		if (manager)
+			manager.AddEntity(m_AIGroup);
 	};
 };
