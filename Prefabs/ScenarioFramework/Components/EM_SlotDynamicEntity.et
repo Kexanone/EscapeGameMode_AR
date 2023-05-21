@@ -1,0 +1,9 @@
+GenericEntity {
+ ID "5D6AC5A16AF9E37D"
+ components {
+  EM_SF_SlotDynamicEntity "{5D6AC5A2873B59FB}" {
+  }
+  Hierarchy "{5D6AC5A16AF9DAE2}" {
+  }
+ }
+}

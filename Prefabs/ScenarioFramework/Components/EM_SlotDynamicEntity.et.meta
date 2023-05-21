@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{3B502E1C37A5603B}Prefabs/ScenarioFramework/Components/EM_SlotDynamicEntity.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}
