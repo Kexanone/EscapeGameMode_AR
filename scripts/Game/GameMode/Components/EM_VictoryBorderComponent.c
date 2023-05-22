@@ -15,6 +15,11 @@ class EM_VictoryBorderComponent : SCR_BaseGameModeComponent
 	[Attribute(UIWidgets.Auto, "Polygon that forms the border")];
 	protected ref array<vector> m_BorderPolygon;
 
+#ifdef WORKBENCH
+	[Attribute(defvalue: "1", desc: "Show the debug shapes in Workbench", category: "Debug")];
+	protected bool m_bShowDebugShapesInWorkbench;
+#endif
+
 	override void OnPostInit(IEntity owner)
 	{
 		if (!GetGame().InPlayMode())
@@ -54,4 +59,48 @@ class EM_VictoryBorderComponent : SCR_BaseGameModeComponent
 			};
 		};
 	};
+	
+#ifdef WORKBENCH
+	protected void DrawDebugShape(bool draw)
+	{
+		if (!draw)
+			return;
+		
+		int cnt = m_BorderPolygon.Count();
+		
+		if (!cnt)
+			return;
+		
+		vector p[100];
+		
+		for (int i = 0; i < cnt; i++)
+		{
+			vector pos =  m_BorderPolygon[i];
+			pos[1] = Math.Max(SCR_TerrainHelper.GetTerrainY(pos), 0) + 5;
+			p[i] = pos;
+		};
+		
+		p[cnt] = p[0];
+		
+		Shape.CreateLines(
+			Color.DARK_GREEN, // ARGB(32, 0x99, 0xF3, 0x12),
+			ShapeFlags.ONCE | ShapeFlags.NOZWRITE,
+			p,
+			Math.Min(cnt + 1, 100)
+		);
+	};
+	
+	override void _WB_AfterWorldUpdate(IEntity owner, float timeSlice)
+	{
+		DrawDebugShape(m_bShowDebugShapesInWorkbench);
+	};
+	
+	override bool _WB_OnKeyChanged(IEntity owner, BaseContainer src, string key, BaseContainerList ownerContainers, IEntity parent)
+	{
+		if (key == "m_bShowDebugShapesInWorkbench")
+			DrawDebugShape(m_bShowDebugShapesInWorkbench);
+		
+		return false;
+	};
+#endif
 };
