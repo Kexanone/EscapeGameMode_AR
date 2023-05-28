@@ -6665,9 +6665,9 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
      }
      coords 0 0 0
      {
-      GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+      GenericEntity : "{3B502E1C37A5603B}Prefabs/ScenarioFramework/Components/EM_SlotDynamicEntity.et" {
        components {
-        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+        EM_SF_SlotDynamicEntity "{5D6AC5A2873B59FB}" {
          m_sObjectToSpawn "{AF0578D66D51946B}Prefabs/Vehicles/Wheeled/M998/M998_covered_MERDC.et"
         }
        }
@@ -6912,10 +6912,10 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
      }
      coords 0 0 0
      {
-      $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/ScenarioFramework/Components/Slot.et" {
+      $grp GenericEntity : "{3B502E1C37A5603B}Prefabs/ScenarioFramework/Components/EM_SlotDynamicEntity.et" {
        {
         components {
-         SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         EM_SF_SlotDynamicEntity "{5D6AC5A2873B59FB}" {
           m_sObjectToSpawn "{D9B91FAB817A6033}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_transport_covered.et"
          }
         }
@@ -6926,7 +6926,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
        }
        {
         components {
-         SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         EM_SF_SlotDynamicEntity "{5D6AC5A2873B59FB}" {
           m_sObjectToSpawn "{259EE7B78C51B624}Prefabs/Vehicles/Wheeled/UAZ469/UAZ469.et"
          }
         }
@@ -6937,7 +6937,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
        }
        {
         components {
-         SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         EM_SF_SlotDynamicEntity "{5D6AC5A2873B59FB}" {
           m_sObjectToSpawn "{259EE7B78C51B624}Prefabs/Vehicles/Wheeled/UAZ469/UAZ469.et"
          }
         }
@@ -6969,7 +6969,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            Enabled 1
           }
          }
-         coords -1.369 -0 0.204
+         coords -1.369 0 0.204
          angleY -165
         }
         GenericEntity : "{86BA5E5CD528D5BC}Prefabs/Props/Military/Sandbags/Sandbag_01_end_plastic.et" {
@@ -6995,7 +6995,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            Hierarchy "{59D87A7D62E1E8AC}" {
            }
           }
-          coords -1.024 -0 0.134
+          coords -1.024 0 0.134
           angleY -166.537
          }
         }
