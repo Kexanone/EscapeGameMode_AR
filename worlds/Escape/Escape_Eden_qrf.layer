@@ -25,4 +25,15 @@ $grp GenericEntity : "{44850546B9F6F8E6}Prefabs/ScenarioFramework/Compositions/E
   angleX -11.482
   angleZ -2.63
  }
+ EM_Area_USSR_ReconQRF_4 {
+  components {
+   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+    m_fAreaRadius 350
+   }
+  }
+  coords 1969.31 77.542 5118.48
+  angleX -5.228
+  angleY -0.438
+  angleZ 0.045
+ }
 }

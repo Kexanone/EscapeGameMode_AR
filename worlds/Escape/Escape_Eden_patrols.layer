@@ -230,4 +230,20 @@ $grp GenericEntity : "{350EE4325BB6C9E1}Prefabs/ScenarioFramework/Compositions/E
   }
   coords 2835.074 86.201 6342.385
  }
+ {
+  components {
+   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+    m_fAreaRadius 850
+   }
+  }
+  coords 2210.22 106.403 5911.13
+ }
+ {
+  components {
+   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+    m_fAreaRadius 850
+   }
+  }
+  coords 3184.73 2.808 7188.94
+ }
 }

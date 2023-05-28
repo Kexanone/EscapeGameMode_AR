@@ -137,9 +137,7 @@ $grp GenericEntity {
     m_sMarkerText "Checkpoint"
    }
   }
-  coords 2120.28 110.002 5418.21
-  angleX -1.79
-  angleZ -1.789
+  coords 2126.03 110.254 5411.78
  }
  LocationCalvaryHill {
   components {
@@ -149,14 +147,11 @@ $grp GenericEntity {
     m_fSize 0.5
    }
   }
-  coords 3493.05 179.954 5800.48
-  angleX 1.79
-  angleZ -1.789
+  coords 3498.47 181.611 5821.3
  }
  LocationTillersFind {
   components {
    EM_MapMarkerComponent "{5D2ED34DC869F2F9}" {
-    Enabled 0
     m_sImageQuadName "em_unknown"
     m_color 0 0 0 1
     m_fSize 0.5
