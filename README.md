@@ -7,7 +7,7 @@
 
 Escape game mode for Arma Reforger inspired by "Escape from Malden" from Arma 3.<br>
 Your task is to survive and escape the hostile territory leaving no man behind.
-Currently only Airfield route is available. Alternatives will be added in future.
+Currently only Airfield and Lamentin harbor routes are available. Alternatives will be added in future.
 
 ## Features
 
@@ -41,6 +41,10 @@ https://reforger.armaplatform.com/workshop/5D2E42788801E818-EscapeGameMode
     {
         "modId": "59D64ADD6FC59CBF",
         "name": "Project Redline - UH-60"
+    },
+    {
+        "modId": "5994614FB5AD35C2",
+        "name": "RHIB"
     }
 ]
 ```
