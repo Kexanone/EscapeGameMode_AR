@@ -3,11 +3,11 @@
 	- Artillery barrage
 */
 
-class EM_SpecialEventsComponentClass : ScriptComponentClass
+class EM_SpecialEventsComponentClass : SCR_BaseGameModeComponentClass
 {
 };
 
-class EM_SpecialEventsComponent : ScriptComponent
+class EM_SpecialEventsComponent : SCR_BaseGameModeComponent
 {
 	// -- TO DO: Make events an attribute
 	[Attribute("10", UIWidgets.EditBox, "Minimum timeout for next special event in minutes", "")]

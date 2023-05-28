@@ -1,7 +1,7 @@
 GenericEntity {
  ID "5D4364623E9E05DB"
  components {
-  EM_SF_SlotAI "{5D4364623E9E05E2}" {
+  EM_SF_SlotDynamicAI "{5D4364623E9E05E2}" {
    m_sObjectToSpawn ""
    m_sWPToSpawn "{93291E72AC23930F}Prefabs/AI/Waypoints/AIWaypoint_Defend.et"
   }

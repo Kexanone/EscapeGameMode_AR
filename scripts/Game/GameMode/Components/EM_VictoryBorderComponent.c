@@ -2,11 +2,11 @@
 	This component ends the game in victory when a player inside a vehicle left the specified border
 */
 
-class EM_VictoryBorderComponentClass : ScriptComponentClass
+class EM_VictoryBorderComponentClass : SCR_BaseGameModeComponentClass
 {
 };
 
-class EM_VictoryBorderComponent : ScriptComponent
+class EM_VictoryBorderComponent : SCR_BaseGameModeComponent
 {
 	[Attribute("0", desc: "Game over type", uiwidget: UIWidgets.ComboBox, enums: ParamEnumArray.FromEnum(EGameOverTypes))]
 	protected EGameOverTypes m_iGameOverType;
@@ -15,7 +15,10 @@ class EM_VictoryBorderComponent : ScriptComponent
 	[Attribute(UIWidgets.Auto, "Polygon that forms the border")];
 	protected ref array<vector> m_BorderPolygon;
 
-	protected SCR_BaseGameMode m_GameMode;
+#ifdef WORKBENCH
+	[Attribute(defvalue: "1", desc: "Show the debug shapes in Workbench", category: "Debug")];
+	protected bool m_bShowDebugShapesInWorkbench;
+#endif
 
 	override void OnPostInit(IEntity owner)
 	{
@@ -35,11 +38,6 @@ class EM_VictoryBorderComponent : ScriptComponent
 		// Run handler only on authority		
 		if (!EM_Utils.IsAuthority(owner))
 			return;
-		
-		m_GameMode = SCR_BaseGameMode.Cast(GetOwner());
-		
-		if (!m_GameMode)
-			return;
 
 		GetGame().GetCallqueue().CallLater(Handler, m_iHandlerTimeout*1000, true);
 	};
@@ -56,9 +54,53 @@ class EM_VictoryBorderComponent : ScriptComponent
 			Print(vehicle.GetOrigin().ToString());
 			if (!Math2D.IsPointInPolygonXZ(m_BorderPolygon, vehicle.GetOrigin()))
 			{
-				m_GameMode.EndGameMode(SCR_GameModeEndData.CreateSimple(m_iGameOverType));
+				m_pGameMode.EndGameMode(SCR_GameModeEndData.CreateSimple(m_iGameOverType));
 				return;
 			};
 		};
 	};
+	
+#ifdef WORKBENCH
+	protected void DrawDebugShape(bool draw)
+	{
+		if (!draw)
+			return;
+		
+		int cnt = m_BorderPolygon.Count();
+		
+		if (!cnt)
+			return;
+		
+		vector p[100];
+		
+		for (int i = 0; i < cnt; i++)
+		{
+			vector pos =  m_BorderPolygon[i];
+			pos[1] = Math.Max(SCR_TerrainHelper.GetTerrainY(pos), 0) + 5;
+			p[i] = pos;
+		};
+		
+		p[cnt] = p[0];
+		
+		Shape.CreateLines(
+			Color.DARK_GREEN, // ARGB(32, 0x99, 0xF3, 0x12),
+			ShapeFlags.ONCE | ShapeFlags.NOZWRITE,
+			p,
+			Math.Min(cnt + 1, 100)
+		);
+	};
+	
+	override void _WB_AfterWorldUpdate(IEntity owner, float timeSlice)
+	{
+		DrawDebugShape(m_bShowDebugShapesInWorkbench);
+	};
+	
+	override bool _WB_OnKeyChanged(IEntity owner, BaseContainer src, string key, BaseContainerList ownerContainers, IEntity parent)
+	{
+		if (key == "m_bShowDebugShapesInWorkbench")
+			DrawDebugShape(m_bShowDebugShapesInWorkbench);
+		
+		return false;
+	};
+#endif
 };

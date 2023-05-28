@@ -2,11 +2,11 @@
 	AI groups assigned to this component via AddStalker will stalk players
 */
 
-class EM_StalkerComponentClass : ScriptComponentClass
+class EM_StalkerComponentClass : SCR_BaseGameModeComponentClass
 {
 };
 
-class EM_StalkerComponent : ScriptComponent
+class EM_StalkerComponent : SCR_BaseGameModeComponent
 {
 	[Attribute("10", UIWidgets.EditBox, "Timeout for position update in seconds", "")]
 	protected int m_iUpdateTimeout;
@@ -14,7 +14,7 @@ class EM_StalkerComponent : ScriptComponent
 	[Attribute("0 0 0", UIWidgets.Coords, "Initial position for stalker waypoint", "")]
 	protected vector m_InitialStalkedPosition;
 		
-	protected ref array<SCR_AIGroup> m_Stalkers = {};
+	protected ref array<AIGroup> m_Stalkers = {};
 	protected SCR_AIWaypoint m_stalkerWaypoint;
 	protected IEntity m_StalkedPlayer;
 	private ref RandomGenerator m_randomGenerator = new RandomGenerator;
@@ -43,9 +43,14 @@ class EM_StalkerComponent : ScriptComponent
 		GetGame().GetCallqueue().CallLater(Stalk, m_iUpdateTimeout*1000, true);
 	};
 	
-	void AddStalker(SCR_AIGroup group)
+	void AddStalker(AIGroup group)
 	{
 		m_Stalkers.Insert(group);
+	};
+
+	void RemoveStalker(AIGroup group)
+	{
+		m_Stalkers.RemoveItem(group);
 	};
 	
 	void ClearStalkers()
@@ -70,7 +75,7 @@ class EM_StalkerComponent : ScriptComponent
 		
 		for (int i = m_Stalkers.Count() - 1; i >= 0; i--)
 		{
-			SCR_AIGroup group = m_Stalkers[i];
+			AIGroup group = m_Stalkers[i];
 			
 			if (!group)
 			{

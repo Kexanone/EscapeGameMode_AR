@@ -8,6 +8,8 @@ SCR_BaseGameMode : "{1B76F75A3175E85C}Prefabs/MP/Modes/Plain/GameMode_Plain.et" 
     "{91D53896F5AD5DB4}Sounds/RadioProtocol/RadioProtocol_CombatPatrol_US.acp"
    }
   }
+  EM_DynamicEntityManagerComponent "{5D6AC2B7D8EEB5BD}" {
+  }
   EM_InitialSpawnPointDeleterComponent "{5D3C5CD1A04EA5D6}" {
   }
   EM_NoSpawnDefeatComponent "{5D537AF0AD1F1973}" {

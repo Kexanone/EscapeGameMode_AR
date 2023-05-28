@@ -7,9 +7,6 @@ $grp GenericEntity : "{350EE4325BB6C9E1}Prefabs/ScenarioFramework/Compositions/E
   coords 5136.78 175.734 7045.31
  }
  {
-  coords 6695.016 146.002 7730.12
- }
- {
   components {
    SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
    }
@@ -78,26 +75,50 @@ $grp GenericEntity : "{350EE4325BB6C9E1}Prefabs/ScenarioFramework/Compositions/E
     {
      GenericEntity {
       ID "5D42DB3141488248"
+      components {
+       EM_SF_SlotAIPatrolOrStalk "{5D3D09AD8446B6B4}" {
+       }
+      }
       coords 0 0 0
      }
      GenericEntity {
       ID "5D42DB3141488249"
+      components {
+       EM_SF_SlotAIPatrolOrStalk "{5D3D09AD8446B6B4}" {
+       }
+      }
       coords 0 0 0
      }
      GenericEntity {
       ID "5D42DB314148F042"
+      components {
+       EM_SF_SlotAIPatrolOrStalk "{5D3D09AD8446B6B4}" {
+       }
+      }
       coords 0 0 0
      }
      GenericEntity {
       ID "5D42DB314148F045"
+      components {
+       EM_SF_SlotAIPatrolOrStalk "{5D3D09AD8446B6B4}" {
+       }
+      }
       coords 0 0 0
      }
      GenericEntity {
       ID "5D42DB314148F05E"
+      components {
+       EM_SF_SlotAIPatrolOrStalk "{5D3D09AD8446B6B4}" {
+       }
+      }
       coords 0 0 0
      }
      GenericEntity {
       ID "5D42DB31414926A9"
+      components {
+       EM_SF_SlotAIPatrolOrStalk "{5D3D09AD8446B6B4}" {
+       }
+      }
       coords 0 0 0
      }
     }
@@ -120,5 +141,109 @@ $grp GenericEntity : "{350EE4325BB6C9E1}Prefabs/ScenarioFramework/Compositions/E
   coords 7179.85 45.135 7345.15
   angleX -8.881
   angleZ 0.884
+ }
+ {
+  components {
+   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+    m_fAreaRadius 800
+   }
+  }
+  coords 7617.48 12.327 8157.05
+ }
+ {
+  components {
+   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+    m_fAreaRadius 800
+   }
+  }
+  coords 6877.35 67.629 8633.859
+ }
+ {
+  components {
+   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+    m_fAreaRadius 800
+   }
+  }
+  coords 7257.45 46.842 7673.32
+ }
+ {
+  components {
+   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+    m_fAreaRadius 700
+   }
+  }
+  coords 3727.59 80.034 6630.85
+  angleX 3.576
+  angleZ -2.679
+ }
+ {
+  components {
+   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+    m_fAreaRadius 650
+   }
+  }
+  coords 4052.786 32.07 7810.019
+ }
+ {
+  coords 2287.52 35.445 7365.96
+  angleX -10.667
+  angleY 0.112
+  angleZ -1.764
+ }
+ {
+  components {
+   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+    m_fAreaRadius 650
+   }
+  }
+  coords 4488.08 57.792 6221.05
+  angleX 4.467
+  angleZ 6.223
+ }
+ {
+  components {
+   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+    m_fAreaRadius 850
+   }
+  }
+  coords 2602.98 91.368 5376.53
+  angleX 4.467
+  angleZ -2.676
+ }
+ {
+  coords 3749.04 117.155 5046.92
+ }
+ {
+  components {
+   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+    m_fAreaRadius 650
+   }
+  }
+  coords 3903.08 15.298 8447.2
+  angleZ -0.895
+ }
+ {
+  components {
+   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+    m_fAreaRadius 850
+   }
+  }
+  coords 2835.074 86.201 6342.385
+ }
+ {
+  components {
+   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+    m_fAreaRadius 850
+   }
+  }
+  coords 2210.22 106.403 5911.13
+ }
+ {
+  components {
+   SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+    m_fAreaRadius 850
+   }
+  }
+  coords 3184.73 2.808 7188.94
  }
 }

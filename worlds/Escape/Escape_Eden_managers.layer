@@ -48,7 +48,7 @@ SCR_BaseGameMode GameModeEscape : "{087AE647D1755635}Prefabs/MP/Modes/EM_GameMod
   }
   EM_VictoryBorderComponent "{5D3C5CC9F314C1C5}" {
    m_BorderPolygon {
-    10004 0 9981 11993 0 6103 15929 0 766 9081 0 -2890 4066 0 22 -3928 0 5609 -11 0 10005 2142 0 14173 6994 0 15023
+    3851 0 12464 5425 0 12956 7104 0 9992 8024 0 9688 8298 0 6461 10193 0 5917 10880 0 3625 12656 0 2195 12185 0 899 10678 0 1030 10755 0 58 9210 0 -116 5894 0 1878 6055 0 2768 2520 0 3365 1119 0 4764 499 0 6208 2286 0 8160 3118 0 8040 3584 0 10730
    }
   }
   SCR_ArsenalManagerComponent "{5B0298F006265F20}" {
@@ -381,6 +381,16 @@ RadioManagerEntity RadioManager : "{B8E09FAB91C4ECCD}Prefabs/Radio/RadioManager.
 ScriptedChatEntity ChatEntity : "{F69BC912AC8236F9}Prefabs/MP/ScriptedChatEntity.et" {
  coords 5371.133 110.219 5931.469
  Flags 0
+}
+HitRegistrationManager HitRegManager : "{0EDA3D48791120DD}Prefabs/MP/HitRegManager.et" {
+ coords 6443.548 162.201 6490.018
+}
+SCR_GarbageManager GarbageManager : "{9B883A7D8EBB282A}Prefabs/MP/Managers/GarbageManager.et" {
+ coords 6437.796 162.176 6489.209
+ CharacterLifetime 360
+ VehicleLifetime 300
+ ItemLifetime 360
+ m_bOnlyDestroyed 1
 }
 SCR_LoadoutManager LoadoutManager : "{AA4E7419A1FF65B0}Prefabs/MP/Managers/Loadouts/LoadoutManager_Base.et" {
  coords 6447.407 164.175 6491.963

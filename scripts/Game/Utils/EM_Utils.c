@@ -61,7 +61,7 @@ class EM_Utils
 		if (!rpl)
 			return false;
 		
-		return (rpl.Role() == RplRole.Authority);
+		return !rpl.IsProxy();
 	};
 	
 	static IEntity SpawnEntity(ResourceName moduleName, vector pos)
