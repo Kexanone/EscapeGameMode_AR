@@ -1,7 +1,6 @@
 # Escape Game Mode
 
 [![Version](https://img.shields.io/github/release/Kexanone/EscapeGameMode_AR.svg?label=Version&colorB=007EC6&style=flat-square)](https://github.com/Kexanone/EscapeGameMode_AR/releases/latest)
-[![GitHub Downloads](https://img.shields.io/github/downloads/Kexanone/EscapeGameMode_AR/total.svg?label=GitHub%20Dowloads&style=flat-square)](https://github.com/Kexanone/EscapeGameMode_AR/releases)
 [![Issues](https://img.shields.io/github/issues-raw/Kexanone/EscapeGameMode_AR.svg?label=Issues&style=flat-square)](https://github.com/Kexanone/EscapeGameMode_AR/issues)
 [![License](https://img.shields.io/badge/License-APL-orange.svg?style=flat-square)](https://github.com/Kexanone/EscapeGameMode_AR/blob/master/LICENSE.md)
 
