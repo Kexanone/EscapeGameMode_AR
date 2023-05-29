@@ -366,6 +366,9 @@ SCR_BaseGameMode GameModeEscape : "{087AE647D1755635}Prefabs/MP/Modes/EM_GameMod
  }
  coords 6453.125 162.256 6494.151
 }
+TagManager TagManager : "{2FA9E172CAB1857A}Prefabs/MP/Managers/TagManager.et" {
+ coords 6439.792 162.2 6489.857
+}
 SCR_FactionManager FactionManager : "{4A188E44289B9A50}Prefabs/MP/Managers/Factions/FactionManager_Editor.et" {
  coords 6442.936 162.2 6490.731
  Factions {
