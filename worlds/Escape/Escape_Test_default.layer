@@ -42,14 +42,25 @@ SCR_BaseGameMode GameModeEscape : "{087AE647D1755635}Prefabs/MP/Modes/EM_GameMod
     100 0 170 170 0 170 170 0 100 100 0 100
    }
   }
-  SCR_GameOverScreenManagerComponent "{56DEC646298AD219}" {
-   m_GameOverScreenConfig SCR_GameOverScreenConfig "{56DEC6462FFDD82D}" {
-    m_aGameOverScreens {
+  SCR_DebriefingScreenComponent "{5DBD7EDF6D233A95}" {
+   m_BaseLayout SCR_DebriefingScreenUnevenFourTiles "{5DC237D1411C0AD7}" {
+    m_TopRightTile SCR_WelcomeScreenMissionObjectivesContent "{5DC237DE0B5DA45C}" {
+     m_aMissionObjectives {
+      SCR_WelcomeScreenMissionObjectives "{5DC25418CF8C22B6}" {
+       m_sObjectiveQuadName "GetIn"
+       m_sDescription "#EM-ScenarioDesc_Everon"
+      }
+     }
     }
    }
   }
-  SCR_RespawnMenuHandlerComponent "{5A234AD9987A4877}" {
-   m_bAllowFactionChange 0
+  SCR_GameOverScreenManagerComponent "{56DEC646298AD219}" {
+   m_GameOverScreenConfig SCR_GameOverScreenConfig "{56DEC6462FFDD82D}" {
+   }
+  }
+  SCR_RespawnSystemComponent "{56B2B4793051E7C9}" {
+   m_SpawnLogic SCR_MenuSpawnLogic "{5D36888CC966608A}" {
+   }
   }
  }
  coords 128.348 1.001 140.035
@@ -952,10 +963,6 @@ GenericEntity Area1_Checkpoint : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Co
    coords 0 0 0
    {
     SCR_EditorTask : "{3AD0A1257870E6C7}Prefabs/Tasks/CustomTask.et" {
-     components {
-      SCR_MapDescriptorComponent "{54C6755D2955E709}" {
-      }
-     }
      coords 0 0 0
     }
    }

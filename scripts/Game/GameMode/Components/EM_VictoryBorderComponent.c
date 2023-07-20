@@ -22,23 +22,10 @@ class EM_VictoryBorderComponent : SCR_BaseGameModeComponent
 
 	override void OnPostInit(IEntity owner)
 	{
-		if (!GetGame().InPlayMode())
+		// Run handler only on server
+		if (!GetGame().InPlayMode() || !Replication.IsServer())
 			return;
 		
-		SetEventMask(owner, EntityEvent.INIT);
-		owner.SetFlags(EntityFlags.ACTIVE, true);
-
-		super.OnPostInit(owner);
-	};
-	
-	override void EOnInit(IEntity owner)
-	{
-		super.EOnInit(owner);
-
-		// Run handler only on authority		
-		if (!EM_Utils.IsAuthority(owner))
-			return;
-
 		GetGame().GetCallqueue().CallLater(Handler, m_iHandlerTimeout*1000, true);
 	};
 	
@@ -46,13 +33,13 @@ class EM_VictoryBorderComponent : SCR_BaseGameModeComponent
 	{
 		foreach (IEntity player : EM_Utils.GetPlayers(true))
 		{
-			IEntity vehicle = IEntity.Cast(player.GetParent());
+			Vehicle vehicle = Vehicle.Cast(CompartmentAccessComponent.GetVehicleIn(player));
 						
 			if (!vehicle)
 				continue;
-	
-			Print(vehicle.GetOrigin().ToString());
-			if (!Math2D.IsPointInPolygonXZ(m_BorderPolygon, vehicle.GetOrigin()))
+			
+			// Workaround: Temporarily trigger victory when a player is in helo no matter the position
+			if (R3D_HeliBase.Cast(vehicle) || !Math2D.IsPointInPolygonXZ(m_BorderPolygon, vehicle.GetOrigin()))
 			{
 				m_pGameMode.EndGameMode(SCR_GameModeEndData.CreateSimple(m_iGameOverType));
 				return;

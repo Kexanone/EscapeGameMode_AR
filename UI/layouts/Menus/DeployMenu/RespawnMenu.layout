@@ -1,0 +1,126 @@
+FrameWidgetClass {
+ {
+  OverlayWidgetClass "{5C7C8A10E08F976D}" {
+   Prefab "{5C7C8A10E08F976D}"
+   {
+    FrameWidgetClass "{5CDEC184DA4DE536}" {
+     Prefab "{5CDEC184DA4DE536}"
+     {
+      FrameWidgetClass "{5C7C8A10D09D8C63}" {
+       Prefab "{5C7C8A10D09D8C63}"
+       {
+        OverlayWidgetClass "{5C927D47FF4135F9}" {
+         Prefab "{5C927D47FF4135F9}"
+         {
+          SizeLayoutWidgetClass "{5D08822079B6553A}" {
+           Prefab "{5D08822079B6553A}"
+           {
+            FrameWidgetClass "{5C92A8C30D069DBF}" {
+             Prefab "{5C92A8C30D069DBF}"
+             {
+              VerticalLayoutWidgetClass "{5D6CA918040A0FC2}" {
+               Prefab "{5D6CA918040A0FC2}"
+               {
+                OverlayWidgetClass "{5DC213944879C696}" {
+                 Name "EM_TicketsBox"
+                 Slot LayoutSlot "{5DC213944879C6B2}" {
+                 }
+                 {
+                  ImageWidgetClass "{5DC2139463448953}" {
+                   Name "Background"
+                   Slot OverlayWidgetSlot "{5DC2139463448973}" {
+                    HorizontalAlign 3
+                    VerticalAlign 3
+                   }
+                   Opacity 0.95
+                   Color 0.007 0.012 0.014 1
+                  }
+                  OverlayWidgetClass "{5DC2138B5DDB9C44}" {
+                   Name "Overlay0"
+                   Slot OverlayWidgetSlot "{5DC2138B5DDB9C65}" {
+                    HorizontalAlign 3
+                    VerticalAlign 3
+                    Padding 8 8 8 0
+                   }
+                   {
+                    ImageWidgetClass "{5DC2138B6C2C4C6D}" {
+                     Name "Background"
+                     Slot OverlayWidgetSlot "{5DC2138B6C2C4D8F}" {
+                      HorizontalAlign 3
+                      VerticalAlign 3
+                     }
+                     Opacity 0.65
+                     Color 0 0 0 1
+                    }
+                    HorizontalLayoutWidgetClass "{5DC213945D2506EC}" {
+                     Name "HorizontalLayout0"
+                     Slot OverlayWidgetSlot "{5DC213945D25060C}" {
+                      Padding 0 8 0 8
+                     }
+                     {
+                      TextWidgetClass "{5DC237D0CD5A8CDE}" {
+                       Name "EM_TicketsLabel"
+                       Slot LayoutSlot "{5DC237D0CD5A8C03}" {
+                        Padding 0 0 8 0
+                       }
+                       Text "#EM-DeployMenu_RespawnTickets"
+                      }
+                      TextWidgetClass "{5DC2139466BC351E}" {
+                       Name "EM_TicketsCount"
+                       Slot LayoutSlot "{5DC2139466BC3530}" {
+                       }
+                       Text "0"
+                      }
+                     }
+                    }
+                   }
+                  }
+                 }
+                }
+                VerticalLayoutWidgetClass "{5D6CA9275120986F}" {
+                 Prefab "{5D6CA9275120986F}"
+                 {
+                  HorizontalLayoutWidgetClass "{5D6CA92737109EF9}" {
+                   Prefab "{5D6CA92737109EF9}"
+                   Slot LayoutSlot "{5D6CA92737109EC3}" {
+                    Padding 0 11 0 22
+                   }
+                  }
+                 }
+                }
+                OverlayWidgetClass "{5D06595B132A2FCC}" {
+                 Prefab "{5D06595B132A2FCC}"
+                 Slot LayoutSlot "{5D6E72AE311E98F6}" {
+                  Padding 0 0 0 0
+                 }
+                 {
+                  SizeLayoutWidgetClass "{5D0A7AA157C0F529}" {
+                   Prefab "{5D0A7AA157C0F529}"
+                   {
+                    VerticalLayoutWidgetClass "{5CCECCCA94548132}" {
+                     Prefab "{5CCECCCA94548132}"
+                     Slot AlignableSlot "{5D0A7AA157B37463}" {
+                      HorizontalAlign 3
+                      VerticalAlign 3
+                     }
+                    }
+                   }
+                  }
+                 }
+                }
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

@@ -23,8 +23,6 @@ PerceptionManager PerceptionManager : "{028DAEAD63E056BE}Prefabs/World/Game/Perc
 }
 SCR_BaseGameMode GameModeEscape : "{087AE647D1755635}Prefabs/MP/Modes/EM_GameModeEscape.et" {
  components {
-  SignalsManagerComponent "{5A96DB65B66820ED}" {
-  }
   SCR_CommunicationSoundComponent "{5A96DB65A4F312BC}" {
    Filenames +{
    }
@@ -35,26 +33,13 @@ SCR_BaseGameMode GameModeEscape : "{087AE647D1755635}Prefabs/MP/Modes/EM_GameMod
   EM_NoSpawnDefeatComponent "{5D537AF0AD1F1973}" {
    m_iGameOverType EM_DEFEAT
   }
-  EM_PlayerCorpseComponent "{5D590B199A4BC247}" {
-  }
   EM_RespawnTimerComponent "{5D45178B969D7313}" {
    m_fRespawnTime 30
-  }
-  EM_SpawnTicketsComponent "{5D4F4A2800A9B193}" {
-  }
-  EM_SpecialEventsComponent "{5D3AEB65B3020A33}" {
-  }
-  EM_StalkerComponent "{5D3C5CFF21F349C0}" {
   }
   EM_VictoryBorderComponent "{5D3C5CC9F314C1C5}" {
    m_BorderPolygon {
     3851 0 12464 5425 0 12956 7104 0 9992 8024 0 9688 8298 0 6461 10193 0 5917 10880 0 3625 12656 0 2195 12185 0 899 10678 0 1030 10755 0 58 9210 0 -116 5894 0 1878 6055 0 2768 2520 0 3365 1119 0 4764 499 0 6208 2286 0 8160 3118 0 8040 3584 0 10730
    }
-  }
-  SCR_ArsenalManagerComponent "{5B0298F006265F20}" {
-  }
-  SCR_AutomaticRespawnHandlerComponent "{56B4EA4DA0EEFF85}" {
-   Enabled 0
   }
   SCR_CommandingManagerComponent "{5A86E110CD916E9A}" {
    m_sCommandsConfigPath "{54764D4E706F348C}Configs/Commanding/Commands.conf"
@@ -271,6 +256,12 @@ SCR_BaseGameMode GameModeEscape : "{087AE647D1755635}Prefabs/MP/Modes/EM_GameMod
       m_bGetWinningFactionImage 0
       m_bGetWinningSubtitleParam 0
      }
+     SCR_BaseGameOverScreenInfo "{59EC75B80DEAA612}" {
+      m_OptionalParams SCR_BaseGameOverScreenInfoOptional "{59EC75B9DB34FA69}" {
+       m_sTitle "MISSION ACCOMPLISHED!"
+       m_sSubtitle "#AR-CombatScenario_Debriefing_Good"
+      }
+     }
      SCR_BaseGameOverScreenInfo "{5ADC782E70D51AD4}" {
       m_GameOverScreenId COMBATPATROL_PARTIAL_SUCCESS
       m_GameOverContentLayout "{77DC985790BEDC1C}UI/layouts/HUD/GameOver/EndScreen/EndScreenContent_CombatPatrol.layout"
@@ -296,12 +287,6 @@ SCR_BaseGameMode GameModeEscape : "{087AE647D1755635}Prefabs/MP/Modes/EM_GameMod
        m_sTitle "MISSION FAILED!"
        m_sSubtitle "#AR-CombatScenario_Debriefing_Good_Timeout"
        m_sAudioOneShot "SOUND_ONDEFEAT"
-      }
-     }
-     SCR_BaseGameOverScreenInfo "{59EC75B80DEAA612}" {
-      m_OptionalParams SCR_BaseGameOverScreenInfoOptional "{59EC75B9DB34FA69}" {
-       m_sTitle "MISSION ACCOMPLISHED!"
-       m_sSubtitle "#AR-CombatScenario_Debriefing_Good"
       }
      }
      SCR_BaseGameOverScreenInfo "{5D537AF0ED4A31B7}" {
@@ -334,13 +319,6 @@ SCR_BaseGameMode GameModeEscape : "{087AE647D1755635}Prefabs/MP/Modes/EM_GameMod
    m_iKillFeedType FULL
    m_iReceiveKillFeedType ALLIES_ONLY
   }
-  SCR_PlayerPenaltyComponent "{5B02E887FFBBB5A9}" {
-   m_iFriendlyPlayerKillPenalty 3
-   m_iFriendlyAIKillPenalty 1
-   m_iBanDuration 1800
-   m_iPenaltySubstractionPeriod 900
-   m_iPenaltySubstractionPoints 2
-  }
   SCR_PlayerSpawnPointManagerComponent "{5D3A7783EC1F84B8}" {
    m_SpawnPointPrefab "{4677BB7DA4611B8A}Prefabs/MP/Spawning/EM_PlayerSpawnPoint.et"
   }
@@ -350,18 +328,11 @@ SCR_BaseGameMode GameModeEscape : "{087AE647D1755635}Prefabs/MP/Modes/EM_GameMod
     }
    }
   }
-  SCR_RespawnMenuHandlerComponent "{5A234AD9987A4877}" {
-  }
-  SCR_RespawnSystemComponent "{56B2B4793051E7C9}" {
-   m_bDebugSkipSelection 1
-  }
   SCR_TimeAndWeatherHandlerComponent "{5AD4D80FEA1C15D9}" {
    m_iStartingHours 12
    m_bRandomStartingDaytime 1
    m_bRandomStartingWeather 1
    m_bAllowHeaderSettings 1
-  }
-  SerializerInventoryStorageManagerComponent "{5B0298F0BE978323}" {
   }
  }
  coords 6453.125 162.256 6494.151
