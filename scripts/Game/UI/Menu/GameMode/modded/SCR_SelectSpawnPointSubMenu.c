@@ -1,3 +1,4 @@
+/*
 modded class SCR_SelectSpawnPointSubMenu : SCR_RespawnSubMenuBase
 {
 	protected Widget m_wTicketsCount;
@@ -26,3 +27,4 @@ modded class SCR_SelectSpawnPointSubMenu : SCR_RespawnSubMenuBase
 		};
 	};
 };
+*/
