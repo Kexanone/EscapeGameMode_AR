@@ -20,7 +20,6 @@ FrameWidgetClass {
              Slot LayoutSlot "{5D4F4A3AAAA7771B}" {
               Padding 0 0 0 5
              }
-             "Is Visible" 0
              {
               ImageWidgetClass "{5D4F4A3B60BB9298}" {
                Name "Bckg"

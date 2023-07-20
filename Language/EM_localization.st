@@ -101,6 +101,41 @@ StringTable {
    ImageLink ""
    Hidden 0
   }
+  CustomStringTableItem "{5DC237D501F7959D}" {
+   Id "EM-ScenarioExec_Everon"
+   Target_en_us "You've got to find a way off this island."\
+   ""\
+   "Commandeer a boat or helicopter and use it to evacuate. It would be a good idea to search Lamentin's harbour and the airfield. Plan carefully, however. The enemy has a strong presence at each of these locations."\
+   ""\
+   "Checkpoints and other areas of interest have been marked on your map. They could be viable targets if you need to scavenge supplies."\
+   ""\
+   "Good luck and stay alive."
+   Target_de_de "Ihr müsst einen Weg von dieser Insel finden."\
+   ""\
+   "Findet ein Boot oder einen Helikopter und entkommt darin. Es wäre eine gute Idee Lamentins Hafen und den Flughafen zu durchsuchen. Plant euer Vorgehen gut, denn der Feind hat an jedem dieser Standorte eine starke Präsenz."\
+   ""\
+   "Kontrollpunkte und andere wichtige Orte wurden auf eurer Karte markiert. Sie könnten nützliche Ziele für Nachschub sein."\
+   ""\
+   "Viel Glück und bleibt am Leben!"
+   Modified 1573061035
+   Author "swellig"
+   LastChanged "swellig"
+  }
+  CustomStringTableItem "{5DC237D993B97819}" {
+   Id "EM-ScenarioExec_Title"
+   Target_en_us "Execution"
+   Target_de_de "Ausführung"
+   Modified 1573014708
+   Author "swellig"
+   LastChanged "swellig"
+  }
+  CustomStringTableItem "{5DC237D9AECBC7CF}" {
+   Id "EM-ScenarioIntro_Title"
+   Target_en_us "Introduction"
+   Modified 1573014737
+   Author "swellig"
+   LastChanged "swellig"
+  }
   CustomStringTableItem "{5D5921F55B461040}" {
    Id "EM-ScenarioName_Everon"
    Target_en_us "Escape from Everon"
