@@ -38,8 +38,7 @@ class EM_VictoryBorderComponent : SCR_BaseGameModeComponent
 			if (!vehicle)
 				continue;
 			
-			// Workaround: Temporarily trigger victory when a player is in helo no matter the position
-			if (R3D_HeliBase.Cast(vehicle) || !Math2D.IsPointInPolygonXZ(m_BorderPolygon, vehicle.GetOrigin()))
+			if (!Math2D.IsPointInPolygonXZ(m_BorderPolygon, vehicle.GetOrigin()))
 			{
 				m_pGameMode.EndGameMode(SCR_GameModeEndData.CreateSimple(m_iGameOverType));
 				return;
