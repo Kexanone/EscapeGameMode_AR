@@ -10,7 +10,7 @@ class EM_PlayerCorpseComponent : SCR_BaseGameModeComponent
 {
 	protected ref map<int,IEntity> m_Corpses = new map<int,IEntity>();
 
-	override void OnPlayerKilled(int playerId, IEntity player, IEntity killer)
+	override void OnPlayerKilled(int playerId, IEntity playerEntity, IEntity killerEntity, notnull Instigator killer)
 	{
 		IEntity corpse = m_Corpses.Get(playerId);
 		
@@ -19,7 +19,7 @@ class EM_PlayerCorpseComponent : SCR_BaseGameModeComponent
 			SCR_EntityHelper.DeleteEntityAndChildren(corpse);
 		};
 		
-		m_Corpses.Set(playerId, player);
+		m_Corpses.Set(playerId, playerEntity);
 	};
 	
 	override void OnPlayerDisconnected(int playerId, KickCauseCode cause, int timeout)

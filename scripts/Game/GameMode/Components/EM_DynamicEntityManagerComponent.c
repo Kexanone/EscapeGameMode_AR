@@ -298,7 +298,7 @@ class EM_DynamicAIGroupBaseWrapper : EM_DynamicEntityWrapper
 		foreach (EM_DynamicEntityWrapper dynamicUnit : m_dynamicUnits)
 		{
 			dynamicUnit.Spawn();
-			m_SpawnedGroup.AddAIEntityToGroup(dynamicUnit.GetEntity(), 0);
+			m_SpawnedGroup.AddAIEntityToGroup(dynamicUnit.GetEntity());
 		};
 		
 		m_SpawnedGroup.SetFaction(m_Faction);
@@ -328,7 +328,11 @@ class EM_DynamicAIGroupWrapper : EM_DynamicAIGroupBaseWrapper
 		
 		m_SpawnedGroup.GetWaypoints(m_Waypoints);
 		
-		AIFormationDefinition formationDef = m_SpawnedGroup.GetFormation();
+		AIFormationComponent formationComp = AIFormationComponent.Cast(m_SpawnedGroup.FindComponent(AIFormationComponent));
+		if (!formationComp)
+			return;
+		
+		AIFormationDefinition formationDef = formationComp.GetFormation();
 				
 		if (!formationDef)
 			return;

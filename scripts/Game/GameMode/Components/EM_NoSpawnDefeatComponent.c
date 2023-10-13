@@ -11,9 +11,9 @@ class EM_NoSpawnDefeatComponent : SCR_BaseGameModeComponent
 	[Attribute("0", desc: "Game over type", uiwidget: UIWidgets.ComboBox, enums: ParamEnumArray.FromEnum(EGameOverTypes))]
 	protected EGameOverTypes m_iGameOverType;
 	
-	override void OnPlayerKilled(int playerId, IEntity player, IEntity killer)
+	override void OnPlayerKilled(int playerId, IEntity playerEntity, IEntity killerEntity, notnull Instigator killer)
 	{
-		Handler(player);
+		Handler(playerEntity);
 	};
 	
 	override void OnPlayerDisconnected(int playerId, KickCauseCode cause, int timeout)

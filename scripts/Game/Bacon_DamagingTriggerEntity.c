@@ -33,6 +33,6 @@ class Bacon_DamagingTriggerEntity: SCR_BaseTriggerEntity {
 		
 		vector hitPosDirNorm[3];
 		HitZone hitZone = dmc.GetDefaultHitZone();
-		dmc.HandleDamage(m_damageType, m_damage, hitPosDirNorm, ent, hitZone, ent, null, -1, -1);
+		hitZone.HandleDamage(m_damage, m_damageType, ent);
 	};
 };

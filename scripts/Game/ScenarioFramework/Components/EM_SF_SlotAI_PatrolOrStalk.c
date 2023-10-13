@@ -17,7 +17,7 @@ class EM_SF_SlotAIPatrolOrStalk : SCR_ScenarioFrameworkSlotBase
 	[Attribute("3", UIWidgets.EditBox, "Number of waypoints", category: "Patrol")]
 	protected float m_iNumWaypoints;
 	
-	override void Init(SCR_ScenarioFrameworkArea area = null, SCR_ScenarioFrameworkEActivationType activation = SCR_ScenarioFrameworkEActivationType.SAME_AS_PARENT, bool bInit = true)
+	override void Init(SCR_ScenarioFrameworkArea area = null, SCR_ScenarioFrameworkEActivationType activation = SCR_ScenarioFrameworkEActivationType.SAME_AS_PARENT)
 	{
 		if (activation == SCR_ScenarioFrameworkEActivationType.SAME_AS_PARENT)
 		{
