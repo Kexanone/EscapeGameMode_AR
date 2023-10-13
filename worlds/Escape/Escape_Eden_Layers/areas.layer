@@ -105,7 +105,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
        Helo_1 {
         components {
          EM_SF_SlotDynamicEntity "{5D6AC5A2873B59FB}" {
-          m_sObjectToSpawn "{0C6491AC961ACAC9}Prefabs/Vehicles/Helis/R3D_UH60/R3D_UH60.et"
+          m_sObjectToSpawn "{DF5CCB7C0FF049F4}Prefabs/Vehicles/Helicopters/Mi8MT/Mi8MT.et"
          }
         }
         coords 15 0.001 -50
@@ -114,7 +114,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
        Helo_2 {
         components {
          EM_SF_SlotDynamicEntity "{5D6AC5A2873B59FB}" {
-          m_sObjectToSpawn "{0C6491AC961ACAC9}Prefabs/Vehicles/Helis/R3D_UH60/R3D_UH60.et"
+          m_sObjectToSpawn "{DF5CCB7C0FF049F4}Prefabs/Vehicles/Helicopters/Mi8MT/Mi8MT.et"
          }
         }
         coords 15 0 -84
@@ -1355,11 +1355,11 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
              1
             }
            }
-           Hierarchy "{5D595C5C61B567BA}" {
-           }
            RigidBody "{5D595C5C61B567C4}" {
             ModelGeometry 1
             Static 1
+           }
+           Hierarchy "{5D595C5C61B567BA}" {
            }
           }
           coords 0.229 -0.682 4.725
@@ -1384,9 +1384,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             }
             PixelSizeScale 2
             ClutterOccluder 1
-           }
-           Hierarchy "{5D595C5C61B56244}" {
-            Enabled 1
            }
            NavmeshCustomLinkComponent "{5D595C5C61B563CF}" {
             Enabled 0
@@ -1431,6 +1428,9 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            RplComponent "{5D595C5C61B560AC}" {
             Enabled 0
            }
+           Hierarchy "{5D595C5C61B56244}" {
+            Enabled 1
+           }
           }
           coords -1.471 -0.682 4.536
           Flags 1027
@@ -1454,8 +1454,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             }
             PixelSizeScale 2
             ClutterOccluder 1
-           }
-           Hierarchy "{5D595C5C61B2CAF0}" {
            }
            NavmeshCustomLinkComponent "{5D595C5C61B2CA4E}" {
             Enabled 0
@@ -1504,6 +1502,8 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            RplComponent "{5D595C5C61B2CBEC}" {
             Enabled 0
            }
+           Hierarchy "{5D595C5C61B2CAF0}" {
+           }
           }
           coords -3.25 -0.682 3.735
           angleY 90
@@ -1517,11 +1517,11 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
              1
             }
            }
-           Hierarchy "{5D595C5C61B56C2A}" {
-           }
            RigidBody "{5D595C5C61B56C3A}" {
             ModelGeometry 1
             Static 1
+           }
+           Hierarchy "{5D595C5C61B56C2A}" {
            }
           }
           coords -3.861 -0.682 0.824
@@ -1547,8 +1547,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             }
             PixelSizeScale 2
             ClutterOccluder 1
-           }
-           Hierarchy "{5D595C5C6CEB0018}" {
            }
            NavmeshCustomLinkComponent "{5D595C5C6CEB018E}" {
             Enabled 0
@@ -1596,6 +1594,8 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            RplComponent "{5D595C5C6CEB013B}" {
             Enabled 0
            }
+           Hierarchy "{5D595C5C6CEB0018}" {
+           }
           }
           coords -3.263 -0.682 1.402
           angleY 90
@@ -1608,8 +1608,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
               LODFactors {
                5 2 1.5 1 1 1
               }
-             }
-             Hierarchy "{5D595C5C7E9C7164}" {
              }
              RigidBody "{5D595C5C7E9C6E97}" {
               Mass 50
@@ -1634,6 +1632,8 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
              RplComponent "{5D595C5C7E9C6EDF}" {
               Enabled 0
              }
+             Hierarchy "{5D595C5C7E9C7164}" {
+             }
             }
             coords -0.553 1.265 0.007
             angleY -2.928
@@ -1648,11 +1648,11 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
              1
             }
            }
-           Hierarchy "{5D595C5C61B572EF}" {
-           }
            RigidBody "{5D595C5C61B572FF}" {
             ModelGeometry 1
             Static 1
+           }
+           Hierarchy "{5D595C5C61B572EF}" {
            }
           }
           coords -3.053 -0.582 5.126
@@ -1677,9 +1677,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             }
             PixelSizeScale 2
             ClutterOccluder 1
-           }
-           Hierarchy "{5D595C5C61B55DFC}" {
-            Enabled 1
            }
            NavmeshCustomLinkComponent "{5D595C5C61B55D4B}" {
             Enabled 0
@@ -1724,6 +1721,9 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            RplComponent "{5D595C5C61B55ADF}" {
             Enabled 0
            }
+           Hierarchy "{5D595C5C61B55DFC}" {
+            Enabled 1
+           }
           }
           coords 0.035 -0.567 4.562
           Flags 1027
@@ -1732,8 +1732,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           components {
            MeshObject "{5D595C5C6CEB188E}" {
             Object "{C86C1F784CE41386}Assets/Props/Military/AmmoBox/EquipmentBoxStack/EquipmentBoxStack_01_V2.xob"
-           }
-           Hierarchy "{5D595C5C6CEB188A}" {
            }
            RigidBody "{5D595C5C6CEB1834}" {
             Mass 10
@@ -1837,6 +1835,8 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            RplComponent "{5D595C5C6CEB170F}" {
             Enabled 0
            }
+           Hierarchy "{5D595C5C6CEB188A}" {
+           }
           }
           coords -2.223 -0.55 3.528
           Flags 1027
@@ -1855,8 +1855,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
               LODFactors {
                5 2 1.5 1 1 1
               }
-             }
-             Hierarchy "{5D595C5C7E9C050F}" {
              }
              ParametricMaterialInstanceComponent "{5D595C5C7E9C0509}" {
              }
@@ -1933,6 +1931,8 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
              RplComponent "{5D595C5C7E9C0227}" {
               Enabled 1
              }
+             Hierarchy "{5D595C5C7E9C050F}" {
+             }
             }
             coords 0.355 0.82 0.204
             angleY -129.157
@@ -1945,8 +1945,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                LODFactors {
                 5 2 1.5 1 1 1
                }
-              }
-              Hierarchy "{5D595C5C7E9C0B1D}" {
               }
               RigidBody "{5D595C5C7E9C0B63}" {
                Mass 3
@@ -1971,6 +1969,8 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
               RplComponent "{5D595C5C7E9C08E3}" {
                Enabled 0
               }
+              Hierarchy "{5D595C5C7E9C0B1D}" {
+              }
              }
              coords -0.146 0.326 -0.315
              angleY 52.96
@@ -1990,9 +1990,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                LODFactors {
                 5 2 1.5 1 1 1
                }
-              }
-              Hierarchy "{5D595C5C7E9C787C}" {
-               Enabled 1
               }
               RadioBroadcastComponent "{5D595C5C7E9C7998}" {
                TurnOnAction SCR_TurnOnAction "{5D595C5C7E9C799A}" {
@@ -2035,6 +2032,9 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
               RplComponent "{5D595C5C7E9C7931}" {
                Enabled 1
               }
+              Hierarchy "{5D595C5C7E9C787C}" {
+               Enabled 1
+              }
              }
              coords -0.204 0.784 -1.896
              angleY 89.9
@@ -2046,8 +2046,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                LODFactors {
                 5 2 1.5 1 1 1
                }
-              }
-              Hierarchy "{5D595C5C7E9C7265}" {
               }
               RigidBody "{5D595C5C7E9C739E}" {
                ResponseIndex "LargeDestructible"
@@ -2076,6 +2074,8 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
               RplComponent "{5D595C5C7E9C7313}" {
                Enabled 0
               }
+              Hierarchy "{5D595C5C7E9C7265}" {
+              }
              }
              Flags 1027
             }
@@ -2095,9 +2095,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             LODFactors {
              5 2 1.5 1 1 1
             }
-           }
-           Hierarchy "{5D595C5C61B559A5}" {
-            Enabled 1
            }
            RigidBody "{5D595C5C61B559D4}" {
             ResponseIndex "HugeDestructible"
@@ -2120,6 +2117,9 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            RplComponent "{5D595C5C61B55926}" {
             Enabled 0
            }
+           Hierarchy "{5D595C5C61B559A5}" {
+            Enabled 1
+           }
           }
           coords -0.012 -0.658 -0.88
           angleY 53.167
@@ -2136,9 +2136,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            LODFactors {
             70 50 30 10 2 1 1
            }
-          }
-          Hierarchy "{5D595C5C61B2EE0B}" {
-           Enabled 1
           }
           NavmeshCustomLinkComponent "{5D595C5C61B2EE38}" {
            Enabled 0
@@ -2167,6 +2164,9 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            Static 1
           }
           SCR_CampaignBuildingCompositionComponent "{5D595C5C61B2EF81}" {
+          }
+          Hierarchy "{5D595C5C61B2EE0B}" {
+           Enabled 1
           }
          }
          coords -1.107 -0.682 5.704
@@ -2254,14 +2254,14 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             }
             ClutterOccluder 1
            }
-           Hierarchy "{5D595C5C61B2D6D0}" {
-            Enabled 1
-           }
            RigidBody "{5D595C5C61B2D6DD}" {
             ModelGeometry 1
             Static 1
            }
            SCR_CampaignBuildingCompositionComponent "{5D595C5C61B2D6DB}" {
+           }
+           Hierarchy "{5D595C5C61B2D6D0}" {
+            Enabled 1
            }
           }
           coords -3.392 -0.682 3.337
@@ -2277,14 +2277,14 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             }
             ClutterOccluder 1
            }
-           Hierarchy "{5D595C5C61B2E5D4}" {
-            Enabled 1
-           }
            RigidBody "{5D595C5C61B2E5DE}" {
             ModelGeometry 1
             Static 1
            }
            SCR_CampaignBuildingCompositionComponent "{5D595C5C61B2E5DD}" {
+           }
+           Hierarchy "{5D595C5C61B2E5D4}" {
+            Enabled 1
            }
           }
           coords -3.348 -0.682 1.591
@@ -2305,14 +2305,14 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
              250 90 40 20 1 1
             }
            }
-           Hierarchy "{5D595C5C61B2E32F}" {
-            Enabled 1
-           }
            RigidBody "{5D595C5C61B2E32B}" {
             ModelGeometry 1
             Static 1
            }
            SCR_CampaignBuildingCompositionComponent "{5D595C5C61B2E329}" {
+           }
+           Hierarchy "{5D595C5C61B2E32F}" {
+            Enabled 1
            }
           }
           coords -3.411 -1.044 5.811
@@ -2337,14 +2337,14 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
              250 90 40 20 1 1
             }
            }
-           Hierarchy "{5D595C5C61B2EB6E}" {
-            Enabled 1
-           }
            RigidBody "{5D595C5C61B2EB77}" {
             ModelGeometry 1
             Static 1
            }
            SCR_CampaignBuildingCompositionComponent "{5D595C5C61B2EB75}" {
+           }
+           Hierarchy "{5D595C5C61B2EB6E}" {
+            Enabled 1
            }
           }
           coords 1.779 -0.682 5.646
@@ -2358,9 +2358,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             LODFactors {
              5 2 1.5 1 1 1
             }
-           }
-           Hierarchy "{5D595C5C699D8184}" {
-            Enabled 1
            }
            RigidBody "{5D595C5C699D81DE}" {
             Mass 10
@@ -2398,6 +2395,9 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            RplComponent "{5D595C5C699DFE89}" {
             Enabled 1
            }
+           Hierarchy "{5D595C5C699D8184}" {
+            Enabled 1
+           }
           }
           coords -2.356 -0.664 1.46
           angleY 85.27
@@ -2411,8 +2411,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                LODFactors {
                 5 2 1.5 1 1 1
                }
-              }
-              Hierarchy "{5D595C5C7E9C6CF6}" {
               }
               RigidBody "{5D595C5C7E9C6C36}" {
                Mass 10
@@ -2437,6 +2435,8 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
               RplComponent "{5D595C5C7E9C6C71}" {
                Enabled 0
               }
+              Hierarchy "{5D595C5C7E9C6CF6}" {
+              }
              }
              coords -0.37 0.9 0.128
              Flags 1027
@@ -2450,9 +2450,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
                }
                PixelSizeScale 2
                ClutterOccluder 1
-              }
-              Hierarchy "{5D595C5C7E9C6BA5}" {
-               Enabled 1
               }
               NavmeshCustomLinkComponent "{5D595C5C7E9C6B00}" {
                Enabled 0
@@ -2497,6 +2494,9 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
               RplComponent "{5D595C5C7E9C6B7A}" {
                Enabled 0
               }
+              Hierarchy "{5D595C5C7E9C6BA5}" {
+               Enabled 1
+              }
              }
              coords 0.317 0.9 -0.021
              angleY 109.713
@@ -2514,14 +2514,14 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             }
             ClutterOccluder 1
            }
-           Hierarchy "{5D595C5C61B2DD4E}" {
-            Enabled 1
-           }
            RigidBody "{5D595C5C61B2DD48}" {
             ModelGeometry 1
             Static 1
            }
            SCR_CampaignBuildingCompositionComponent "{5D595C5C61B2DD56}" {
+           }
+           Hierarchy "{5D595C5C61B2DD4E}" {
+            Enabled 1
            }
           }
           coords -0.007 -0.497 4.719
@@ -2536,14 +2536,14 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             }
             ClutterOccluder 1
            }
-           Hierarchy "{5D595C5C61B2E16D}" {
-            Enabled 1
-           }
            RigidBody "{5D595C5C61B2E169}" {
             ModelGeometry 1
             Static 1
            }
            SCR_CampaignBuildingCompositionComponent "{5D595C5C61B2E177}" {
+           }
+           Hierarchy "{5D595C5C61B2E16D}" {
+            Enabled 1
            }
           }
           coords -2.55 -0.497 4.812
@@ -2557,9 +2557,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
             LODFactors {
              5 2 1.5 1 1 1
             }
-           }
-           Hierarchy "{5D595C5C61B2D422}" {
-            Enabled 1
            }
            RigidBody "{5D595C5C61B2D45A}" {
             Mass 10
@@ -2592,6 +2589,9 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
            }
            RplComponent "{5D595C5C61B2D5D5}" {
             Enabled 0
+           }
+           Hierarchy "{5D595C5C61B2D422}" {
+            Enabled 1
            }
           }
           coords -1.544 -0.542 1.803
@@ -3084,7 +3084,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
     A4_Structures {
      coords 0 0 0
      {
-      SCR_DestructibleEntity : "{0E14405B63358ABF}PrefabsEditable/Auto/Structures/Signs/Military/E_Sign_Warzone_USSR_01.et" {
+      GenericEntity : "{0E14405B63358ABF}PrefabsEditable/Auto/Structures/Signs/Military/E_Sign_Warzone_USSR_01.et" {
        components {
         SCR_EditableEntityComponent "{58EEFD4A069326F2}" {
          Enabled 0
@@ -3094,6 +3094,39 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
        angleX 0.643
        angleY 138.128
        angleZ -1.09
+      }
+      GenericEntity : "{4510C273B794F3A9}Prefabs/Compositions/Slotted/SlotFlatMedium/VehicleMaintenance_M_USSR_01.et" {
+       coords 12.93 -0.769 27.005
+       angleX 0.749
+       angleY -108.666
+       angleZ 1.021
+       {
+        $grp GenericEntity {
+         {
+          coords 9.079 -0.248 4.988
+          angleX 0.885
+          angleY -89.999
+          angleZ 0.136
+         }
+         {
+          coords 7.441 -0.219 3.81
+          angleX -0.915
+          angleY 82.576
+          angleZ 0.874
+         }
+        }
+        $grp StaticModelEntity {
+         {
+          coords 7.315 -0.216 2.807
+          angleX 0.53
+          angleY -44.997
+          angleZ 0.722
+         }
+         {
+          coords 10.022 0.158 -7.288
+         }
+        }
+       }
       }
       StaticModelEntity : "{6A171AC105BA5A2B}PrefabLibrary/Props/Military/Dragonsteeth_01/Dragonsteeth_01_V2.et" {
        coords -11.024 2.892 -29.519
@@ -3670,39 +3703,6 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
           angleY 115.584
           angleZ -7.4
          }
-        }
-       }
-      }
-      GenericEntity : "{6DF32F9976E68515}Prefabs/Compositions/Slotted/SlotFlatMedium/VehicleMaintenance_M_USSR_01.et" {
-       coords 12.93 -0.769 27.005
-       angleX 0.749
-       angleY -108.666
-       angleZ 1.021
-       {
-        GenericEntity {
-         ID "5A5AB0496039BA97"
-         coords 9.079 -0.248 4.988
-         angleX 0.885
-         angleY -89.999
-         angleZ 0.136
-        }
-        GenericEntity {
-         ID "5A5AB0496039B36A"
-         coords 7.441 -0.219 3.81
-         angleX -0.915
-         angleY 82.576
-         angleZ 0.874
-        }
-        StaticModelEntity {
-         ID "5A5AB0496039B3E5"
-         coords 7.315 -0.216 2.807
-         angleX 0.53
-         angleY -44.997
-         angleZ 0.722
-        }
-        StaticModelEntity {
-         ID "5A5AB0496039BB5F"
-         coords 10.022 0.158 -7.288
         }
        }
       }
@@ -6897,7 +6897,7 @@ $grp GenericEntity : "{C72F956E4AC6A6E7}Prefabs/ScenarioFramework/Components/Are
         }
        }
       }
-      GenericEntity : "{68ED84218EA1BDC2}Prefabs/Compositions/Slotted/SlotFlatSmall/Antenna_S_USSR_01.et" {
+      GenericEntity : "{68ED84218EA1BDC3}Prefabs/Compositions/Slotted/SlotFlatSmall/Antenna_S_USSR_01.et" {
        coords -16.396 -0.17 21.532
        angleX 6.849
        angleY 140.07
